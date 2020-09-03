@@ -1,0 +1,2316 @@
+Started GET "/" for ::1 at 2020-09-03 18:15:30 +0900
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3.2) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3.2) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('4776105987311447145', 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddPasswordToUsers (20200824085334)
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE `users` ADD `password` varchar(255) DEFAULT '' NOT NULL[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('4776105987311447145')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (31.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS `furima_28868_development`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (38.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS `furima_28868_test`[0m
+  [1m[35m (7.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE DATABASE `furima_28868_development` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE `furima_28868_test` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT @@innodb_file_per_table = 1 AND @@innodb_file_format = 'Barracuda'[0m
+  [1m[35m (24.6ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[35m (8.4ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('4776105987311447145', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to DeviseCreateUsers (20200824082318)
+  [1m[35m (10.8ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `email` varchar(255) NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (8.4ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) [0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200824082318')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddNickNmaeToUsers (20200824082749)
+  [1m[35m (14.0ms)[0m  [1m[35mALTER TABLE `users` ADD `nickname` varchar(255) DEFAULT '' NOT NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200824082749')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddPasswordToUsers (20200824085334)
+  [1m[35m (29.5ms)[0m  [1m[35mALTER TABLE `users` ADD `password` varchar(255) DEFAULT '' NOT NULL[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200824085334')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddFirstNameToUsers (20200824085554)
+  [1m[35m (15.0ms)[0m  [1m[35mALTER TABLE `users` ADD `first_name` varchar(255) DEFAULT '' NOT NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200824085554')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddFirstNamePhoneticToUsers (20200824085633)
+  [1m[35m (17.7ms)[0m  [1m[35mALTER TABLE `users` ADD `first_name_phonetic` varchar(255) DEFAULT '' NOT NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200824085633')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddFamilyNamePhoneticToUsers (20200824085714)
+  [1m[35m (17.2ms)[0m  [1m[35mALTER TABLE `users` ADD `family_name_phonetic` varchar(255) DEFAULT '' NOT NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200824085714')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddFamilyNameToUsers (20200824085745)
+  [1m[35m (15.2ms)[0m  [1m[35mALTER TABLE `users` ADD `family_name` varchar(255) DEFAULT '' NOT NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200824085745')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddBirthdayToUsers (20200826080158)
+  [1m[35m (15.3ms)[0m  [1m[35mALTER TABLE `users` ADD `birthday` date NOT NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200826080158')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateItems (20200827084419)
+  [1m[35m (10.8ms)[0m  [1m[35mCREATE TABLE `items` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `category` int NOT NULL, `status` int NOT NULL, `postage` int NOT NULL, `area` int NOT NULL, `shipping` int NOT NULL, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (3.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200827084419')[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddTitleToItems (20200827094433)
+  [1m[35m (12.9ms)[0m  [1m[35mALTER TABLE `items` ADD `title` varchar(255) NOT NULL[0m
+  [1m[35m (11.9ms)[0m  [1m[35mALTER TABLE `items` ADD `introduction` text NOT NULL[0m
+  [1m[35m (10.7ms)[0m  [1m[35mALTER TABLE `items` ADD `price` int NOT NULL[0m
+  [1m[35m (12.1ms)[0m  [1m[35mALTER TABLE `items` ADD `user_id` int NOT NULL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200827094433')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveStorageTables (20200827095033)
+  [1m[35m (9.8ms)[0m  [1m[35mCREATE TABLE `active_storage_blobs` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `key` varchar(255) NOT NULL, `filename` varchar(255) NOT NULL, `content_type` varchar(255), `metadata` text, `byte_size` bigint NOT NULL, `checksum` varchar(255) NOT NULL, `created_at` datetime NOT NULL, UNIQUE INDEX `index_active_storage_blobs_on_key`  (`key`))[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE `active_storage_attachments` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `record_type` varchar(255) NOT NULL, `record_id` bigint NOT NULL, `blob_id` bigint NOT NULL, `created_at` datetime NOT NULL,  INDEX `index_active_storage_attachments_on_blob_id`  (`blob_id`), UNIQUE INDEX `index_active_storage_attachments_uniqueness`  (`record_type`, `record_id`, `name`, `blob_id`), CONSTRAINT `fk_rails_c3b3935057`
+FOREIGN KEY (`blob_id`)
+  REFERENCES `active_storage_blobs` (`id`)
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200827095033')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePurchases (20200828075114)
+  [1m[35m (18.4ms)[0m  [1m[35mCREATE TABLE `purchases` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200828075114')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddUserIdToPurchases (20200828075442)
+  [1m[35m (13.7ms)[0m  [1m[35mALTER TABLE `purchases` ADD `user_id` int NOT NULL[0m
+  [1m[35m (10.7ms)[0m  [1m[35mALTER TABLE `purchases` ADD `item_id` int NOT NULL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200828075442')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2020-09-03 09:34:10.840303', '2020-09-03 09:34:10.840303')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('4776105987311447145')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for ::1 at 2020-09-03 18:34:44 +0900
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  Rendered shared/_header.html.erb (Duration: 1612.2ms | Allocations: 1493920)
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  Rendered shared/_footer.html.erb (Duration: 5.1ms | Allocations: 1516)
+  Rendered items/index.html.erb within layouts/application (Duration: 1647.4ms | Allocations: 1503696)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/taichi/projects/furima_28868/public/packs
+[Webpacker] Hash: c52aab290e6e4a1e835b
+Version: webpack 4.44.1
+Time: 1746ms
+Built at: 2020/09/03 18:34:49
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-6ec6ac8211bc523b8259.js    125 KiB  application  [emitted] [immutable]  application
+js/application-6ec6ac8211bc523b8259.js.map    140 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-6ec6ac8211bc523b8259.js js/application-6ec6ac8211bc523b8259.js.map
+[./app/javascript/calculate.js] 456 bytes {application} [built]
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 775 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 5315ms (Views: 5267.3ms | ActiveRecord: 2.6ms | Allocations: 1533909)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-09-03 18:35:23 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 2.2ms | Allocations: 807)
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_new_html_erb___1195315279428237185_70111354580040 at /Users/taichi/projects/furima_28868/app/views/devise/registrations/new.html.erb:11)
+  Rendered shared/_second-footer.html.erb (Duration: 1.3ms | Allocations: 440)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1121.9ms | Allocations: 871979)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1173ms (Views: 1141.3ms | ActiveRecord: 5.5ms | Allocations: 902817)
+
+
+Started POST "/users" for ::1 at 2020-09-03 18:36:13 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"vBBEJG0/MxjZaKGfmcXWWqf7F71FKMtqa+SWVNvsc+E5ZE24RhQFUKtiFpCZZiwuVMS95vYA8cCQ151RRGqjYg==", "user"=>{"nickname"=>"aaax", "email"=>"aaax@me.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "first_name"=>"山田", "family_name"=>"山田", "first_name_phonetic"=>"ヤマダ", "family_name_phonetic"=>"ヤマダ", "birthday(1i)"=>"1930", "birthday(2i)"=>"4", "birthday(3i)"=>"1"}, "commit"=>"会員登録"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'aaax@me.com' LIMIT 1[0m
+DEPRECATION WARNING: Uniqueness validator will no longer enforce case sensitive comparison in Rails 6.1. To continue case sensitive comparison on the :email attribute in User model, pass `case_sensitive: true` option explicitly to the uniqueness validator. (called from block in build_relation at /Users/taichi/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-6.0.3.2/lib/active_record/validations/uniqueness.rb:64)
+  [1m[36mCACHE User Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'aaax@me.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`, `nickname`, `first_name`, `first_name_phonetic`, `family_name_phonetic`, `family_name`, `birthday`) VALUES ('aaax@me.com', '$2a$12$J7rj1cmH5uOemUq84Ex/.uO8HB4RYsFthgU7Vv9O/Wphd05hzamFy', '2020-09-03 09:36:13.378297', '2020-09-03 09:36:13.378297', 'aaax', '山田', 'ヤマダ', 'ヤマダ', '山田', '1930-04-01')[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 234ms (ActiveRecord: 1.5ms | Allocations: 13030)
+
+
+Started GET "/" for ::1 at 2020-09-03 18:36:13 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 3.5ms | Allocations: 2376)
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  Rendered shared/_footer.html.erb (Duration: 0.9ms | Allocations: 1076)
+  Rendered items/index.html.erb within layouts/application (Duration: 10.6ms | Allocations: 8947)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 26.9ms | ActiveRecord: 1.0ms | Allocations: 27422)
+
+
+Started GET "/items/new" for ::1 at 2020-09-03 18:36:15 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 179)
+  Rendered items/new.html.erb within layouts/application (Duration: 21.8ms | Allocations: 7781)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 55ms (Views: 37.6ms | ActiveRecord: 0.5ms | Allocations: 33880)
+
+
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('4776105987311447145', 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddUserIdToPurchases (20200828075442)
+  [1m[35m (12.4ms)[0m  [1m[35mALTER TABLE `purchases` DROP COLUMN `item_id`[0m
+  [1m[35m (8.7ms)[0m  [1m[35mALTER TABLE `purchases` DROP COLUMN `user_id`[0m
+  [1m[36mprimary::SchemaMigration Destroy (4.2ms)[0m  [1m[31mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20200828075442'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('4776105987311447145')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('4776105987311447145', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreatePurchases (20200828075114)
+  [1m[35m (3.5ms)[0m  [1m[35mDROP TABLE `purchases`[0m
+  [1m[36mprimary::SchemaMigration Destroy (0.5ms)[0m  [1m[31mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20200828075114'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('4776105987311447145')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('4776105987311447145', 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateActiveStorageTables (20200827095033)
+  [1m[35m (4.5ms)[0m  [1m[35mDROP TABLE `active_storage_attachments`[0m
+  [1m[35m (2.1ms)[0m  [1m[35mDROP TABLE `active_storage_blobs`[0m
+  [1m[36mprimary::SchemaMigration Destroy (0.5ms)[0m  [1m[31mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20200827095033'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('4776105987311447145')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('4776105987311447145', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddTitleToItems (20200827094433)
+  [1m[35m (14.5ms)[0m  [1m[35mALTER TABLE `items` DROP COLUMN `user_id`[0m
+  [1m[35m (9.0ms)[0m  [1m[35mALTER TABLE `items` DROP COLUMN `price`[0m
+  [1m[35m (10.4ms)[0m  [1m[35mALTER TABLE `items` DROP COLUMN `introduction`[0m
+  [1m[35m (9.3ms)[0m  [1m[35mALTER TABLE `items` DROP COLUMN `title`[0m
+  [1m[36mprimary::SchemaMigration Destroy (0.7ms)[0m  [1m[31mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20200827094433'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('4776105987311447145')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('4776105987311447145', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateItems (20200827084419)
+  [1m[35m (3.9ms)[0m  [1m[35mDROP TABLE `items`[0m
+  [1m[36mprimary::SchemaMigration Destroy (0.5ms)[0m  [1m[31mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20200827084419'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('4776105987311447145')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('4776105987311447145', 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateItems (20200827084419)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT @@innodb_file_per_table = 1 AND @@innodb_file_format = 'Barracuda'[0m
+  [1m[35m (9.1ms)[0m  [1m[35mCREATE TABLE `items` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `category_id` int NOT NULL, `status_id` int NOT NULL, `postage_id` int NOT NULL, `area_id` int NOT NULL, `shipping_id` int NOT NULL, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200827084419')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddTitleToItems (20200827094433)
+  [1m[35m (13.1ms)[0m  [1m[35mALTER TABLE `items` ADD `title` varchar(255) NOT NULL[0m
+  [1m[35m (9.3ms)[0m  [1m[35mALTER TABLE `items` ADD `introduction` text NOT NULL[0m
+  [1m[35m (9.7ms)[0m  [1m[35mALTER TABLE `items` ADD `price` int NOT NULL[0m
+  [1m[35m (8.6ms)[0m  [1m[35mALTER TABLE `items` ADD `user_id` int NOT NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200827094433')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveStorageTables (20200827095033)
+  [1m[35m (10.9ms)[0m  [1m[35mCREATE TABLE `active_storage_blobs` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `key` varchar(255) NOT NULL, `filename` varchar(255) NOT NULL, `content_type` varchar(255), `metadata` text, `byte_size` bigint NOT NULL, `checksum` varchar(255) NOT NULL, `created_at` datetime NOT NULL, UNIQUE INDEX `index_active_storage_blobs_on_key`  (`key`))[0m
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE `active_storage_attachments` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `record_type` varchar(255) NOT NULL, `record_id` bigint NOT NULL, `blob_id` bigint NOT NULL, `created_at` datetime NOT NULL,  INDEX `index_active_storage_attachments_on_blob_id`  (`blob_id`), UNIQUE INDEX `index_active_storage_attachments_uniqueness`  (`record_type`, `record_id`, `name`, `blob_id`), CONSTRAINT `fk_rails_c3b3935057`
+FOREIGN KEY (`blob_id`)
+  REFERENCES `active_storage_blobs` (`id`)
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200827095033')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePurchases (20200828075114)
+  [1m[35m (11.6ms)[0m  [1m[35mCREATE TABLE `purchases` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200828075114')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddUserIdToPurchases (20200828075442)
+  [1m[35m (12.3ms)[0m  [1m[35mALTER TABLE `purchases` ADD `user_id` int NOT NULL[0m
+  [1m[35m (8.9ms)[0m  [1m[35mALTER TABLE `purchases` ADD `item_id` int NOT NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200828075442')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('4776105987311447145')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started POST "/items" for ::1 at 2020-09-03 18:46:09 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"YUMW9wMzmOJJDg1Uf37UvlCa5KIqmewTAfVCUG9piiuPz5ZUjyLI9QQ2PYg5sp3YBj0h0scoKp55w9wWvC1jKw==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8824b6e690 @tempfile=#<Tempfile:/var/folders/3n/t_yyftl93y18vj8swjyj30vh0000gn/T/RackMultipart20200903-6251-ygumau.jpg>, @original_filename="IMG_0010.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"IMG_0010.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "introduction"=>"テスト", "category"=>"4", "status"=>"2", "postage"=>"3", "area"=>"4", "shipping"=>"2", "price"=>"10000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:28:in `items_params'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mItem Create (0.8ms)[0m  [1m[32mINSERT INTO `items` (`category`, `status`, `postage`, `area`, `shipping`, `created_at`, `updated_at`, `title`, `introduction`, `price`, `user_id`) VALUES (4, 2, 3, 4, 2, '2020-09-03 09:46:10.281636', '2020-09-03 09:46:10.281636', 'テスト', 'テスト', 10000, 1)[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+Completed 500 Internal Server Error in 208ms (ActiveRecord: 51.8ms | Allocations: 81831)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'category' in 'field list'):
+  
+app/controllers/items_controller.rb:14:in `create'
+Started GET "/items" for ::1 at 2020-09-03 18:47:09 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 6.4ms | Allocations: 2639)
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  Rendered shared/_footer.html.erb (Duration: 2.6ms | Allocations: 1482)
+  Rendered items/index.html.erb within layouts/application (Duration: 25.2ms | Allocations: 11227)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 54.2ms | ActiveRecord: 0.6ms | Allocations: 30705)
+
+
+Started GET "/items/new" for ::1 at 2020-09-03 18:47:11 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 173)
+  Rendered items/new.html.erb within layouts/application (Duration: 14.9ms | Allocations: 3468)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 4128)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007f8808a82c48>::Category_id):
+    48:           カテゴリー
+    49:           <span class="indispensable">必須</span>
+    50:         </div>
+    51:         <%= f.collection_select(:category_id, Category_id.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    52:         <div class="weight-bold-text">
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:51
+app/views/items/new.html.erb:8
+Started PUT "/__web_console/repl_sessions/4efb9bc66c48d6756307ca5a34561945" for ::1 at 2020-09-03 18:51:44 +0900
+Started PUT "/__web_console/repl_sessions/4efb9bc66c48d6756307ca5a34561945" for ::1 at 2020-09-03 18:51:44 +0900
+Started PUT "/__web_console/repl_sessions/4efb9bc66c48d6756307ca5a34561945" for ::1 at 2020-09-03 18:51:53 +0900
+Started GET "/items/new" for ::1 at 2020-09-03 18:58:25 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 173)
+  Rendered items/new.html.erb within layouts/application (Duration: 11.3ms | Allocations: 3401)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 4753)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007f8808a6bca0>::Category):
+    48:           カテゴリー
+    49:           <span class="indispensable">必須</span>
+    50:         </div>
+    51:         <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    52:         <div class="weight-bold-text">
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:51
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 18:58:26 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 9.0ms | Allocations: 2298)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 2812)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007f8808a6bca0>::Category):
+    48:           カテゴリー
+    49:           <span class="indispensable">必須</span>
+    50:         </div>
+    51:         <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    52:         <div class="weight-bold-text">
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:51
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 18:59:16 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 173)
+  Rendered items/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 3403)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 4755)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007f88196b9538>::Category):
+    48:           カテゴリー
+    49:           <span class="indispensable">必須</span>
+    50:         </div>
+    51:         <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    52:         <div class="weight-bold-text">
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:51
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 18:59:18 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2298)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2812)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007f88196b9538>::Category):
+    48:           カテゴリー
+    49:           <span class="indispensable">必須</span>
+    50:         </div>
+    51:         <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    52:         <div class="weight-bold-text">
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:51
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 18:59:19 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 7.9ms | Allocations: 2293)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 2806)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007f88196b9538>::Category):
+    48:           カテゴリー
+    49:           <span class="indispensable">必須</span>
+    50:         </div>
+    51:         <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    52:         <div class="weight-bold-text">
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:51
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 18:59:19 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2291)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2804)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007f88196b9538>::Category):
+    48:           カテゴリー
+    49:           <span class="indispensable">必須</span>
+    50:         </div>
+    51:         <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    52:         <div class="weight-bold-text">
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:51
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 18:59:20 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 2293)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 2806)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007f88196b9538>::Category):
+    48:           カテゴリー
+    49:           <span class="indispensable">必須</span>
+    50:         </div>
+    51:         <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    52:         <div class="weight-bold-text">
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:51
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 18:59:21 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 8.2ms | Allocations: 2291)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 2804)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007f88196b9538>::Category):
+    48:           カテゴリー
+    49:           <span class="indispensable">必須</span>
+    50:         </div>
+    51:         <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    52:         <div class="weight-bold-text">
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:51
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 18:59:21 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2291)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2804)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007f88196b9538>::Category):
+    48:           カテゴリー
+    49:           <span class="indispensable">必須</span>
+    50:         </div>
+    51:         <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    52:         <div class="weight-bold-text">
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:51
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 19:00:19 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 188)
+  Rendered items/new.html.erb within layouts/application (Duration: 1375.2ms | Allocations: 1413309)
+Completed 500 Internal Server Error in 1429ms (ActiveRecord: 2.1ms | Allocations: 1427509)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007f98f63c7058>::Category):
+    48:           カテゴリー
+    49:           <span class="indispensable">必須</span>
+    50:         </div>
+    51:         <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    52:         <div class="weight-bold-text">
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:51
+app/views/items/new.html.erb:8
+Started GET "/" for ::1 at 2020-09-03 19:00:29 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 21.5ms | Allocations: 13455)
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  Rendered shared/_footer.html.erb (Duration: 1.8ms | Allocations: 1503)
+  Rendered items/index.html.erb within layouts/application (Duration: 32.7ms | Allocations: 22120)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 76ms (Views: 70.7ms | ActiveRecord: 3.9ms | Allocations: 43086)
+
+
+Started GET "/items/new" for ::1 at 2020-09-03 19:00:31 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 10.3ms | Allocations: 2301)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 2818)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007f98f63c7058>::Category):
+    48:           カテゴリー
+    49:           <span class="indispensable">必須</span>
+    50:         </div>
+    51:         <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    52:         <div class="weight-bold-text">
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:51
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 19:06:33 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2305)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.0ms | Allocations: 17034)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007f98f63c7058>::Category):
+    48:           カテゴリー
+    49:           <span class="indispensable">必須</span>
+    50:         </div>
+    51:         <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    52:         <div class="weight-bold-text">
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:51
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 19:06:35 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 7.7ms | Allocations: 2297)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 2813)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007f98f63c7058>::Category):
+    48:           カテゴリー
+    49:           <span class="indispensable">必須</span>
+    50:         </div>
+    51:         <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    52:         <div class="weight-bold-text">
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:51
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 19:06:37 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2293)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2802)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007f98f63c7058>::Category):
+    48:           カテゴリー
+    49:           <span class="indispensable">必須</span>
+    50:         </div>
+    51:         <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    52:         <div class="weight-bold-text">
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:51
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 19:09:47 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2305)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 2.3ms | Allocations: 16422)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007f98f63c7058>::Category):
+    48:           カテゴリー
+    49:           <span class="indispensable">必須</span>
+    50:         </div>
+    51:         <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    52:         <div class="weight-bold-text">
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:51
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 19:09:48 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2293)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2802)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007f98f63c7058>::Category):
+    48:           カテゴリー
+    49:           <span class="indispensable">必須</span>
+    50:         </div>
+    51:         <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    52:         <div class="weight-bold-text">
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:51
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 19:09:50 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 8.0ms | Allocations: 2293)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 2802)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007f98f63c7058>::Category):
+    48:           カテゴリー
+    49:           <span class="indispensable">必須</span>
+    50:         </div>
+    51:         <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    52:         <div class="weight-bold-text">
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:51
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 19:09:51 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 2297)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 2813)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007f98f63c7058>::Category):
+    48:           カテゴリー
+    49:           <span class="indispensable">必須</span>
+    50:         </div>
+    51:         <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    52:         <div class="weight-bold-text">
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:51
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 19:09:56 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 9.9ms | Allocations: 2293)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 2802)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007f98f63c7058>::Category):
+    48:           カテゴリー
+    49:           <span class="indispensable">必須</span>
+    50:         </div>
+    51:         <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    52:         <div class="weight-bold-text">
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:51
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 19:11:50 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 1.1ms | Allocations: 188)
+  Rendered items/new.html.erb within layouts/application (Duration: 1235.4ms | Allocations: 1413306)
+Completed 500 Internal Server Error in 1298ms (ActiveRecord: 6.7ms | Allocations: 1430191)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fbb4520a500>::Category):
+    48:           カテゴリー
+    49:           <span class="indispensable">必須</span>
+    50:         </div>
+    51:         <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    52:         <div class="weight-bold-text">
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:51
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 19:11:54 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 10.5ms | Allocations: 2302)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 2819)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fbb4520a500>::Category):
+    48:           カテゴリー
+    49:           <span class="indispensable">必須</span>
+    50:         </div>
+    51:         <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    52:         <div class="weight-bold-text">
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:51
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 19:27:28 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ItemsController#new as HTML
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 3109)
+
+
+  
+NameError (uninitialized constant CategoryId):
+  
+app/models/item.rb:3:in `<class:Item>'
+app/models/item.rb:1:in `<main>'
+app/controllers/items_controller.rb:9:in `new'
+Started GET "/items/new" for ::1 at 2020-09-03 19:27:53 +0900
+Processing by ItemsController#new as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 3253)
+
+
+  
+NameError (uninitialized constant CategoryId):
+  
+app/models/item.rb:3:in `<class:Item>'
+app/models/item.rb:1:in `<main>'
+app/controllers/items_controller.rb:9:in `new'
+Started GET "/items/new" for ::1 at 2020-09-03 19:27:55 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 10.7ms | Allocations: 3120)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 4.0ms | Allocations: 12111)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fbb4520a500>::Status):
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+    55:         </div>
+    56:         <%= f.collection_select(:status_id, Status.all, :id, :name, {}, {class:"select-box", id:"item-sales-status"}) %>
+    57:       </div>
+    58:     </div>
+    59:     <%# /商品の詳細 %>
+  
+app/views/items/new.html.erb:56
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 19:29:40 +0900
+Processing by ItemsController#new as HTML
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 3633)
+
+
+  
+Zeitwerk::NameError (expected file /Users/taichi/projects/furima_28868/app/models/area.rb to define constant Area, but didn't):
+  
+app/models/item.rb:4:in `<class:Item>'
+app/models/item.rb:1:in `<main>'
+app/controllers/items_controller.rb:9:in `new'
+Started GET "/items/new" for ::1 at 2020-09-03 19:30:42 +0900
+Processing by ItemsController#new as HTML
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 4923)
+
+
+  
+NameError (uninitialized constant Area
+Did you mean?  Arel):
+  
+app/models/item.rb:4:in `<class:Item>'
+app/models/item.rb:1:in `<main>'
+app/controllers/items_controller.rb:9:in `new'
+Started GET "/items/new" for ::1 at 2020-09-03 19:30:43 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 10.5ms | Allocations: 2610)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 2.7ms | Allocations: 11158)
+
+
+  
+ActionView::Template::Error (expected file /Users/taichi/projects/furima_28868/app/models/status.rb to define constant Status, but didn't):
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+    55:         </div>
+    56:         <%= f.collection_select(:status_id, Status.all, :id, :name, {}, {class:"select-box", id:"item-sales-status"}) %>
+    57:       </div>
+    58:     </div>
+    59:     <%# /商品の詳細 %>
+  
+app/views/items/new.html.erb:56
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 19:31:55 +0900
+Processing by ItemsController#new as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 3567)
+
+
+  
+NameError (uninitialized constant Area
+Did you mean?  Arel):
+  
+app/models/item.rb:4:in `<class:Item>'
+app/models/item.rb:1:in `<main>'
+app/controllers/items_controller.rb:9:in `new'
+Started GET "/items/new" for ::1 at 2020-09-03 19:31:57 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 10.4ms | Allocations: 3545)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 5.3ms | Allocations: 12098)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fbb4520a500>::Area):
+    74:           発送元の地域
+    75:           <span class="indispensable">必須</span>
+    76:         </div>
+    77:         <%= f.collection_select(:area_id, Area.all, :id, :name, {}, {class:"select-box", id:"item-prefecture"}) %>
+    78:         <div class="weight-bold-text">
+    79:           発送までの日数
+    80:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:77
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 19:32:05 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 9.3ms | Allocations: 2926)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 3435)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fbb4520a500>::Area):
+    74:           発送元の地域
+    75:           <span class="indispensable">必須</span>
+    76:         </div>
+    77:         <%= f.collection_select(:area_id, Area.all, :id, :name, {}, {class:"select-box", id:"item-prefecture"}) %>
+    78:         <div class="weight-bold-text">
+    79:           発送までの日数
+    80:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:77
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 19:32:06 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2928)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 3442)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fbb4520a500>::Area):
+    74:           発送元の地域
+    75:           <span class="indispensable">必須</span>
+    76:         </div>
+    77:         <%= f.collection_select(:area_id, Area.all, :id, :name, {}, {class:"select-box", id:"item-prefecture"}) %>
+    78:         <div class="weight-bold-text">
+    79:           発送までの日数
+    80:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:77
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 19:32:07 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 9.6ms | Allocations: 2926)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 3435)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fbb4520a500>::Area):
+    74:           発送元の地域
+    75:           <span class="indispensable">必須</span>
+    76:         </div>
+    77:         <%= f.collection_select(:area_id, Area.all, :id, :name, {}, {class:"select-box", id:"item-prefecture"}) %>
+    78:         <div class="weight-bold-text">
+    79:           発送までの日数
+    80:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:77
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 19:32:07 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2924)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 3433)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fbb4520a500>::Area):
+    74:           発送元の地域
+    75:           <span class="indispensable">必須</span>
+    76:         </div>
+    77:         <%= f.collection_select(:area_id, Area.all, :id, :name, {}, {class:"select-box", id:"item-prefecture"}) %>
+    78:         <div class="weight-bold-text">
+    79:           発送までの日数
+    80:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:77
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 19:32:49 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 9.0ms | Allocations: 2926)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 3435)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fbb4520a500>::Area):
+    74:           発送元の地域
+    75:           <span class="indispensable">必須</span>
+    76:         </div>
+    77:         <%= f.collection_select(:area_id, Area.all, :id, :name, {}, {class:"select-box", id:"item-prefecture"}) %>
+    78:         <div class="weight-bold-text">
+    79:           発送までの日数
+    80:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:77
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 19:32:50 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 29.7ms | Allocations: 2926)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms | Allocations: 3437)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fbb4520a500>::Area):
+    74:           発送元の地域
+    75:           <span class="indispensable">必須</span>
+    76:         </div>
+    77:         <%= f.collection_select(:area_id, Area.all, :id, :name, {}, {class:"select-box", id:"item-prefecture"}) %>
+    78:         <div class="weight-bold-text">
+    79:           発送までの日数
+    80:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:77
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 19:32:58 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 173)
+  Rendered items/new.html.erb within layouts/application (Duration: 17.5ms | Allocations: 5930)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 62ms (Views: 60.9ms | ActiveRecord: 0.0ms | Allocations: 27442)
+
+
+Started GET "/items/new" for ::1 at 2020-09-03 19:33:19 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 173)
+  Rendered items/new.html.erb within layouts/application (Duration: 9.6ms | Allocations: 4030)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 5353)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fbb416e38a0>::Area):
+    74:           発送元の地域
+    75:           <span class="indispensable">必須</span>
+    76:         </div>
+    77:         <%= f.collection_select(:area_id, Area.all, :id, :name, {}, {class:"select-box", id:"item-prefecture"}) %>
+    78:         <div class="weight-bold-text">
+    79:           発送までの日数
+    80:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:77
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 19:33:49 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 173)
+  Rendered items/new.html.erb within layouts/application (Duration: 9.6ms | Allocations: 4032)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 5361)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fbb41511ae0>::Area):
+    74:           発送元の地域
+    75:           <span class="indispensable">必須</span>
+    76:         </div>
+    77:         <%= f.collection_select(:area_id, Area.all, :id, :name, {}, {class:"select-box", id:"item-prefecture"}) %>
+    78:         <div class="weight-bold-text">
+    79:           発送までの日数
+    80:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:77
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 19:33:50 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2931)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 3422)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007fbb41511ae0>::Area):
+    74:           発送元の地域
+    75:           <span class="indispensable">必須</span>
+    76:         </div>
+    77:         <%= f.collection_select(:area_id, Area.all, :id, :name, {}, {class:"select-box", id:"item-prefecture"}) %>
+    78:         <div class="weight-bold-text">
+    79:           発送までの日数
+    80:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:77
+app/views/items/new.html.erb:8
+Started PUT "/__web_console/repl_sessions/d479bc6952fc5519adee0d5bf3ce2c8a" for ::1 at 2020-09-03 19:34:17 +0900
+Started PUT "/__web_console/repl_sessions/d479bc6952fc5519adee0d5bf3ce2c8a" for ::1 at 2020-09-03 19:34:17 +0900
+Started PUT "/__web_console/repl_sessions/d479bc6952fc5519adee0d5bf3ce2c8a" for ::1 at 2020-09-03 19:34:26 +0900
+Started PUT "/__web_console/repl_sessions/d479bc6952fc5519adee0d5bf3ce2c8a" for ::1 at 2020-09-03 19:34:27 +0900
+Started PUT "/__web_console/repl_sessions/d479bc6952fc5519adee0d5bf3ce2c8a" for ::1 at 2020-09-03 19:34:34 +0900
+Started PUT "/__web_console/repl_sessions/d479bc6952fc5519adee0d5bf3ce2c8a" for ::1 at 2020-09-03 19:34:36 +0900
+Started PUT "/__web_console/repl_sessions/d479bc6952fc5519adee0d5bf3ce2c8a" for ::1 at 2020-09-03 19:34:38 +0900
+Started GET "/items/new" for ::1 at 2020-09-03 19:37:55 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 173)
+  Rendered items/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 4566)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 62ms (Views: 35.0ms | ActiveRecord: 4.0ms | Allocations: 37302)
+
+
+Started GET "/items/new" for ::1 at 2020-09-03 19:38:02 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 3390)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.0ms | Allocations: 21837)
+
+
+Started POST "/items" for ::1 at 2020-09-03 19:38:26 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"zjRDk3VACqc97CtyztNqFEnTa4ZZxJg3daT5tfhV2N9k64bhsxD0x+vi0spre5qm1FQs6evF1Pfe6wcC4121sw==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fbb3eef9b78 @tempfile=#<Tempfile:/var/folders/3n/t_yyftl93y18vj8swjyj30vh0000gn/T/RackMultipart20200903-7158-pyzvgh.jpg>, @original_filename="IMG_0010.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"IMG_0010.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "introduction"=>"テスト", "category_id"=>"2", "status_id"=>"3", "postage_id"=>"2", "area_id"=>"2", "shipping_id"=>"2", "price"=>"10000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:28:in `items_params'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 665)
+  Rendered items/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 4066)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 442ms (Views: 24.1ms | ActiveRecord: 14.8ms | Allocations: 268186)
+
+
+Started POST "/items" for ::1 at 2020-09-03 19:40:05 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"NfJ1oC9kJbQIuXqXI8eAdoO4hhovx9d71NJpJNssINufLbDS6TTb1N63gy+Gb3DEHj/BdZ3Gm7t/nZeTwCRNtw==", "item"=>{"title"=>"テスト", "introduction"=>"テスト", "category_id"=>"2", "status_id"=>"3", "postage_id"=>"3", "area_id"=>"2", "shipping_id"=>"2", "price"=>"10000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:28:in `items_params'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 1.1ms | Allocations: 785)
+  Rendered items/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 4182)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 67ms (Views: 53.7ms | ActiveRecord: 1.4ms | Allocations: 30936)
+
+
+Started POST "/items" for ::1 at 2020-09-03 19:46:41 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"/vzwIkMYrXcHyC4Dh4U4jmqnbbLnRz0V7mxm/vNe9KhUIzVQhUhTF9HG17siLcg89yAq3VVGcdVFI5hJ6FaZxA==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fbb4b0ee350 @tempfile=#<Tempfile:/var/folders/3n/t_yyftl93y18vj8swjyj30vh0000gn/T/RackMultipart20200903-7158-lgu5g1.jpg>, @original_filename="IMG_0010.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"IMG_0010.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "introduction"=>"テスト", "category_id"=>"2", "status_id"=>"3", "postage_id"=>"3", "area_id"=>"2", "shipping_id"=>"2", "price"=>"10000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:29:in `items_params'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:15:in `create'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:15:in `create'
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:15:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 657)
+  Rendered items/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 4069)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1134237ms (Views: 41.2ms | ActiveRecord: 1.5ms | Allocations: 98116)
+
+
+Started GET "/items" for ::1 at 2020-09-03 20:05:39 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 6.2ms | Allocations: 2662)
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  Rendered shared/_footer.html.erb (Duration: 2.9ms | Allocations: 1503)
+  Rendered items/index.html.erb within layouts/application (Duration: 28.1ms | Allocations: 11331)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 59ms (Views: 57.0ms | ActiveRecord: 0.7ms | Allocations: 30830)
+
+
+Started GET "/items/new" for ::1 at 2020-09-03 20:05:40 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 1.1ms | Allocations: 173)
+  Rendered items/new.html.erb within layouts/application (Duration: 414.9ms | Allocations: 168842)
+Completed 500 Internal Server Error in 418ms (ActiveRecord: 0.0ms | Allocations: 169483)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `status_id' for #<#<Class:0x00007fbb490ef680>:0x00007fbb417c8090>):
+    48:           カテゴリー
+    49:           <span class="indispensable">必須</span>
+    50:         </div>
+    51:         <%= f.collection_select(:category_id, Category.all, status_id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    52:         <div class="weight-bold-text">
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:51
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 20:05:49 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 173)
+  Rendered items/new.html.erb within layouts/application (Duration: 413.8ms | Allocations: 168849)
+Completed 500 Internal Server Error in 417ms (ActiveRecord: 0.0ms | Allocations: 170190)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `id' for #<#<Class:0x00007fbb457f8048>:0x00007fbb4a815c38>
+Did you mean?  @@id):
+    48:           カテゴリー
+    49:           <span class="indispensable">必須</span>
+    50:         </div>
+    51:         <%= f.collection_select(:category_id, Category.all, id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    52:         <div class="weight-bold-text">
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:51
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 20:05:57 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 472.6ms | Allocations: 167744)
+Completed 500 Internal Server Error in 475ms (ActiveRecord: 0.0ms | Allocations: 168248)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `id' for #<#<Class:0x00007fbb457f8048>:0x00007fbb457c6de0>
+Did you mean?  @@id):
+    48:           カテゴリー
+    49:           <span class="indispensable">必須</span>
+    50:         </div>
+    51:         <%= f.collection_select(:category_id, Category.all, id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    52:         <div class="weight-bold-text">
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:51
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 20:06:12 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 173)
+  Rendered items/new.html.erb within layouts/application (Duration: 8.4ms | Allocations: 3537)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 4876)
+
+
+  
+ActionView::Template::Error (undefined method `category_id' for #<Category:0x00007fbb4b13d4f0 @attributes={:id=>1, :name=>"--"}>):
+    48:           カテゴリー
+    49:           <span class="indispensable">必須</span>
+    50:         </div>
+    51:         <%= f.collection_select(:category_id, Category.all, :category_id, :name, {}, {class:"select-box", id:"item-category"}) %>
+    52:         <div class="weight-bold-text">
+    53:           商品の状態
+    54:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:51
+app/views/items/new.html.erb:8
+Started GET "/items/new" for ::1 at 2020-09-03 20:06:36 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 173)
+  Rendered items/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 4497)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 26.4ms | ActiveRecord: 0.0ms | Allocations: 23959)
+
+
+Started POST "/items" for ::1 at 2020-09-03 20:06:57 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"Tr9WcMjAfIrMy8Sm3DBk9KcS+9k7Dxz4LnwDk7L33nnkYJMCDpCC6hrFPR55mJRGOpW8tokOUDiFM/0kqf+zFQ==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fbb457bc430 @tempfile=#<Tempfile:/var/folders/3n/t_yyftl93y18vj8swjyj30vh0000gn/T/RackMultipart20200903-7158-134l5t7.jpg>, @original_filename="IMG_0011.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"IMG_0011.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "introduction"=>"テスト", "category_id"=>"2", "status_id"=>"4", "postage_id"=>"3", "area_id"=>"4", "shipping_id"=>"3", "price"=>"400000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:29:in `items_params'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:15:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:15:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:15:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 657)
+  Rendered items/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 4059)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23959ms (Views: 38.3ms | ActiveRecord: 1.2ms | Allocations: 44014)
+
+
+Started POST "/items" for ::1 at 2020-09-03 20:08:05 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"Ns949/OpEhtR/wbb+oGysEJvWwQlis2lRKdIH0DdIPGcEL2FNfnse4fx/2NfKUIC3+gca5eLgWXv6LaoW9VNnQ==", "item"=>{"title"=>"テスト", "introduction"=>"テスト", "category_id"=>"2", "status_id"=>"4", "postage_id"=>"3", "area_id"=>"4", "shipping_id"=>"3", "price"=>"400000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:28:in `items_params'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 785)
+  Rendered items/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 4197)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 66ms (Views: 22.9ms | ActiveRecord: 7.0ms | Allocations: 55355)
+
+
+Started POST "/items" for ::1 at 2020-09-03 20:10:46 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"YmcFr3OG8ZFqapQV/Brx6umLagQwAIBk+xa9oXVLZ1HIuMDdtdYP8bxkba1ZsgFYdAwta4IBzKRQWUMWbkMKPQ==", "item"=>{"title"=>"テスト", "introduction"=>"テスト", "category_id"=>"2", "status_id"=>"4", "postage_id"=>"3", "area_id"=>"4", "shipping_id"=>"3", "price"=>"400000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:28:in `items_params'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 1.3ms | Allocations: 943)
+  Rendered items/new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 4740)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.9ms | Allocations: 14390)
+
+
+  
+ActionView::Template::Error (undefined method `postage_id' for #<Postage:0x00007fbb2c1ae0e8 @attributes={:id=>1, :name=>"--"}>):
+    69:           配送料の負担
+    70:           <span class="indispensable">必須</span>
+    71:         </div>
+    72:         <%= f.collection_select(:postage_id, Postage.all, :postage_id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
+    73:         <div class="weight-bold-text">
+    74:           発送元の地域
+    75:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:72
+app/views/items/new.html.erb:8
+app/controllers/items_controller.rb:17:in `create'
+Started PUT "/__web_console/repl_sessions/0194f93f42a1e41829129aa8abb3fcc3" for ::1 at 2020-09-03 20:11:03 +0900
+Started PUT "/__web_console/repl_sessions/0194f93f42a1e41829129aa8abb3fcc3" for ::1 at 2020-09-03 20:11:07 +0900
+Started PUT "/__web_console/repl_sessions/0194f93f42a1e41829129aa8abb3fcc3" for ::1 at 2020-09-03 20:11:18 +0900
+Started PUT "/__web_console/repl_sessions/0194f93f42a1e41829129aa8abb3fcc3" for ::1 at 2020-09-03 20:11:18 +0900
+Started POST "/items" for ::1 at 2020-09-03 20:12:05 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"YmcFr3OG8ZFqapQV/Brx6umLagQwAIBk+xa9oXVLZ1HIuMDdtdYP8bxkba1ZsgFYdAwta4IBzKRQWUMWbkMKPQ==", "item"=>{"title"=>"テスト", "introduction"=>"テスト", "category_id"=>"2", "status_id"=>"4", "postage_id"=>"3", "area_id"=>"4", "shipping_id"=>"3", "price"=>"400000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:28:in `items_params'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 1.5ms | Allocations: 943)
+  Rendered items/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 4871)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.9ms | Allocations: 14548)
+
+
+  
+ActionView::Template::Error (undefined method `area_id' for #<Area:0x00007fbb4b0b6ba8 @attributes={:id=>1, :name=>"--"}>):
+    74:           発送元の地域
+    75:           <span class="indispensable">必須</span>
+    76:         </div>
+    77:         <%= f.collection_select(:area_id, Area.all, :area_id, :name, {}, {class:"select-box", id:"item-prefecture"}) %>
+    78:         <div class="weight-bold-text">
+    79:           発送までの日数
+    80:           <span class="indispensable">必須</span>
+  
+app/views/items/new.html.erb:77
+app/views/items/new.html.erb:8
+app/controllers/items_controller.rb:17:in `create'
+Started POST "/items" for ::1 at 2020-09-03 20:12:16 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"YmcFr3OG8ZFqapQV/Brx6umLagQwAIBk+xa9oXVLZ1HIuMDdtdYP8bxkba1ZsgFYdAwta4IBzKRQWUMWbkMKPQ==", "item"=>{"title"=>"テスト", "introduction"=>"テスト", "category_id"=>"2", "status_id"=>"4", "postage_id"=>"3", "area_id"=>"4", "shipping_id"=>"3", "price"=>"400000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:28:in `items_params'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 1.3ms | Allocations: 943)
+  Rendered items/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 5295)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 26.7ms | ActiveRecord: 0.9ms | Allocations: 33002)
+
+
+Started POST "/items" for ::1 at 2020-09-03 20:12:57 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"yW17JYClo1FB4kOPW2/5rbSTaaYF01HlWVG+Bo2g3PBjsr5XRvVdMZfsujf+xwkfKRQuybfSHSXyHkCxlqixnA==", "item"=>{"title"=>"テスト", "introduction"=>"テスト", "category_id"=>"2", "status_id"=>"4", "postage_id"=>"3", "area_id"=>"4", "shipping_id"=>"3", "price"=>"400000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:28:in `items_params'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 785)
+  Rendered items/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 4198)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 90ms (Views: 17.7ms | ActiveRecord: 5.4ms | Allocations: 55057)
+
+
+Started POST "/items" for ::1 at 2020-09-03 20:13:29 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"yGTRF/SbWGdnPVBrg+0btGppLTanxwwwiA5BFWsepe9iuxRlMsumB7EzqdMmResG9+5qWRXGQPAjQb+icBbIgw==", "item"=>{"title"=>"テスト", "introduction"=>"テスト", "category_id"=>"2", "status_id"=>"4", "postage_id"=>"3", "area_id"=>"4", "shipping_id"=>"3", "price"=>"400000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:28:in `items_params'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 785)
+  Rendered items/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 4197)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 57ms (Views: 18.8ms | ActiveRecord: 5.5ms | Allocations: 55398)
+
+
+Started GET "/items" for ::1 at 2020-09-03 20:17:02 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 5.0ms | Allocations: 2639)
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  Rendered shared/_footer.html.erb (Duration: 1.6ms | Allocations: 1482)
+  Rendered items/index.html.erb within layouts/application (Duration: 17.7ms | Allocations: 11229)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 35.9ms | ActiveRecord: 0.7ms | Allocations: 30707)
+
+
+Started GET "/items/new" for ::1 at 2020-09-03 20:17:04 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 173)
+  Rendered items/new.html.erb within layouts/application (Duration: 7.6ms | Allocations: 4448)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 31.2ms | ActiveRecord: 0.0ms | Allocations: 23033)
+
+
+Started POST "/items" for ::1 at 2020-09-03 20:17:10 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"lnyOjAlEXH44JXYNjzC7PtM1y0rngiGfcOIWSB4VLBt48A4vhVUMaXUdRtHJ/PJYhZIOOgoz5xII1IgOzVHFGw==", "item"=>{"title"=>"", "introduction"=>"", "category_id"=>"3", "status_id"=>"2", "postage_id"=>"1", "area_id"=>"--", "shipping_id"=>"1", "price"=>""}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:28:in `items_params'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 1.8ms | Allocations: 1555)
+  Rendered items/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 4902)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 22.7ms | ActiveRecord: 1.0ms | Allocations: 33973)
+
+
+Started POST "/items" for ::1 at 2020-09-03 20:17:33 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"rBeifJXxmqcfqC7/yVJ4QtvcbM0C6x0SXG2bGx5pP5MGyGcOU6Fkx8mm10ds+ojwRlsrorDqUdL3ImWsBWFS/w==", "item"=>{"title"=>"", "introduction"=>"", "category_id"=>"3", "status_id"=>"2", "postage_id"=>"1", "area_id"=>"北海道", "shipping_id"=>"1", "price"=>""}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:28:in `items_params'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 2.1ms | Allocations: 1555)
+  Rendered items/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 4901)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 25.7ms | ActiveRecord: 1.0ms | Allocations: 33714)
+
+
+Started GET "/items" for ::1 at 2020-09-03 20:18:04 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 5.0ms | Allocations: 2633)
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  Rendered shared/_footer.html.erb (Duration: 2.0ms | Allocations: 1482)
+  Rendered items/index.html.erb within layouts/application (Duration: 16.4ms | Allocations: 11213)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 36.5ms | ActiveRecord: 0.6ms | Allocations: 30690)
+
+
+Started GET "/items/new" for ::1 at 2020-09-03 20:18:05 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 173)
+  Rendered items/new.html.erb within layouts/application (Duration: 7.2ms | Allocations: 4422)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 29.3ms | ActiveRecord: 0.0ms | Allocations: 23013)
+
+
+Started POST "/items" for ::1 at 2020-09-03 20:18:31 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"HA1HPH9GLn9AkWam2aS+uucyFjbGpPfJAPq9jDBTvuXygcef81d+aA2pVnqfaPfcsZXTRisVMUR4zCPK4xdX5Q==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fbb49791df8 @tempfile=#<Tempfile:/var/folders/3n/t_yyftl93y18vj8swjyj30vh0000gn/T/RackMultipart20200903-7158-9816fk.jpg>, @original_filename="IMG_0010.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"IMG_0010.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "introduction"=>"テスト", "category_id"=>"レディース", "status_id"=>"木津や汚れあり", "postage_id"=>"着払い（購入者負担）", "area_id"=>"徳島県", "shipping_id"=>"２〜３日で配送", "price"=>"30000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:28:in `items_params'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 1.3ms | Allocations: 1297)
+  Rendered items/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 4606)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 95ms (Views: 20.3ms | ActiveRecord: 36.8ms | Allocations: 47143)
+
+
+Started POST "/items" for ::1 at 2020-09-03 20:19:10 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"efcBDNBYlXtgVjuIQ47UYBortsLOhZbiXlnDNB1VdvTTKMR+FghrG7ZYwjDmJiTSh6zxrXyE2iL1Fj2DBl0bmA==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fbb4ae25a38 @tempfile=#<Tempfile:/var/folders/3n/t_yyftl93y18vj8swjyj30vh0000gn/T/RackMultipart20200903-7158-196n3s1.jpg>, @original_filename="IMG_0042.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"IMG_0042.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "introduction"=>"テスト", "category_id"=>"ベビー・キッズ", "status_id"=>"未使用に近い", "postage_id"=>"送料込み（出品者負担）", "area_id"=>"青森県", "shipping_id"=>"１〜2日で配送", "price"=>"30000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:28:in `items_params'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 1.9ms | Allocations: 1455)
+  Rendered items/new.html.erb within layouts/application (Duration: 45.8ms | Allocations: 5790)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 79ms (Views: 65.5ms | ActiveRecord: 0.8ms | Allocations: 34846)
+
+
+Started POST "/items" for ::1 at 2020-09-03 20:19:22 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"BNrIijoZTJt3PUbEfuJnNh918ybU56nHDy7LK23s/KyuBQ34/Emy+6Ezv3zbSpeEgvK0SWbm5QekYTWcduSRwA==", "item"=>{"title"=>"テスト", "introduction"=>"テスト", "category_id"=>"4", "status_id"=>"2", "postage_id"=>"3", "area_id"=>"3", "shipping_id"=>"4", "price"=>"30000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:28:in `items_params'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 785)
+  Rendered items/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 4188)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 21.3ms | ActiveRecord: 1.1ms | Allocations: 30868)
+
+
+Started POST "/items" for ::1 at 2020-09-03 20:21:31 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"i23Jh3QkPDPIaB3GfNC4J9l5I8QshbFYEa8t+PQMbUwhsgz1snTCUx5m5H7ZeEiVRP5kq56E/Zi64NNP7wQAIA==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fbb2c0e75d8 @tempfile=#<Tempfile:/var/folders/3n/t_yyftl93y18vj8swjyj30vh0000gn/T/RackMultipart20200903-7158-gw9hll.jpg>, @original_filename="IMG_0042.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"IMG_0042.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "introduction"=>"テスト", "category_id"=>"4", "status_id"=>"2", "postage_id"=>"3", "area_id"=>"3", "shipping_id"=>"4", "price"=>"30000"}, "commit"=>"出品する"}
+[31mUnpermitted parameters: :category_id, :status_id, :postage_id, :area_id, :shipping_id[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:28:in `items_params'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 1.2ms | Allocations: 1297)
+  Rendered items/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 4687)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 89ms (Views: 18.4ms | ActiveRecord: 14.0ms | Allocations: 69442)
+
+
+Started POST "/items" for ::1 at 2020-09-03 20:21:43 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"NwGaHbLldkG/naD8SIDtitdIGmyBnfST8z2Moy1CaZad3l9vdLWIIWmTWUTtKB04Ss9dAzOcuFNYcnIUNkoE+g==", "item"=>{"title"=>"テスト", "introduction"=>"テスト", "category_id"=>"3", "status_id"=>"2", "postage_id"=>"2", "area_id"=>"2", "shipping_id"=>"3", "price"=>"30000"}, "commit"=>"出品する"}
+[31mUnpermitted parameters: :category_id, :status_id, :postage_id, :area_id, :shipping_id[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:28:in `items_params'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 1.7ms | Allocations: 1425)
+  Rendered items/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 4802)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 21.1ms | ActiveRecord: 1.0ms | Allocations: 32939)
+
+
+Started GET "/items" for ::1 at 2020-09-03 20:23:22 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 16.3ms | Allocations: 12543)
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  Rendered shared/_footer.html.erb (Duration: 1.2ms | Allocations: 1482)
+  Rendered items/index.html.erb within layouts/application (Duration: 27.4ms | Allocations: 21760)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 39.3ms | ActiveRecord: 4.5ms | Allocations: 45152)
+
+
+Started GET "/items/new" for ::1 at 2020-09-03 20:23:23 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 173)
+  Rendered items/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 4579)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 24.9ms | ActiveRecord: 0.7ms | Allocations: 30317)
+
+
+Started POST "/items" for ::1 at 2020-09-03 20:23:28 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"sucNdw+NHEnMZmVuOYhavR4doAQ4QBDldX+w1xp/h0Vca43Ug5xMXoFeVbJ/RBPbSLpldNXx1mgNSS6RyTtuRQ==", "item"=>{"title"=>"", "introduction"=>"", "category_id"=>"2", "status"=>"1", "postage_id"=>"1", "area_id"=>"1", "shipping_id"=>"1", "price"=>""}, "commit"=>"出品する"}
+[31mUnpermitted parameter: :status[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:28:in `items_params'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 1.7ms | Allocations: 1555)
+  Rendered items/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 4973)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 21.4ms | ActiveRecord: 1.1ms | Allocations: 36440)
+
+
+Started POST "/items" for ::1 at 2020-09-03 20:24:13 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"VTs5hSGbheg1na0/vHBnVrN7M6AGAjaL62bv0lXfiZD/5Pz358t7iOOTVIcZ2JfkLvx0z7QDektAKRFlTtfk/A==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fbb4b45d978 @tempfile=#<Tempfile:/var/folders/3n/t_yyftl93y18vj8swjyj30vh0000gn/T/RackMultipart20200903-7158-1yp1szw.jpg>, @original_filename="IMG_0042.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"IMG_0042.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "introduction"=>"テスト", "category_id"=>"2", "status"=>"4", "postage_id"=>"2", "area_id"=>"40", "shipping_id"=>"3", "price"=>"10000"}, "commit"=>"出品する"}
+[31mUnpermitted parameter: :status[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:28:in `items_params'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 943)
+  Rendered items/new.html.erb within layouts/application (Duration: 42.5ms | Allocations: 5288)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 100ms (Views: 61.3ms | ActiveRecord: 9.1ms | Allocations: 47501)
+
+
+Started GET "/items" for ::1 at 2020-09-03 20:25:57 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 16.6ms | Allocations: 12575)
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  Rendered shared/_footer.html.erb (Duration: 1.3ms | Allocations: 1482)
+  Rendered items/index.html.erb within layouts/application (Duration: 28.0ms | Allocations: 21792)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 40.2ms | ActiveRecord: 4.3ms | Allocations: 44479)
+
+
+Started GET "/items/new" for ::1 at 2020-09-03 20:25:59 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 3452)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 23.5ms | ActiveRecord: 0.7ms | Allocations: 29056)
+
+
+Started POST "/items" for ::1 at 2020-09-03 20:26:19 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"kUqrXn6MaeZDyDY4/yxeEFqVk4mdnDReO49bMRwlinN/xiv98p058Q7wBuS54Bd2DDJW+XAt8tNDucV3z2Fjcw==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fbb2c3bd938 @tempfile=#<Tempfile:/var/folders/3n/t_yyftl93y18vj8swjyj30vh0000gn/T/RackMultipart20200903-7158-gddssm.jpg>, @original_filename="IMG_0011.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"IMG_0011.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "introduction"=>"テスト", "category_id"=>"4", "status_id"=>"3", "postage_id"=>"3", "area_id"=>"4", "shipping_id"=>"3", "price"=>"300"}, "commit"=>"出品する"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1244)
+
+
+  
+NoMethodError (undefined method `id' for :category:Symbol):
+  
+app/controllers/items_controller.rb:28:in `items_params'
+app/controllers/items_controller.rb:13:in `create'
+Started POST "/items" for ::1 at 2020-09-03 20:26:45 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"kUqrXn6MaeZDyDY4/yxeEFqVk4mdnDReO49bMRwlinN/xiv98p058Q7wBuS54Bd2DDJW+XAt8tNDucV3z2Fjcw==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fbb4b36fb60 @tempfile=#<Tempfile:/var/folders/3n/t_yyftl93y18vj8swjyj30vh0000gn/T/RackMultipart20200903-7158-1q9ho5c.jpg>, @original_filename="IMG_0011.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"IMG_0011.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "introduction"=>"テスト", "category_id"=>"4", "status_id"=>"3", "postage_id"=>"3", "area_id"=>"4", "shipping_id"=>"3", "price"=>"300"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:28:in `items_params'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 786)
+  Rendered items/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 4199)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 126ms (Views: 20.9ms | ActiveRecord: 15.6ms | Allocations: 67897)
+
+
+Started POST "/items" for ::1 at 2020-09-03 20:26:52 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"ju0yTRlIOOWdwzRXx6L2v+1XRU4Z0rdeDpINM6yx+SskMvc/3xjGhUvNze9iCgYNcNACIavT+56l3fOEt7mURw==", "item"=>{"title"=>"テスト", "introduction"=>"テスト", "category_id"=>"4", "status_id"=>"3", "postage_id"=>"3", "area_id"=>"4", "shipping_id"=>"3", "price"=>"30000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:28:in `items_params'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 785)
+  Rendered items/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 4182)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 21.5ms | ActiveRecord: 1.0ms | Allocations: 30846)
+
+
+Started GET "/items" for ::1 at 2020-09-03 20:28:06 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 15.8ms | Allocations: 12217)
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  Rendered shared/_footer.html.erb (Duration: 0.7ms | Allocations: 1076)
+  Rendered items/index.html.erb within layouts/application (Duration: 23.9ms | Allocations: 19415)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 37.2ms | ActiveRecord: 4.8ms | Allocations: 41953)
+
+
+Started GET "/items/new" for ::1 at 2020-09-03 20:28:08 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 3449)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 29.1ms | ActiveRecord: 0.4ms | Allocations: 29050)
+
+
+Started POST "/items" for ::1 at 2020-09-03 20:28:27 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"fLcYZaDwrzuuL1dR03VU5pBOJI0bbnDoNgdUD8a8ghaSO5jGLOH/LOMXZ42VuR2Axunh/fbftmVOMcpJFfhrFg==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fbb4aacc670 @tempfile=#<Tempfile:/var/folders/3n/t_yyftl93y18vj8swjyj30vh0000gn/T/RackMultipart20200903-7158-1qot0vz.jpg>, @original_filename="IMG_0033.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"IMG_0033.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "introduction"=>"てうそt", "category_id"=>"5", "status_id"=>"3", "postage_id"=>"2", "area_id"=>"39", "shipping_id"=>"4", "price"=>"400000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:29:in `items_params'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:15:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:15:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:15:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 657)
+  Rendered items/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 4056)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 124461ms (Views: 21.1ms | ActiveRecord: 6.4ms | Allocations: 70474)
+
+
+Started POST "/items" for ::1 at 2020-09-03 20:45:16 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"k6+J6jUPv8AhIDYgxu83RDQpj+QZDY629CNy2Lrx6uU5cEyY819BoPcuz5hjR8f2qa7Ii6sMwnZfbIxvofmHiQ==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fbb2c70f898 @tempfile=#<Tempfile:/var/folders/3n/t_yyftl93y18vj8swjyj30vh0000gn/T/RackMultipart20200903-7158-1uw65nt.jpg>, @original_filename="IMG_3340.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"IMG_3340.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "introduction"=>"てうそt", "category_id"=>"5", "status_id"=>"3", "postage_id"=>"2", "area_id"=>"39", "shipping_id"=>"4", "price"=>"400000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:29:in `items_params'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:15:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:15:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:15:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 657)
+  Rendered items/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 4054)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 180368ms (Views: 31.6ms | ActiveRecord: 1.1ms | Allocations: 56899)
+
+
+Started POST "/items" for ::1 at 2020-09-03 20:49:01 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"9MEYgOisN9/v/QzRzdUEs19z0US9AWh607sKvD0e4l5eHt3yLvzJvznz9WloffQBwvSWKw8AJLp49PQLJhaPMg==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fbb4929c230 @tempfile=#<Tempfile:/var/folders/3n/t_yyftl93y18vj8swjyj30vh0000gn/T/RackMultipart20200903-7158-18hvey0.jpg>, @original_filename="IMG_0042.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"IMG_0042.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "introduction"=>"てうそt", "category_id"=>"5", "status_id"=>"3", "postage_id"=>"2", "area_id"=>"39", "shipping_id"=>"4", "price"=>"400000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:29:in `items_params'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 657)
+  Rendered items/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 4068)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 84ms (Views: 18.3ms | ActiveRecord: 14.6ms | Allocations: 67866)
+
+
+Started POST "/items" for ::1 at 2020-09-03 20:49:36 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"YbNmcSDMKp/bj3uaREfg/XWk1HmLyfUqyJLje9v0WG/LbKMD5pzU/w2BgiLh7xBP6COTFjnIuepj3R3MwPw1Aw==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fbb4aa1df08 @tempfile=#<Tempfile:/var/folders/3n/t_yyftl93y18vj8swjyj30vh0000gn/T/RackMultipart20200903-7158-74sq3x.jpg>, @original_filename="IMG_0010.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"IMG_0010.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "introduction"=>"てうそt", "category_id"=>"5", "status_id"=>"3", "postage_id"=>"2", "area_id"=>"39", "shipping_id"=>"4", "price"=>"400000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:29:in `items_params'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:13:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:13:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:13:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 1.7ms | Allocations: 657)
+  Rendered items/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 4067)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23518ms (Views: 25.8ms | ActiveRecord: 9.8ms | Allocations: 84759)
+
+
+Started POST "/items" for ::1 at 2020-09-03 20:50:15 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"YaC+Q1LQUnBc1l5HodDWkcz9lY7K3l9fseyvZCidAUnLf3sxlICsEIrYp/8EeCYjUXrS4XjfE58ao1HTM5VsJQ==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fbb4ad5e668 @tempfile=#<Tempfile:/var/folders/3n/t_yyftl93y18vj8swjyj30vh0000gn/T/RackMultipart20200903-7158-de1leo.jpg>, @original_filename="IMG_0010.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"IMG_0010.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "introduction"=>"てうそt", "category_id"=>"5", "status_id"=>"3", "postage_id"=>"2", "area_id"=>"39", "shipping_id"=>"4", "price"=>"400000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:28:in `items_params'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:13:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:13:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:13:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 657)
+  Rendered items/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 4067)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 127ms (Views: 64.4ms | ActiveRecord: 13.8ms | Allocations: 71367)
+
+
+Started POST "/items" for ::1 at 2020-09-03 20:51:13 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"xgm2mOiyJqBY8buTyXty9PderjH9VD5AKh77VtTG4CFs1nPqLuLYwI7/Qits04JGatnpXk9VcoCBUQXhz86NTQ==", "item"=>{"title"=>"テスト", "introduction"=>"てうそt", "category_id"=>"5", "status_id"=>"3", "postage_id"=>"2", "area_id"=>"39", "shipping_id"=>"4", "price"=>"400000"}, "commit"=>"出品する"}
+[31mUnpermitted parameter: :category_id[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:29:in `items_params'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:15:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:15:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:15:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 913)
+  Rendered items/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 4320)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28451ms (Views: 25.1ms | ActiveRecord: 6.8ms | Allocations: 68277)
+
+
+Started GET "/items" for ::1 at 2020-09-03 20:51:59 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 20.4ms | Allocations: 12217)
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  Rendered shared/_footer.html.erb (Duration: 1.4ms | Allocations: 1076)
+  Rendered items/index.html.erb within layouts/application (Duration: 36.3ms | Allocations: 19415)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 58ms (Views: 43.0ms | ActiveRecord: 9.3ms | Allocations: 41965)
+
+
+Started GET "/items/new" for ::1 at 2020-09-03 20:52:01 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 3449)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 27.4ms | ActiveRecord: 0.6ms | Allocations: 29056)
+
+
+Started POST "/items" for ::1 at 2020-09-03 20:52:22 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"LskOE3CprXyyKp2nWoRk1GyMHI/SiI452NZhVql6HyrARY6w/Lj9a/8SrXscSC2yOivZ/z85SLSg4P8Qej72Kg==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fbb2c532138 @tempfile=#<Tempfile:/var/folders/3n/t_yyftl93y18vj8swjyj30vh0000gn/T/RackMultipart20200903-7158-1d7y69a.JPG>, @original_filename="IMG_1404.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"IMG_1404.JPG\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "introduction"=>"テスト", "category_id"=>"4", "status_id"=>"4", "postage_id"=>"2", "area_id"=>"40", "shipping_id"=>"3", "price"=>"400000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:29:in `items_params'
+Completed 500 Internal Server Error in 338078ms (ActiveRecord: 0.3ms | Allocations: 101306)
+
+
+  
+FrozenError (can't modify frozen String):
+  
+app/controllers/items_controller.rb:14:in `create'
+Started POST "/items" for ::1 at 2020-09-03 20:58:12 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"LskOE3CprXyyKp2nWoRk1GyMHI/SiI452NZhVql6HyrARY6w/Lj9a/8SrXscSC2yOivZ/z85SLSg4P8Qej72Kg==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fbb2c6ced48 @tempfile=#<Tempfile:/var/folders/3n/t_yyftl93y18vj8swjyj30vh0000gn/T/RackMultipart20200903-7158-fqbvuy.JPG>, @original_filename="IMG_1404.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"IMG_1404.JPG\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "introduction"=>"テスト", "category_id"=>"4", "status_id"=>"4", "postage_id"=>"2", "area_id"=>"40", "shipping_id"=>"3", "price"=>"400000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:29:in `items_params'
+Started POST "/items" for ::1 at 2020-09-03 20:58:17 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"cvmA1VJzY8PJxINx+UenGGo+92ipiSUu1V8GmYnFI0TYJkWnlCOdox/Keslc71eq97mwBxuIae5+EPguks1OKA==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fbb4ade43d0 @tempfile=#<Tempfile:/var/folders/3n/t_yyftl93y18vj8swjyj30vh0000gn/T/RackMultipart20200903-7158-h7ers3.JPG>, @original_filename="IMG_1404.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"IMG_1404.JPG\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "introduction"=>"テスト", "category_id"=>"4", "status_id"=>"4", "postage_id"=>"2", "area_id"=>"40", "shipping_id"=>"3", "price"=>"400000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:29:in `items_params'
+Completed 500 Internal Server Error in 24515ms (ActiveRecord: 0.4ms | Allocations: 12082)
+
+
+  
+FrozenError (can't modify frozen String):
+  
+app/controllers/items_controller.rb:14:in `create'
+Completed 500 Internal Server Error in 108208ms (ActiveRecord: 0.3ms | Allocations: 287791)
+
+
+  
+Errno::EIO (Input/output error @ io_write - <STDOUT>):
+  
+app/controllers/items_controller.rb:14:in `create'
+Started POST "/items" for ::1 at 2020-09-03 21:00:27 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"cvmA1VJzY8PJxINx+UenGGo+92ipiSUu1V8GmYnFI0TYJkWnlCOdox/Keslc71eq97mwBxuIae5+EPguks1OKA==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fdca0018e00 @tempfile=#<Tempfile:/var/folders/3n/t_yyftl93y18vj8swjyj30vh0000gn/T/RackMultipart20200903-8545-124dtk.JPG>, @original_filename="IMG_1404.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"IMG_1404.JPG\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "introduction"=>"テスト", "category_id"=>"4", "status_id"=>"4", "postage_id"=>"2", "area_id"=>"40", "shipping_id"=>"3", "price"=>"400000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:29:in `items_params'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:15:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:15:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:15:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 1.3ms | Allocations: 837)
+  Rendered items/new.html.erb within layouts/application (Duration: 1302.2ms | Allocations: 1414808)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 162107ms (Views: 1353.6ms | ActiveRecord: 18.3ms | Allocations: 1828411)
+
+
+Started POST "/items" for ::1 at 2020-09-03 21:10:48 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"CDlOzTot6vVdJdTLptMJJwTtslcHu+ltp55vL72Ox9ai5ou//H0UlYsrLXMDe/mVmWr1OLW6pa0M0ZGYpoaqug==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fdcaaaade60 @tempfile=#<Tempfile:/var/folders/3n/t_yyftl93y18vj8swjyj30vh0000gn/T/RackMultipart20200903-8545-125ukyz.jpg>, @original_filename="IMG_0010.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"IMG_0010.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "introduction"=>"テスト", "category_id"=>"4", "status_id"=>"4", "postage_id"=>"2", "area_id"=>"40", "shipping_id"=>"3", "price"=>"400000"}, "commit"=>"出品する"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 3255)
+
+
+  
+NameError (uninitialized constant CategoryId):
+  
+app/models/item.rb:3:in `<class:Item>'
+app/models/item.rb:1:in `<main>'
+app/controllers/items_controller.rb:13:in `create'
+Started POST "/items" for ::1 at 2020-09-03 21:12:06 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"CDlOzTot6vVdJdTLptMJJwTtslcHu+ltp55vL72Ox9ai5ou//H0UlYsrLXMDe/mVmWr1OLW6pa0M0ZGYpoaqug==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fdc8c0c77c0 @tempfile=#<Tempfile:/var/folders/3n/t_yyftl93y18vj8swjyj30vh0000gn/T/RackMultipart20200903-8545-kqfizm.jpg>, @original_filename="IMG_0010.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"IMG_0010.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "introduction"=>"テスト", "category_id"=>"4", "status_id"=>"4", "postage_id"=>"2", "area_id"=>"40", "shipping_id"=>"3", "price"=>"400000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:29:in `items_params'
+Started GET "/items" for ::1 at 2020-09-03 21:12:17 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:15:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:15:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:15:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 1.3ms | Allocations: 815)
+  Rendered items/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 5176)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18401ms (Views: 52.9ms | ActiveRecord: 11.5ms | Allocations: 81379)
+
+
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 16.0ms | Allocations: 12612)
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  Rendered shared/_footer.html.erb (Duration: 1.3ms | Allocations: 1503)
+  Rendered items/index.html.erb within layouts/application (Duration: 26.5ms | Allocations: 21915)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 41.2ms | ActiveRecord: 4.6ms | Allocations: 46232)
+
+
+Started GET "/items/new" for ::1 at 2020-09-03 21:12:30 +0900
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered items/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 3452)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 47ms (Views: 31.5ms | ActiveRecord: 0.4ms | Allocations: 29056)
+
+
+Started POST "/items" for ::1 at 2020-09-03 21:13:02 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"Zt1CQokBrwV/MXTMdu01uhzVTFY1VBIDABEgeNfOMCuIUcLhBRD/EjIJRBAwIXzcSnKJJtjl1I54J74+BIrZKw==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fdc8c0f71a0 @tempfile=#<Tempfile:/var/folders/3n/t_yyftl93y18vj8swjyj30vh0000gn/T/RackMultipart20200903-8545-1hawja.jpg>, @original_filename="IMG_0010.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"IMG_0010.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "introduction"=>"テスト", "category_id"=>"4", "status_id"=>"2", "postage_id"=>"3", "area_id"=>"5", "shipping_id"=>"2", "price"=>"20000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:28:in `items_params'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  Rendering items/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 657)
+  Rendered items/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 4068)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 83ms (Views: 19.5ms | ActiveRecord: 13.9ms | Allocations: 68804)
+
+
+Started POST "/items" for ::1 at 2020-09-03 21:13:55 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"IUdlgPUa5/RJOYn91OQYwcIYCw9MiQ8okUw+q8Ej0kSLmKDyM0oZlJ83cEVxTOhzX59MYP6IQ+g6A8Ac2iu/KA==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fdcaa533318 @tempfile=#<Tempfile:/var/folders/3n/t_yyftl93y18vj8swjyj30vh0000gn/T/RackMultipart20200903-8545-zed20o.jpg>, @original_filename="IMG_0010.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"IMG_0010.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "introduction"=>"テスト", "category_id"=>"4", "status_id"=>"2", "postage_id"=>"3", "area_id"=>"5", "shipping_id"=>"2", "price"=>"20000"}, "commit"=>"出品する"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 3261)
+
+
+  
+NameError (uninitialized constant CategoryId):
+  
+app/models/item.rb:3:in `<class:Item>'
+app/models/item.rb:1:in `<main>'
+app/controllers/items_controller.rb:13:in `create'
+Started POST "/items" for ::1 at 2020-09-03 21:14:08 +0900
+Processing by ItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"IUdlgPUa5/RJOYn91OQYwcIYCw9MiQ8okUw+q8Ej0kSLmKDyM0oZlJ83cEVxTOhzX59MYP6IQ+g6A8Ac2iu/KA==", "item"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007fdca9c98320 @tempfile=#<Tempfile:/var/folders/3n/t_yyftl93y18vj8swjyj30vh0000gn/T/RackMultipart20200903-8545-nq7ag1.jpg>, @original_filename="IMG_0010.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"IMG_0010.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"テスト", "introduction"=>"テスト", "category_id"=>"4", "status_id"=>"2", "postage_id"=>"3", "area_id"=>"5", "shipping_id"=>"2", "price"=>"20000"}, "commit"=>"出品する"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:28:in `items_params'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO `items` (`category_id`, `status_id`, `postage_id`, `area_id`, `shipping_id`, `created_at`, `updated_at`, `title`, `introduction`, `price`, `user_id`) VALUES (4, 2, 3, 5, 2, '2020-09-03 12:14:08.498791', '2020-09-03 12:14:08.498791', 'テスト', 'テスト', 20000, 1)[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Load (2.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Blob Create (0.3ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `metadata`, `byte_size`, `checksum`, `created_at`) VALUES ('z37nik5hx9h49pc2drde46chdafy', 'IMG_0010.jpg', 'image/jpeg', '{\"identified\":true}', 118959, 'HROED+CTQbXCbfMO/Ogreg==', '2020-09-03 12:14:08')[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mActiveStorage::Attachment Create (0.2ms)[0m  [1m[32mINSERT INTO `active_storage_attachments` (`name`, `record_type`, `record_id`, `blob_id`, `created_at`) VALUES ('image', 'Item', 1, 1, '2020-09-03 12:14:08')[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[36mItem Update (1.5ms)[0m  [1m[33mUPDATE `items` SET `items`.`updated_at` = '2020-09-03 12:14:08.509256' WHERE `items`.`id` = 1[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/items_controller.rb:14:in `create'
+[36m  Disk Storage (2.7ms) [0m[32mUploaded file to key: z37nik5hx9h49pc2drde46chdafy (checksum: HROED+CTQbXCbfMO/Ogreg==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 3a5b8796-6c9e-4db2-b625-0bd076c08d8a) to Async(active_storage_analysis) with arguments: #<GlobalID:0x00007fdca9ed3810 @uri=#<URI::GID gid://furima28868/ActiveStorage::Blob/1>>
+Redirected to http://localhost:3000/
+Completed 302 Found in 156ms (ActiveRecord: 19.8ms | Allocations: 61032)
+
+
+Started GET "/" for ::1 at 2020-09-03 21:14:08 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 50.8ms | Allocations: 15996)
+  [1m[36mActiveStorage::Blob Load (39.9ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3a5b8796-6c9e-4db2-b625-0bd076c08d8a] Performing ActiveStorage::AnalyzeJob (Job ID: 3a5b8796-6c9e-4db2-b625-0bd076c08d8a) from Async(active_storage_analysis) enqueued at 2020-09-03T12:14:08Z with arguments: #<GlobalID:0x00007fdca90ceee0 @uri=#<URI::GID gid://furima28868/ActiveStorage::Blob/1>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3a5b8796-6c9e-4db2-b625-0bd076c08d8a] [36m  Disk Storage (0.6ms) [0m[34mDownloaded file from key: z37nik5hx9h49pc2drde46chdafy[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mPurchase Load (0.3ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` = 1 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:135
+  Rendered shared/_footer.html.erb (Duration: 1.3ms | Allocations: 1076)
+  Rendered items/index.html.erb within layouts/application (Duration: 206.1ms | Allocations: 48481)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 242ms (Views: 131.4ms | ActiveRecord: 103.5ms | Allocations: 72608)
+
+
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3a5b8796-6c9e-4db2-b625-0bd076c08d8a]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3a5b8796-6c9e-4db2-b625-0bd076c08d8a]   [1m[36mActiveStorage::Blob Update (0.4ms)[0m  [1m[33mUPDATE `active_storage_blobs` SET `active_storage_blobs`.`metadata` = '{\"identified\":true,\"width\":550,\"height\":825,\"analyzed\":true}' WHERE `active_storage_blobs`.`id` = 1[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3a5b8796-6c9e-4db2-b625-0bd076c08d8a]   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3a5b8796-6c9e-4db2-b625-0bd076c08d8a] Performed ActiveStorage::AnalyzeJob (Job ID: 3a5b8796-6c9e-4db2-b625-0bd076c08d8a) from Async(active_storage_analysis) in 195.74ms
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dbb7dfcc37505ad65aae61b290003df4392908eb/IMG_0010.jpg" for ::1 at 2020-09-03 21:14:08 +0900
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dbb7dfcc37505ad65aae61b290003df4392908eb", "filename"=>"IMG_0010"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+[36m  Disk Storage (1.1ms) [0m[34mGenerated URL for file at key: z37nik5hx9h49pc2drde46chdafy (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wM1QxMjoxOTowOS4wNjFaIiwicHVyIjoiYmxvYl9rZXkifX0=--1220662b922215de336d4a9c3777e4ef8e76f2cb/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wM1QxMjoxOTowOS4wNjFaIiwicHVyIjoiYmxvYl9rZXkifX0=--1220662b922215de336d4a9c3777e4ef8e76f2cb/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms | Allocations: 2380)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wM1QxMjoxOTowOS4wNjFaIiwicHVyIjoiYmxvYl9rZXkifX0=--1220662b922215de336d4a9c3777e4ef8e76f2cb/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-03 21:14:09 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wM1QxMjoxOTowOS4wNjFaIiwicHVyIjoiYmxvYl9rZXkifX0=--1220662b922215de336d4a9c3777e4ef8e76f2cb", "filename"=>"IMG_0010"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 457)
+
+
+Started GET "/items/1" for ::1 at 2020-09-03 21:18:51 +0900
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:32:in `set_params'
+  Rendering items/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 4.7ms | Allocations: 2307)
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:11
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:11
+  [1m[36mPurchase Load (0.4ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` = 1 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:14
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:51
+  Rendered shared/_footer.html.erb (Duration: 1.7ms | Allocations: 1294)
+  Rendered items/show.html.erb within layouts/application (Duration: 24.0ms | Allocations: 10889)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 41.6ms | ActiveRecord: 3.3ms | Allocations: 30102)
+
+
+Started GET "/items/1" for ::1 at 2020-09-03 21:20:23 +0900
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:32:in `set_params'
+  Rendering items/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 5.0ms | Allocations: 2638)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:11
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:11
+  [1m[36mPurchase Load (0.2ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` = 1 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:14
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:51
+  Rendered shared/_footer.html.erb (Duration: 1.9ms | Allocations: 1700)
+  Rendered items/show.html.erb within layouts/application (Duration: 18.3ms | Allocations: 11082)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 38.5ms | ActiveRecord: 1.7ms | Allocations: 31150)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dbb7dfcc37505ad65aae61b290003df4392908eb/IMG_0010.jpg" for ::1 at 2020-09-03 21:20:24 +0900
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dbb7dfcc37505ad65aae61b290003df4392908eb", "filename"=>"IMG_0010"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+[36m  Disk Storage (0.4ms) [0m[34mGenerated URL for file at key: z37nik5hx9h49pc2drde46chdafy (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wM1QxMjoyNToyNC4wMzRaIiwicHVyIjoiYmxvYl9rZXkifX0=--55decae5abd5247cdd29c44344a628b86d4afa7b/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wM1QxMjoyNToyNC4wMzRaIiwicHVyIjoiYmxvYl9rZXkifX0=--55decae5abd5247cdd29c44344a628b86d4afa7b/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms | Allocations: 1899)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wM1QxMjoyNToyNC4wMzRaIiwicHVyIjoiYmxvYl9rZXkifX0=--55decae5abd5247cdd29c44344a628b86d4afa7b/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-03 21:20:24 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wM1QxMjoyNToyNC4wMzRaIiwicHVyIjoiYmxvYl9rZXkifX0=--55decae5abd5247cdd29c44344a628b86d4afa7b", "filename"=>"IMG_0010"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 392)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2020-09-03 21:21:48 +0900
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"dGxEGHWuAviIdhucIbf5ngvvyzJI4IdvRSz6+GqWR6Hes4Fqs/78mF544iSEHwkslmiMXfrhy6/uYwRPcZ4qzQ=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 22ms (ActiveRecord: 0.3ms | Allocations: 3307)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-09-03 21:21:48 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 2.7ms | Allocations: 801)
+  Rendered shared/_second-footer.html.erb (Duration: 1.0ms | Allocations: 432)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.4ms | Allocations: 3851)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 41.9ms | ActiveRecord: 0.0ms | Allocations: 23497)
+
+
+Started GET "/" for ::1 at 2020-09-03 21:21:49 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  Rendered shared/_header.html.erb (Duration: 3.3ms | Allocations: 1417)
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mPurchase Load (0.3ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` = 1 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:135
+  Rendered shared/_footer.html.erb (Duration: 1.4ms | Allocations: 1076)
+  Rendered items/index.html.erb within layouts/application (Duration: 63.5ms | Allocations: 12906)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 83ms (Views: 80.4ms | ActiveRecord: 1.0ms | Allocations: 31492)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wM1QxMjoyNToyNC4wMzRaIiwicHVyIjoiYmxvYl9rZXkifX0=--55decae5abd5247cdd29c44344a628b86d4afa7b/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-03 21:21:49 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wM1QxMjoyNToyNC4wMzRaIiwicHVyIjoiYmxvYl9rZXkifX0=--55decae5abd5247cdd29c44344a628b86d4afa7b", "filename"=>"IMG_0010"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 346)
+
+
+Started GET "/items/1" for ::1 at 2020-09-03 21:21:53 +0900
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:32:in `set_params'
+  Rendering items/show.html.erb within layouts/application
+  Rendered shared/_header.html.erb (Duration: 2.8ms | Allocations: 1405)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:11
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:11
+  [1m[36mPurchase Load (0.3ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` = 1 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:14
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:51
+  Rendered shared/_footer.html.erb (Duration: 1.7ms | Allocations: 1294)
+  Rendered items/show.html.erb within layouts/application (Duration: 19.0ms | Allocations: 8359)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 48.8ms | ActiveRecord: 1.9ms | Allocations: 27390)
+
+
+Started GET "/" for ::1 at 2020-09-03 21:22:10 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  Rendered shared/_header.html.erb (Duration: 2.7ms | Allocations: 1405)
+  [1m[36mItem Load (6.9ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mPurchase Load (0.3ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` = 1 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:135
+  Rendered shared/_footer.html.erb (Duration: 2.0ms | Allocations: 1076)
+  Rendered items/index.html.erb within layouts/application (Duration: 34.2ms | Allocations: 11548)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 71ms (Views: 62.1ms | ActiveRecord: 8.1ms | Allocations: 29988)
+
+

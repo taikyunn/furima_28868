@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-  # before_action :set_params, only: [:show]
+  before_action :set_params, only: [:show]
 
   def index
     @items = Item.all.order('created_at DESC')

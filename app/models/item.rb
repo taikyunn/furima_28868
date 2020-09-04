@@ -30,6 +30,4 @@ class Item < ApplicationRecord
     validates :shipping_id
     validates :status_id
   end
-
-
 end

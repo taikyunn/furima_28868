@@ -15,7 +15,7 @@ class Item < ApplicationRecord
     validates :area_id
     validates :postage_id
     validates :shipping_id
-    validates :status
+    validates :status_id
     validates :title
     validates :introduction
     validates :price, numericality: { greater_than: 300, less_than: 9_999_999 }, format: { with: /\A[0-9]+\z/ }

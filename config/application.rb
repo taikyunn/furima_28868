@@ -2,6 +2,10 @@ require_relative 'boot'
 
 require 'rails/all'
 
+class MyLogger < Logger
+  include LoggerSilence
+  include ActiveSupport::LoggerThreadSafeLevel
+end
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)

@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-  before_action :set_params, only: [:show]
+  before_action :set_params, only: %i[show edit update]
 
   def index
     @items = Item.all.order('created_at DESC')
@@ -18,10 +18,17 @@ class ItemsController < ApplicationController
     end
   end
 
-  def show
-  end
+  def show; end
 
   def edit; end
+
+  def update
+    if @item.update(items_params)
+      redirect_to action: :show
+    else
+      render 'edit'
+    end
+  end
 
   private
 

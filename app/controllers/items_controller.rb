@@ -18,10 +18,6 @@ class ItemsController < ApplicationController
     end
   end
 
-  def show; end
-
-  def edit; end
-
   def destroy
     if @item.destroy
       redirect_to root_path

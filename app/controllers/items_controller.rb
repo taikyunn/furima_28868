@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-  before_action :set_params, only: %i[show edit update]
+  before_action :set_params, only: %i[show edit update destroy]
 
   def index
     @items = Item.all.order('created_at DESC')
@@ -18,9 +18,13 @@ class ItemsController < ApplicationController
     end
   end
 
-  def show; end
-
-  def edit; end
+  def destroy
+    if @item.destroy
+      redirect_to root_path
+    else
+      render 'show'
+    end
+  end
 
   def update
     if @item.update(items_params)
@@ -40,3 +44,4 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
   end
 end
+

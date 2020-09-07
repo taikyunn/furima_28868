@@ -132,7 +132,8 @@
       <%= link_to item.title,item_path(item.id) %>
       <div class='item-img-content'>
         <%= image_tag item.image, class: "item-img" %>
-        <% if item.nil? %>
+
+        <% if item.purchase.present? %>
             <div class='sold-out'>
               <span>Sold Out!!</span>
             </div>

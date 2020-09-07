@@ -11405,3 +11405,155 @@ Processing by ActiveStorage::DiskController#show as JPEG
 Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 487)
 
 
+Started GET "/" for ::1 at 2020-09-08 08:40:01 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 17.7ms | Allocations: 12544)
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  Rendered items/index.html.erb within layouts/application (Duration: 379.8ms | Allocations: 210144)
+Completed 500 Internal Server Error in 388ms (ActiveRecord: 11.2ms | Allocations: 217031)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `purchase' for #<#<Class:0x00007ff7c508c5b8>:0x00007ff7c50962e8>):
+    132:       <%= link_to item.title,item_path(item.id) %>
+    133:       <div class='item-img-content'>
+    134:         <%= image_tag item.image, class: "item-img" %>
+    135:         <% if purchase.present? %>
+    136:             <div class='sold-out'>
+    137:               <span>Sold Out!!</span>
+    138:             </div>
+  
+app/views/items/index.html.erb:135
+app/views/items/index.html.erb:130
+Started GET "/items/3/purchase" for ::1 at 2020-09-08 08:41:00 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:47:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 2.1ms | Allocations: 795)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  Rendered shared/_second-footer.html.erb (Duration: 1.5ms | Allocations: 427)
+  Rendered items/purchase.html.erb within layouts/application (Duration: 14.6ms | Allocations: 14199)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 69ms (Views: 56.4ms | ActiveRecord: 0.9ms | Allocations: 36693)
+
+
+Started GET "/" for ::1 at 2020-09-08 08:41:03 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 4.5ms | Allocations: 2633)
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  Rendered shared/_footer.html.erb (Duration: 2.6ms | Allocations: 1482)
+  Rendered items/index.html.erb within layouts/application (Duration: 21.2ms | Allocations: 13991)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 36.0ms | ActiveRecord: 1.3ms | Allocations: 31908)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNM281Y1hsbWJ6WnVOV3hqTUdKb04yczFaR1p6YWpaNk1ubDNjQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QyMzo0Mjo0Ny41OTJaIiwicHVyIjoiYmxvYl9rZXkifX0=--d80b08a94d8bf85485c78733af5aae9048b8d9c1/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-08 08:41:03 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNM281Y1hsbWJ6WnVOV3hqTUdKb04yczFaR1p6YWpaNk1ubDNjQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QyMzo0Mjo0Ny41OTJaIiwicHVyIjoiYmxvYl9rZXkifX0=--d80b08a94d8bf85485c78733af5aae9048b8d9c1", "filename"=>"IMG_0010"}
+Completed 304 Not Modified in 3ms (ActiveRecord: 0.0ms | Allocations: 536)
+
+
+Started GET "/" for ::1 at 2020-09-08 08:41:15 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 4.5ms | Allocations: 2306)
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  Rendered shared/_footer.html.erb (Duration: 0.9ms | Allocations: 1076)
+  Rendered items/index.html.erb within layouts/application (Duration: 17.6ms | Allocations: 11637)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 34.4ms | ActiveRecord: 1.2ms | Allocations: 29432)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNM281Y1hsbWJ6WnVOV3hqTUdKb04yczFaR1p6YWpaNk1ubDNjQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QyMzo0Mjo0Ny41OTJaIiwicHVyIjoiYmxvYl9rZXkifX0=--d80b08a94d8bf85485c78733af5aae9048b8d9c1/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-08 08:41:15 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNM281Y1hsbWJ6WnVOV3hqTUdKb04yczFaR1p6YWpaNk1ubDNjQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QyMzo0Mjo0Ny41OTJaIiwicHVyIjoiYmxvYl9rZXkifX0=--d80b08a94d8bf85485c78733af5aae9048b8d9c1", "filename"=>"IMG_0010"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 439)
+
+
+Started GET "/" for ::1 at 2020-09-08 08:41:16 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 3.7ms | Allocations: 2300)
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  Rendered shared/_footer.html.erb (Duration: 1.0ms | Allocations: 1076)
+  Rendered items/index.html.erb within layouts/application (Duration: 16.9ms | Allocations: 11623)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 31.8ms | ActiveRecord: 1.3ms | Allocations: 29417)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNM281Y1hsbWJ6WnVOV3hqTUdKb04yczFaR1p6YWpaNk1ubDNjQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QyMzo0Mjo0Ny41OTJaIiwicHVyIjoiYmxvYl9rZXkifX0=--d80b08a94d8bf85485c78733af5aae9048b8d9c1/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-08 08:41:16 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNM281Y1hsbWJ6WnVOV3hqTUdKb04yczFaR1p6YWpaNk1ubDNjQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QyMzo0Mjo0Ny41OTJaIiwicHVyIjoiYmxvYl9rZXkifX0=--d80b08a94d8bf85485c78733af5aae9048b8d9c1", "filename"=>"IMG_0010"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 437)
+
+
+Started GET "/" for ::1 at 2020-09-08 08:42:51 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 4.4ms | Allocations: 2633)
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mPurchase Load (0.3ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` = 3 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:136
+  Rendered shared/_footer.html.erb (Duration: 1.8ms | Allocations: 1482)
+  Rendered items/index.html.erb within layouts/application (Duration: 39.6ms | Allocations: 22365)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 59ms (Views: 52.4ms | ActiveRecord: 5.1ms | Allocations: 41073)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8b63b5cad89ebba7a25a193246d7230faeaec573/IMG_0010.jpg" for ::1 at 2020-09-08 08:42:51 +0900
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8b63b5cad89ebba7a25a193246d7230faeaec573", "filename"=>"IMG_0010"}
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+[36m  Disk Storage (0.8ms) [0m[34mGenerated URL for file at key: 3z9qyfo6n5lc0bh7k5dfsj6z2ywp (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNM281Y1hsbWJ6WnVOV3hqTUdKb04yczFaR1p6YWpaNk1ubDNjQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QyMzo0Nzo1MS42NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--7cbad05cbc4dd817085dd549667b6ff8173c7e2b/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNM281Y1hsbWJ6WnVOV3hqTUdKb04yczFaR1p6YWpaNk1ubDNjQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QyMzo0Nzo1MS42NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--7cbad05cbc4dd817085dd549667b6ff8173c7e2b/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms | Allocations: 2248)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNM281Y1hsbWJ6WnVOV3hqTUdKb04yczFaR1p6YWpaNk1ubDNjQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QyMzo0Nzo1MS42NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--7cbad05cbc4dd817085dd549667b6ff8173c7e2b/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-08 08:42:51 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNM281Y1hsbWJ6WnVOV3hqTUdKb04yczFaR1p6YWpaNk1ubDNjQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QyMzo0Nzo1MS42NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--7cbad05cbc4dd817085dd549667b6ff8173c7e2b", "filename"=>"IMG_0010"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 447)
+
+

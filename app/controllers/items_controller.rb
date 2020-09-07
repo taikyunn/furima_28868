@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-  before_action :set_params, only: %i[show edit update purchase]
+  before_action :set_params, only: %i[show edit update purchase buy]
 
   def index
     @items = Item.all.order('created_at DESC')
@@ -30,6 +30,9 @@ class ItemsController < ApplicationController
   end
 
   def buy
+    @place = UserPurchase.new(items.params)
+    @place.save
+    redirect_to root_path
   end
 
   private

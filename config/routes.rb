@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :items do
     member do
       get 'purchase', to: 'items#purchase'
-      post 'buy', to: 'items#buy'
+      post 'purchase', to: 'items#buy'
     end
   end
 end

@@ -3397,3 +3397,2631 @@ Processing by ItemsController#purchase as HTML
 Completed 200 OK in 49ms (Views: 44.4ms | ActiveRecord: 1.1ms | Allocations: 30928)
 
 
+Started POST "/items/1/purchase" for ::1 at 2020-09-07 15:04:50 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/items/1/purchase"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/items/1/purchase" for ::1 at 2020-09-07 15:07:27 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/items/1/purchase"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 15:08:12 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:42:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 2.7ms | Allocations: 795)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  Rendered items/purchase.html.erb within layouts/application (Duration: 13.7ms | Allocations: 11432)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.1ms | Allocations: 13428)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 0..2)):
+    120:       </div>
+    121:     </div>
+    122:     <div class='buy-btn'>
+    123:       <%= f.submit "購入" ,buy_item_path ,class:"buy-red-btn" %>
+    124:     </div>
+    125:     <% end %>
+    126:   </div>
+  
+app/views/items/purchase.html.erb:123
+app/views/items/purchase.html.erb:34
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 15:08:19 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:42:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 2.0ms | Allocations: 795)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  Rendered shared/_second-footer.html.erb (Duration: 1.5ms | Allocations: 427)
+  Rendered items/purchase.html.erb within layouts/application (Duration: 14.1ms | Allocations: 11461)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 44.7ms | ActiveRecord: 0.9ms | Allocations: 30760)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjowOToxNS4zMzVaIiwicHVyIjoiYmxvYl9rZXkifX0=--ea8d36f3100b3cf34660d19c49ac21db8bb37e2f/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-07 15:08:20 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjowOToxNS4zMzVaIiwicHVyIjoiYmxvYl9rZXkifX0=--ea8d36f3100b3cf34660d19c49ac21db8bb37e2f", "filename"=>"IMG_0010"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 419)
+
+
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 15:09:16 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:42:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 1.2ms | Allocations: 794)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  Rendered shared/_second-footer.html.erb (Duration: 1.1ms | Allocations: 427)
+  Rendered items/purchase.html.erb within layouts/application (Duration: 26.9ms | Allocations: 16041)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 47ms (Views: 44.5ms | ActiveRecord: 0.8ms | Allocations: 35327)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dbb7dfcc37505ad65aae61b290003df4392908eb/IMG_0010.jpg" for ::1 at 2020-09-07 15:09:16 +0900
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dbb7dfcc37505ad65aae61b290003df4392908eb", "filename"=>"IMG_0010"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+[36m  Disk Storage (0.6ms) [0m[34mGenerated URL for file at key: z37nik5hx9h49pc2drde46chdafy (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjoxNDoxNi44NDdaIiwicHVyIjoiYmxvYl9rZXkifX0=--c02a22f1e9948a671f98943929d04cad0ebdbbf0/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjoxNDoxNi44NDdaIiwicHVyIjoiYmxvYl9rZXkifX0=--c02a22f1e9948a671f98943929d04cad0ebdbbf0/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg
+Completed 302 Found in 16ms (ActiveRecord: 0.4ms | Allocations: 1971)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjoxNDoxNi44NDdaIiwicHVyIjoiYmxvYl9rZXkifX0=--c02a22f1e9948a671f98943929d04cad0ebdbbf0/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-07 15:09:16 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjoxNDoxNi44NDdaIiwicHVyIjoiYmxvYl9rZXkifX0=--c02a22f1e9948a671f98943929d04cad0ebdbbf0", "filename"=>"IMG_0010"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 455)
+
+
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 15:09:17 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:42:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 1.1ms | Allocations: 690)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  Rendered shared/_second-footer.html.erb (Duration: 0.2ms | Allocations: 311)
+  Rendered items/purchase.html.erb within layouts/application (Duration: 9.3ms | Allocations: 11103)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 31.5ms | ActiveRecord: 0.8ms | Allocations: 29406)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjoxNDoxNi44NDdaIiwicHVyIjoiYmxvYl9rZXkifX0=--c02a22f1e9948a671f98943929d04cad0ebdbbf0/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-07 15:09:17 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjoxNDoxNi44NDdaIiwicHVyIjoiYmxvYl9rZXkifX0=--c02a22f1e9948a671f98943929d04cad0ebdbbf0", "filename"=>"IMG_0010"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 435)
+
+
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 15:09:18 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:42:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 1.1ms | Allocations: 689)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  Rendered shared/_second-footer.html.erb (Duration: 0.2ms | Allocations: 311)
+  Rendered items/purchase.html.erb within layouts/application (Duration: 9.7ms | Allocations: 11090)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 30.0ms | ActiveRecord: 1.1ms | Allocations: 29369)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjoxNDoxNi44NDdaIiwicHVyIjoiYmxvYl9rZXkifX0=--c02a22f1e9948a671f98943929d04cad0ebdbbf0/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-07 15:09:18 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjoxNDoxNi44NDdaIiwicHVyIjoiYmxvYl9rZXkifX0=--c02a22f1e9948a671f98943929d04cad0ebdbbf0", "filename"=>"IMG_0010"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 427)
+
+
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 15:31:38 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:42:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 0.9ms | Allocations: 691)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  Rendered shared/_second-footer.html.erb (Duration: 0.2ms | Allocations: 311)
+  Rendered items/purchase.html.erb within layouts/application (Duration: 29.8ms | Allocations: 26328)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 69ms (Views: 46.7ms | ActiveRecord: 0.9ms | Allocations: 58331)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dbb7dfcc37505ad65aae61b290003df4392908eb/IMG_0010.jpg" for ::1 at 2020-09-07 15:31:38 +0900
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dbb7dfcc37505ad65aae61b290003df4392908eb", "filename"=>"IMG_0010"}
+  [1m[36mActiveStorage::Blob Load (1.6ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+[36m  Disk Storage (0.9ms) [0m[34mGenerated URL for file at key: z37nik5hx9h49pc2drde46chdafy (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjozNjozOC45NTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--4b3d419cab8cc41a3a2c0c8d4383b72cf4fd6a72/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjozNjozOC45NTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--4b3d419cab8cc41a3a2c0c8d4383b72cf4fd6a72/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg
+Completed 302 Found in 26ms (ActiveRecord: 1.6ms | Allocations: 2338)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjozNjozOC45NTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--4b3d419cab8cc41a3a2c0c8d4383b72cf4fd6a72/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-07 15:31:38 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjozNjozOC45NTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--4b3d419cab8cc41a3a2c0c8d4383b72cf4fd6a72", "filename"=>"IMG_0010"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 495)
+
+
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 15:32:15 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:42:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 1.2ms | Allocations: 689)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  Rendered shared/_second-footer.html.erb (Duration: 0.2ms | Allocations: 311)
+  Rendered items/purchase.html.erb within layouts/application (Duration: 10.0ms | Allocations: 11091)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 26.8ms | ActiveRecord: 1.0ms | Allocations: 29371)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjozNjozOC45NTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--4b3d419cab8cc41a3a2c0c8d4383b72cf4fd6a72/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-07 15:32:15 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjozNjozOC45NTZaIiwicHVyIjoiYmxvYl9rZXkifX0=--4b3d419cab8cc41a3a2c0c8d4383b72cf4fd6a72", "filename"=>"IMG_0010"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 439)
+
+
+Started POST "/items/1/purchase" for ::1 at 2020-09-07 15:32:56 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/items/1/purchase"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/items/1/purchase" for ::1 at 2020-09-07 15:34:21 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/items/1/purchase"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/items/1/purchase" for ::1 at 2020-09-07 15:35:23 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/items/1/purchase"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 15:41:45 +0900
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:42:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered items/purchase.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1749)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.3ms | Allocations: 17339)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= render "shared/second-header"%>
+
+<div class='transaction-contents'>
+  <div class='transaction-main'>
+    <h1 class='transaction-title-text'>
+      購入内容の確認
+    </h1>
+    <%# 購入内容の表示 %>
+    <div class='buy-item-info'>
+      <%= image_tag @item.image , class: 'buy-item-img' %>
+      <div class='buy-item-right-content'>
+        <h2 class='buy-item-text'>
+          <%= @item.introduction %>
+        </h2>
+        <div class='buy-item-price'>
+          <p class='item-price-text'>¥<%= @item.price %></p>
+          <p class='item-price-sub-text'>（税込）送料込み</p>
+        </div>
+      </div>
+    </div>
+    <%# /購入内容の表示 %>
+
+    <%# 支払額の表示 %>
+    <div class='item-payment'>
+      <h1 class='item-payment-title'>
+        支払金額
+      </h1>
+      <p class='item-payment-price'>
+        ¥<%= @item.price %>
+      </p>
+    </div>
+    <%# /支払額の表示 %>
+
+    <%= form_with id: 'charge-form', class: 'transaction-form-wrap',local: true do |f| %>
+    <%# カード情報の入力 %>
+    <div class='credit-card-form'>
+      <h1 class='info-input-haedline'>
+        クレジットカード情報入力
+      </h1>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">カード情報</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"card-number", placeholder:"カード番号(半角英数字)", maxlength:"16" %>
+        <div class='available-card'>
+          <%= image_tag 'card-visa.gif', class: 'card-logo'%>
+          <%= image_tag 'card-mastercard.gif', class: 'card-logo'%>
+          <%= image_tag 'card-jcb.gif', class: 'card-logo'%>
+          <%= image_tag 'card-amex.gif', class: 'card-logo'%>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">有効期限</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <div class='input-expiration-date-wrap'>
+          <%= f.text_area 'hoge', class:"input-expiration-date", id:"card-exp-month", placeholder:"例)3" %>
+          <p>月</p>
+          <%= f.text_area 'hoge', class:"input-expiration-date", id:"card-exp-year", placeholder:"例)23" %>
+          <p>年</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">セキュリティコード</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field "hoge",class:"input-default", id:"card-cvc", placeholder:"カード背面4桁もしくは3桁の番号", maxlength:"4" %>
+      </div>
+    </div>
+    <%# /カード情報の入力 %>
+    <%# 配送先の入力 %>
+    <div class='shipping-address-form'>
+      <h1 class='info-input-haedline'>
+        配送先入力
+      </h1>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">郵便番号</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"postal-code", placeholder:"例）123-4567", maxlength:"8" %>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">都道府県</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.collection_select(:prefecture_id,Prefecture.all, :id, :name, {}, {class:"select-box", id:"prefecture"}) %>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">市区町村</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"city", placeholder:"例）横浜市緑区"%>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">番地</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"addresses", placeholder:"例）青山1-1-1"%>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">建物名</label>
+          <span class="form-any">任意</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"building", placeholder:"例）柳ビル103"%>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">電話番号</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"phone-number", placeholder:"例）09012345678",maxlength:"11"%>
+      </div>
+    </div>
+    <div class='buy-btn'>
+      <%= f.submit "購入" buy_item_path_path ,class:"buy-red-btn" %>
+    </div>
+    <% end %>
+  </div>
+</div>
+<%= render "shared/second-footer"%>
+):
+1:    <%= render "shared/second-header"%>
+2:    
+3:    <div class='transaction-contents'>
+4:      <div class='transaction-main'>
+5:        <h1 class='transaction-title-text'>
+6:          購入内容の確認
+7:        </h1>
+8:        <%# 購入内容の表示 %>
+9:        <div class='buy-item-info'>
+10:          <%= image_tag @item.image , class: 'buy-item-img' %>
+11:          <div class='buy-item-right-content'>
+12:            <h2 class='buy-item-text'>
+13:              <%= @item.introduction %>
+14:            </h2>
+15:            <div class='buy-item-price'>
+16:              <p class='item-price-text'>¥<%= @item.price %></p>
+17:              <p class='item-price-sub-text'>（税込）送料込み</p>
+18:            </div>
+19:          </div>
+20:        </div>
+21:        <%# /購入内容の表示 %>
+22:    
+23:        <%# 支払額の表示 %>
+24:        <div class='item-payment'>
+25:          <h1 class='item-payment-title'>
+26:            支払金額
+27:          </h1>
+28:          <p class='item-payment-price'>
+29:            ¥<%= @item.price %>
+30:          </p>
+31:        </div>
+32:        <%# /支払額の表示 %>
+33:    
+34:        <%= form_with id: 'charge-form', class: 'transaction-form-wrap',local: true do |f| %>
+35:        <%# カード情報の入力 %>
+36:        <div class='credit-card-form'>
+37:          <h1 class='info-input-haedline'>
+38:            クレジットカード情報入力
+39:          </h1>
+40:          <div class="form-group">
+41:            <div class='form-text-wrap'>
+42:              <label class="form-text">カード情報</label>
+43:              <span class="indispensable">必須</span>
+44:            </div>
+45:            <%= f.text_field 'hoge', class:"input-default", id:"card-number", placeholder:"カード番号(半角英数字)", maxlength:"16" %>
+46:            <div class='available-card'>
+47:              <%= image_tag 'card-visa.gif', class: 'card-logo'%>
+48:              <%= image_tag 'card-mastercard.gif', class: 'card-logo'%>
+49:              <%= image_tag 'card-jcb.gif', class: 'card-logo'%>
+50:              <%= image_tag 'card-amex.gif', class: 'card-logo'%>
+51:            </div>
+52:          </div>
+53:          <div class="form-group">
+54:            <div class='form-text-wrap'>
+55:              <label class="form-text">有効期限</label>
+56:              <span class="indispensable">必須</span>
+57:            </div>
+58:            <div class='input-expiration-date-wrap'>
+59:              <%= f.text_area 'hoge', class:"input-expiration-date", id:"card-exp-month", placeholder:"例)3" %>
+60:              <p>月</p>
+61:              <%= f.text_area 'hoge', class:"input-expiration-date", id:"card-exp-year", placeholder:"例)23" %>
+62:              <p>年</p>
+63:            </div>
+64:          </div>
+65:          <div class="form-group">
+66:            <div class='form-text-wrap'>
+67:              <label class="form-text">セキュリティコード</label>
+68:              <span class="indispensable">必須</span>
+69:            </div>
+70:            <%= f.text_field "hoge",class:"input-default", id:"card-cvc", placeholder:"カード背面4桁もしくは3桁の番号", maxlength:"4" %>
+71:          </div>
+72:        </div>
+73:        <%# /カード情報の入力 %>
+74:        <%# 配送先の入力 %>
+75:        <div class='shipping-address-form'>
+76:          <h1 class='info-input-haedline'>
+77:            配送先入力
+78:          </h1>
+79:          <div class="form-group">
+80:            <div class='form-text-wrap'>
+81:              <label class="form-text">郵便番号</label>
+82:              <span class="indispensable">必須</span>
+83:            </div>
+84:            <%= f.text_field 'hoge', class:"input-default", id:"postal-code", placeholder:"例）123-4567", maxlength:"8" %>
+85:          </div>
+86:          <div class="form-group">
+87:            <div class='form-text-wrap'>
+88:              <label class="form-text">都道府県</label>
+89:              <span class="indispensable">必須</span>
+90:            </div>
+91:            <%= f.collection_select(:prefecture_id,Prefecture.all, :id, :name, {}, {class:"select-box", id:"prefecture"}) %>
+92:          </div>
+93:          <div class="form-group">
+94:            <div class='form-text-wrap'>
+95:              <label class="form-text">市区町村</label>
+96:              <span class="indispensable">必須</span>
+97:            </div>
+98:            <%= f.text_field 'hoge', class:"input-default", id:"city", placeholder:"例）横浜市緑区"%>
+99:          </div>
+100:          <div class="form-group">
+101:            <div class='form-text-wrap'>
+102:              <label class="form-text">番地</label>
+103:              <span class="indispensable">必須</span>
+104:            </div>
+105:            <%= f.text_field 'hoge', class:"input-default", id:"addresses", placeholder:"例）青山1-1-1"%>
+106:          </div>
+107:          <div class="form-group">
+108:            <div class='form-text-wrap'>
+109:              <label class="form-text">建物名</label>
+110:              <span class="form-any">任意</span>
+111:            </div>
+112:            <%= f.text_field 'hoge', class:"input-default", id:"building", placeholder:"例）柳ビル103"%>
+113:          </div>
+114:          <div class="form-group">
+115:            <div class='form-text-wrap'>
+116:              <label class="form-text">電話番号</label>
+117:              <span class="indispensable">必須</span>
+118:            </div>
+119:            <%= f.text_field 'hoge', class:"input-default", id:"phone-number", placeholder:"例）09012345678",maxlength:"11"%>
+120:          </div>
+121:        </div>
+122:        <div class='buy-btn'>
+123:          <%= f.submit "購入" buy_item_path_path ,class:"buy-red-btn" %>
+124:        </div>
+125:        <% end %>
+126:      </div>
+127:    </div>
+128:    <%= render "shared/second-footer"%>
+  
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 15:41:58 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:42:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered items/purchase.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1783)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 2.6ms | Allocations: 16686)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= render "shared/second-header"%>
+
+<div class='transaction-contents'>
+  <div class='transaction-main'>
+    <h1 class='transaction-title-text'>
+      購入内容の確認
+    </h1>
+    <%# 購入内容の表示 %>
+    <div class='buy-item-info'>
+      <%= image_tag @item.image , class: 'buy-item-img' %>
+      <div class='buy-item-right-content'>
+        <h2 class='buy-item-text'>
+          <%= @item.introduction %>
+        </h2>
+        <div class='buy-item-price'>
+          <p class='item-price-text'>¥<%= @item.price %></p>
+          <p class='item-price-sub-text'>（税込）送料込み</p>
+        </div>
+      </div>
+    </div>
+    <%# /購入内容の表示 %>
+
+    <%# 支払額の表示 %>
+    <div class='item-payment'>
+      <h1 class='item-payment-title'>
+        支払金額
+      </h1>
+      <p class='item-payment-price'>
+        ¥<%= @item.price %>
+      </p>
+    </div>
+    <%# /支払額の表示 %>
+
+    <%= form_with id: 'charge-form', class: 'transaction-form-wrap',local: true do |f| %>
+    <%# カード情報の入力 %>
+    <div class='credit-card-form'>
+      <h1 class='info-input-haedline'>
+        クレジットカード情報入力
+      </h1>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">カード情報</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"card-number", placeholder:"カード番号(半角英数字)", maxlength:"16" %>
+        <div class='available-card'>
+          <%= image_tag 'card-visa.gif', class: 'card-logo'%>
+          <%= image_tag 'card-mastercard.gif', class: 'card-logo'%>
+          <%= image_tag 'card-jcb.gif', class: 'card-logo'%>
+          <%= image_tag 'card-amex.gif', class: 'card-logo'%>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">有効期限</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <div class='input-expiration-date-wrap'>
+          <%= f.text_area 'hoge', class:"input-expiration-date", id:"card-exp-month", placeholder:"例)3" %>
+          <p>月</p>
+          <%= f.text_area 'hoge', class:"input-expiration-date", id:"card-exp-year", placeholder:"例)23" %>
+          <p>年</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">セキュリティコード</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field "hoge",class:"input-default", id:"card-cvc", placeholder:"カード背面4桁もしくは3桁の番号", maxlength:"4" %>
+      </div>
+    </div>
+    <%# /カード情報の入力 %>
+    <%# 配送先の入力 %>
+    <div class='shipping-address-form'>
+      <h1 class='info-input-haedline'>
+        配送先入力
+      </h1>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">郵便番号</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"postal-code", placeholder:"例）123-4567", maxlength:"8" %>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">都道府県</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.collection_select(:prefecture_id,Prefecture.all, :id, :name, {}, {class:"select-box", id:"prefecture"}) %>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">市区町村</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"city", placeholder:"例）横浜市緑区"%>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">番地</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"addresses", placeholder:"例）青山1-1-1"%>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">建物名</label>
+          <span class="form-any">任意</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"building", placeholder:"例）柳ビル103"%>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">電話番号</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"phone-number", placeholder:"例）09012345678",maxlength:"11"%>
+      </div>
+    </div>
+    <div class='buy-btn'>
+      <%= f.submit "購入" buy_item_path_path ,class:"buy-red-btn" %>
+    </div>
+    <% end %>
+  </div>
+</div>
+<%= render "shared/second-footer"%>
+):
+1:    <%= render "shared/second-header"%>
+2:    
+3:    <div class='transaction-contents'>
+4:      <div class='transaction-main'>
+5:        <h1 class='transaction-title-text'>
+6:          購入内容の確認
+7:        </h1>
+8:        <%# 購入内容の表示 %>
+9:        <div class='buy-item-info'>
+10:          <%= image_tag @item.image , class: 'buy-item-img' %>
+11:          <div class='buy-item-right-content'>
+12:            <h2 class='buy-item-text'>
+13:              <%= @item.introduction %>
+14:            </h2>
+15:            <div class='buy-item-price'>
+16:              <p class='item-price-text'>¥<%= @item.price %></p>
+17:              <p class='item-price-sub-text'>（税込）送料込み</p>
+18:            </div>
+19:          </div>
+20:        </div>
+21:        <%# /購入内容の表示 %>
+22:    
+23:        <%# 支払額の表示 %>
+24:        <div class='item-payment'>
+25:          <h1 class='item-payment-title'>
+26:            支払金額
+27:          </h1>
+28:          <p class='item-payment-price'>
+29:            ¥<%= @item.price %>
+30:          </p>
+31:        </div>
+32:        <%# /支払額の表示 %>
+33:    
+34:        <%= form_with id: 'charge-form', class: 'transaction-form-wrap',local: true do |f| %>
+35:        <%# カード情報の入力 %>
+36:        <div class='credit-card-form'>
+37:          <h1 class='info-input-haedline'>
+38:            クレジットカード情報入力
+39:          </h1>
+40:          <div class="form-group">
+41:            <div class='form-text-wrap'>
+42:              <label class="form-text">カード情報</label>
+43:              <span class="indispensable">必須</span>
+44:            </div>
+45:            <%= f.text_field 'hoge', class:"input-default", id:"card-number", placeholder:"カード番号(半角英数字)", maxlength:"16" %>
+46:            <div class='available-card'>
+47:              <%= image_tag 'card-visa.gif', class: 'card-logo'%>
+48:              <%= image_tag 'card-mastercard.gif', class: 'card-logo'%>
+49:              <%= image_tag 'card-jcb.gif', class: 'card-logo'%>
+50:              <%= image_tag 'card-amex.gif', class: 'card-logo'%>
+51:            </div>
+52:          </div>
+53:          <div class="form-group">
+54:            <div class='form-text-wrap'>
+55:              <label class="form-text">有効期限</label>
+56:              <span class="indispensable">必須</span>
+57:            </div>
+58:            <div class='input-expiration-date-wrap'>
+59:              <%= f.text_area 'hoge', class:"input-expiration-date", id:"card-exp-month", placeholder:"例)3" %>
+60:              <p>月</p>
+61:              <%= f.text_area 'hoge', class:"input-expiration-date", id:"card-exp-year", placeholder:"例)23" %>
+62:              <p>年</p>
+63:            </div>
+64:          </div>
+65:          <div class="form-group">
+66:            <div class='form-text-wrap'>
+67:              <label class="form-text">セキュリティコード</label>
+68:              <span class="indispensable">必須</span>
+69:            </div>
+70:            <%= f.text_field "hoge",class:"input-default", id:"card-cvc", placeholder:"カード背面4桁もしくは3桁の番号", maxlength:"4" %>
+71:          </div>
+72:        </div>
+73:        <%# /カード情報の入力 %>
+74:        <%# 配送先の入力 %>
+75:        <div class='shipping-address-form'>
+76:          <h1 class='info-input-haedline'>
+77:            配送先入力
+78:          </h1>
+79:          <div class="form-group">
+80:            <div class='form-text-wrap'>
+81:              <label class="form-text">郵便番号</label>
+82:              <span class="indispensable">必須</span>
+83:            </div>
+84:            <%= f.text_field 'hoge', class:"input-default", id:"postal-code", placeholder:"例）123-4567", maxlength:"8" %>
+85:          </div>
+86:          <div class="form-group">
+87:            <div class='form-text-wrap'>
+88:              <label class="form-text">都道府県</label>
+89:              <span class="indispensable">必須</span>
+90:            </div>
+91:            <%= f.collection_select(:prefecture_id,Prefecture.all, :id, :name, {}, {class:"select-box", id:"prefecture"}) %>
+92:          </div>
+93:          <div class="form-group">
+94:            <div class='form-text-wrap'>
+95:              <label class="form-text">市区町村</label>
+96:              <span class="indispensable">必須</span>
+97:            </div>
+98:            <%= f.text_field 'hoge', class:"input-default", id:"city", placeholder:"例）横浜市緑区"%>
+99:          </div>
+100:          <div class="form-group">
+101:            <div class='form-text-wrap'>
+102:              <label class="form-text">番地</label>
+103:              <span class="indispensable">必須</span>
+104:            </div>
+105:            <%= f.text_field 'hoge', class:"input-default", id:"addresses", placeholder:"例）青山1-1-1"%>
+106:          </div>
+107:          <div class="form-group">
+108:            <div class='form-text-wrap'>
+109:              <label class="form-text">建物名</label>
+110:              <span class="form-any">任意</span>
+111:            </div>
+112:            <%= f.text_field 'hoge', class:"input-default", id:"building", placeholder:"例）柳ビル103"%>
+113:          </div>
+114:          <div class="form-group">
+115:            <div class='form-text-wrap'>
+116:              <label class="form-text">電話番号</label>
+117:              <span class="indispensable">必須</span>
+118:            </div>
+119:            <%= f.text_field 'hoge', class:"input-default", id:"phone-number", placeholder:"例）09012345678",maxlength:"11"%>
+120:          </div>
+121:        </div>
+122:        <div class='buy-btn'>
+123:          <%= f.submit "購入" buy_item_path_path ,class:"buy-red-btn" %>
+124:        </div>
+125:        <% end %>
+126:      </div>
+127:    </div>
+128:    <%= render "shared/second-footer"%>
+  
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 15:42:33 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:42:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 3.3ms | Allocations: 795)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  Rendered shared/_second-footer.html.erb (Duration: 1.1ms | Allocations: 427)
+  Rendered items/purchase.html.erb within layouts/application (Duration: 54.1ms | Allocations: 30475)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 73ms (Views: 62.6ms | ActiveRecord: 8.1ms | Allocations: 49769)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dbb7dfcc37505ad65aae61b290003df4392908eb/IMG_0010.jpg" for ::1 at 2020-09-07 15:42:33 +0900
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dbb7dfcc37505ad65aae61b290003df4392908eb", "filename"=>"IMG_0010"}
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+[36m  Disk Storage (1.2ms) [0m[34mGenerated URL for file at key: z37nik5hx9h49pc2drde46chdafy (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjo0NzozMy42MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--01a43f26542a7f3f9064e995638430ddb605af28/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjo0NzozMy42MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--01a43f26542a7f3f9064e995638430ddb605af28/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg
+Completed 302 Found in 8ms (ActiveRecord: 0.9ms | Allocations: 2310)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjo0NzozMy42MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--01a43f26542a7f3f9064e995638430ddb605af28/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-07 15:42:33 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjo0NzozMy42MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--01a43f26542a7f3f9064e995638430ddb605af28", "filename"=>"IMG_0010"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 497)
+
+
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 15:42:36 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:42:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 1.2ms | Allocations: 690)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  Rendered shared/_second-footer.html.erb (Duration: 0.2ms | Allocations: 311)
+  Rendered items/purchase.html.erb within layouts/application (Duration: 10.7ms | Allocations: 11102)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 26.9ms | ActiveRecord: 1.2ms | Allocations: 29387)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjo0NzozMy42MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--01a43f26542a7f3f9064e995638430ddb605af28/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-07 15:42:36 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjo0NzozMy42MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--01a43f26542a7f3f9064e995638430ddb605af28", "filename"=>"IMG_0010"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 439)
+
+
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 15:42:52 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:42:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 0.8ms | Allocations: 690)
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  Rendered shared/_second-footer.html.erb (Duration: 0.2ms | Allocations: 311)
+  Rendered items/purchase.html.erb within layouts/application (Duration: 50.8ms | Allocations: 26794)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 86ms (Views: 63.1ms | ActiveRecord: 7.1ms | Allocations: 58722)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjo0NzozMy42MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--01a43f26542a7f3f9064e995638430ddb605af28/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-07 15:42:53 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjo0NzozMy42MTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--01a43f26542a7f3f9064e995638430ddb605af28", "filename"=>"IMG_0010"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 543)
+
+
+Started POST "/items/1/purchase" for ::1 at 2020-09-07 15:42:55 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/items/1/purchase"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/items/1/purchase" for ::1 at 2020-09-07 15:43:57 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/items/1/purchase"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/items/1/purchase" for ::1 at 2020-09-07 15:44:28 +0900
+Processing by ItemsController#buy as HTML
+  Parameters: {"authenticity_token"=>"hbvOpW9JXCn7HEzsm0chBa9h69GnZKvYwCuULZvGHDb/Uf63oVTRkRLpN7qD7e99FllzPV+ZrUv74ZC/1xpwFw==", "hoge"=>"", "prefecture_id"=>"1", "commit"=>"購入", "id"=>"1"}
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:42:in `set_params'
+No template found for ItemsController#buy, rendering head :no_content
+Completed 204 No Content in 22ms (ActiveRecord: 2.3ms | Allocations: 16340)
+
+
+Started POST "/items/1/purchase" for ::1 at 2020-09-07 15:44:32 +0900
+Processing by ItemsController#buy as HTML
+  Parameters: {"authenticity_token"=>"hbvOpW9JXCn7HEzsm0chBa9h69GnZKvYwCuULZvGHDb/Uf63oVTRkRLpN7qD7e99FllzPV+ZrUv74ZC/1xpwFw==", "hoge"=>"", "prefecture_id"=>"1", "commit"=>"購入", "id"=>"1"}
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:42:in `set_params'
+No template found for ItemsController#buy, rendering head :no_content
+Completed 204 No Content in 3ms (ActiveRecord: 0.4ms | Allocations: 1055)
+
+
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 15:44:36 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:42:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 1.2ms | Allocations: 691)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  Rendered shared/_second-footer.html.erb (Duration: 0.3ms | Allocations: 311)
+  Rendered items/purchase.html.erb within layouts/application (Duration: 33.9ms | Allocations: 26813)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 43.8ms | ActiveRecord: 4.8ms | Allocations: 45255)
+
+
+Started POST "/items/1/purchase" for ::1 at 2020-09-07 15:45:15 +0900
+Processing by ItemsController#buy as HTML
+  Parameters: {"authenticity_token"=>"+h1w1yH7evle+Z4Jw59FfR+sIkK99i20Qyt5llIJi3yA90DF7+b3QbcM5V/bNYsFppS6rkULKyd44X0EHtXnXQ==", "hoge"=>"08011111111", "prefecture_id"=>"2", "commit"=>"購入", "id"=>"1"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:42:in `set_params'
+No template found for ItemsController#buy, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.3ms | Allocations: 1058)
+
+
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 15:46:06 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:42:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered items/purchase.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1796)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.5ms | Allocations: 3781)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= render "shared/second-header"%>
+
+<div class='transaction-contents'>
+  <div class='transaction-main'>
+    <h1 class='transaction-title-text'>
+      購入内容の確認
+    </h1>
+    <%# 購入内容の表示 %>
+    <div class='buy-item-info'>
+      <%= image_tag @item.image , class: 'buy-item-img' %>
+      <div class='buy-item-right-content'>
+        <h2 class='buy-item-text'>
+          <%= @item.introduction %>
+        </h2>
+        <div class='buy-item-price'>
+          <p class='item-price-text'>¥<%= @item.price %></p>
+          <p class='item-price-sub-text'>（税込）送料込み</p>
+        </div>
+      </div>
+    </div>
+    <%# /購入内容の表示 %>
+
+    <%# 支払額の表示 %>
+    <div class='item-payment'>
+      <h1 class='item-payment-title'>
+        支払金額
+      </h1>
+      <p class='item-payment-price'>
+        ¥<%= @item.price %>
+      </p>
+    </div>
+    <%# /支払額の表示 %>
+
+    <%= form_with id: 'charge-form', class: 'transaction-form-wrap',local: true do |f| %>
+    <%# カード情報の入力 %>
+    <div class='credit-card-form'>
+      <h1 class='info-input-haedline'>
+        クレジットカード情報入力
+      </h1>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">カード情報</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"card-number", placeholder:"カード番号(半角英数字)", maxlength:"16" %>
+        <div class='available-card'>
+          <%= image_tag 'card-visa.gif', class: 'card-logo'%>
+          <%= image_tag 'card-mastercard.gif', class: 'card-logo'%>
+          <%= image_tag 'card-jcb.gif', class: 'card-logo'%>
+          <%= image_tag 'card-amex.gif', class: 'card-logo'%>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">有効期限</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <div class='input-expiration-date-wrap'>
+          <%= f.text_area 'hoge', class:"input-expiration-date", id:"card-exp-month", placeholder:"例)3" %>
+          <p>月</p>
+          <%= f.text_area 'hoge', class:"input-expiration-date", id:"card-exp-year", placeholder:"例)23" %>
+          <p>年</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">セキュリティコード</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field "hoge",class:"input-default", id:"card-cvc", placeholder:"カード背面4桁もしくは3桁の番号", maxlength:"4" %>
+      </div>
+    </div>
+    <%# /カード情報の入力 %>
+    <%# 配送先の入力 %>
+    <div class='shipping-address-form'>
+      <h1 class='info-input-haedline'>
+        配送先入力
+      </h1>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">郵便番号</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"postal-code", placeholder:"例）123-4567", maxlength:"8" %>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">都道府県</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.collection_select(:prefecture_id,Prefecture.all, :id, :name, {}, {class:"select-box", id:"prefecture"}) %>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">市区町村</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"city", placeholder:"例）横浜市緑区"%>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">番地</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"addresses", placeholder:"例）青山1-1-1"%>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">建物名</label>
+          <span class="form-any">任意</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"building", placeholder:"例）柳ビル103"%>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">電話番号</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"phone-number", placeholder:"例）09012345678",maxlength:"11"%>
+      </div>
+    </div>
+    <div class='buy-btn'>
+      <%= f.submit "購入" purchase_item_path(@item.id),class:"buy-red-btn" %>
+    </div>
+    <% end %>
+  </div>
+</div>
+<%= render "shared/second-footer"%>
+):
+1:    <%= render "shared/second-header"%>
+2:    
+3:    <div class='transaction-contents'>
+4:      <div class='transaction-main'>
+5:        <h1 class='transaction-title-text'>
+6:          購入内容の確認
+7:        </h1>
+8:        <%# 購入内容の表示 %>
+9:        <div class='buy-item-info'>
+10:          <%= image_tag @item.image , class: 'buy-item-img' %>
+11:          <div class='buy-item-right-content'>
+12:            <h2 class='buy-item-text'>
+13:              <%= @item.introduction %>
+14:            </h2>
+15:            <div class='buy-item-price'>
+16:              <p class='item-price-text'>¥<%= @item.price %></p>
+17:              <p class='item-price-sub-text'>（税込）送料込み</p>
+18:            </div>
+19:          </div>
+20:        </div>
+21:        <%# /購入内容の表示 %>
+22:    
+23:        <%# 支払額の表示 %>
+24:        <div class='item-payment'>
+25:          <h1 class='item-payment-title'>
+26:            支払金額
+27:          </h1>
+28:          <p class='item-payment-price'>
+29:            ¥<%= @item.price %>
+30:          </p>
+31:        </div>
+32:        <%# /支払額の表示 %>
+33:    
+34:        <%= form_with id: 'charge-form', class: 'transaction-form-wrap',local: true do |f| %>
+35:        <%# カード情報の入力 %>
+36:        <div class='credit-card-form'>
+37:          <h1 class='info-input-haedline'>
+38:            クレジットカード情報入力
+39:          </h1>
+40:          <div class="form-group">
+41:            <div class='form-text-wrap'>
+42:              <label class="form-text">カード情報</label>
+43:              <span class="indispensable">必須</span>
+44:            </div>
+45:            <%= f.text_field 'hoge', class:"input-default", id:"card-number", placeholder:"カード番号(半角英数字)", maxlength:"16" %>
+46:            <div class='available-card'>
+47:              <%= image_tag 'card-visa.gif', class: 'card-logo'%>
+48:              <%= image_tag 'card-mastercard.gif', class: 'card-logo'%>
+49:              <%= image_tag 'card-jcb.gif', class: 'card-logo'%>
+50:              <%= image_tag 'card-amex.gif', class: 'card-logo'%>
+51:            </div>
+52:          </div>
+53:          <div class="form-group">
+54:            <div class='form-text-wrap'>
+55:              <label class="form-text">有効期限</label>
+56:              <span class="indispensable">必須</span>
+57:            </div>
+58:            <div class='input-expiration-date-wrap'>
+59:              <%= f.text_area 'hoge', class:"input-expiration-date", id:"card-exp-month", placeholder:"例)3" %>
+60:              <p>月</p>
+61:              <%= f.text_area 'hoge', class:"input-expiration-date", id:"card-exp-year", placeholder:"例)23" %>
+62:              <p>年</p>
+63:            </div>
+64:          </div>
+65:          <div class="form-group">
+66:            <div class='form-text-wrap'>
+67:              <label class="form-text">セキュリティコード</label>
+68:              <span class="indispensable">必須</span>
+69:            </div>
+70:            <%= f.text_field "hoge",class:"input-default", id:"card-cvc", placeholder:"カード背面4桁もしくは3桁の番号", maxlength:"4" %>
+71:          </div>
+72:        </div>
+73:        <%# /カード情報の入力 %>
+74:        <%# 配送先の入力 %>
+75:        <div class='shipping-address-form'>
+76:          <h1 class='info-input-haedline'>
+77:            配送先入力
+78:          </h1>
+79:          <div class="form-group">
+80:            <div class='form-text-wrap'>
+81:              <label class="form-text">郵便番号</label>
+82:              <span class="indispensable">必須</span>
+83:            </div>
+84:            <%= f.text_field 'hoge', class:"input-default", id:"postal-code", placeholder:"例）123-4567", maxlength:"8" %>
+85:          </div>
+86:          <div class="form-group">
+87:            <div class='form-text-wrap'>
+88:              <label class="form-text">都道府県</label>
+89:              <span class="indispensable">必須</span>
+90:            </div>
+91:            <%= f.collection_select(:prefecture_id,Prefecture.all, :id, :name, {}, {class:"select-box", id:"prefecture"}) %>
+92:          </div>
+93:          <div class="form-group">
+94:            <div class='form-text-wrap'>
+95:              <label class="form-text">市区町村</label>
+96:              <span class="indispensable">必須</span>
+97:            </div>
+98:            <%= f.text_field 'hoge', class:"input-default", id:"city", placeholder:"例）横浜市緑区"%>
+99:          </div>
+100:          <div class="form-group">
+101:            <div class='form-text-wrap'>
+102:              <label class="form-text">番地</label>
+103:              <span class="indispensable">必須</span>
+104:            </div>
+105:            <%= f.text_field 'hoge', class:"input-default", id:"addresses", placeholder:"例）青山1-1-1"%>
+106:          </div>
+107:          <div class="form-group">
+108:            <div class='form-text-wrap'>
+109:              <label class="form-text">建物名</label>
+110:              <span class="form-any">任意</span>
+111:            </div>
+112:            <%= f.text_field 'hoge', class:"input-default", id:"building", placeholder:"例）柳ビル103"%>
+113:          </div>
+114:          <div class="form-group">
+115:            <div class='form-text-wrap'>
+116:              <label class="form-text">電話番号</label>
+117:              <span class="indispensable">必須</span>
+118:            </div>
+119:            <%= f.text_field 'hoge', class:"input-default", id:"phone-number", placeholder:"例）09012345678",maxlength:"11"%>
+120:          </div>
+121:        </div>
+122:        <div class='buy-btn'>
+123:          <%= f.submit "購入" purchase_item_path(@item.id),class:"buy-red-btn" %>
+124:        </div>
+125:        <% end %>
+126:      </div>
+127:    </div>
+128:    <%= render "shared/second-footer"%>
+  
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected ',', expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected ',', expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected ',', expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected ',', expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected ',', expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected ',', expecting ')'
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 15:46:19 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:42:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered items/purchase.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1791)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms | Allocations: 3776)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= render "shared/second-header"%>
+
+<div class='transaction-contents'>
+  <div class='transaction-main'>
+    <h1 class='transaction-title-text'>
+      購入内容の確認
+    </h1>
+    <%# 購入内容の表示 %>
+    <div class='buy-item-info'>
+      <%= image_tag @item.image , class: 'buy-item-img' %>
+      <div class='buy-item-right-content'>
+        <h2 class='buy-item-text'>
+          <%= @item.introduction %>
+        </h2>
+        <div class='buy-item-price'>
+          <p class='item-price-text'>¥<%= @item.price %></p>
+          <p class='item-price-sub-text'>（税込）送料込み</p>
+        </div>
+      </div>
+    </div>
+    <%# /購入内容の表示 %>
+
+    <%# 支払額の表示 %>
+    <div class='item-payment'>
+      <h1 class='item-payment-title'>
+        支払金額
+      </h1>
+      <p class='item-payment-price'>
+        ¥<%= @item.price %>
+      </p>
+    </div>
+    <%# /支払額の表示 %>
+
+    <%= form_with id: 'charge-form', class: 'transaction-form-wrap',local: true do |f| %>
+    <%# カード情報の入力 %>
+    <div class='credit-card-form'>
+      <h1 class='info-input-haedline'>
+        クレジットカード情報入力
+      </h1>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">カード情報</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"card-number", placeholder:"カード番号(半角英数字)", maxlength:"16" %>
+        <div class='available-card'>
+          <%= image_tag 'card-visa.gif', class: 'card-logo'%>
+          <%= image_tag 'card-mastercard.gif', class: 'card-logo'%>
+          <%= image_tag 'card-jcb.gif', class: 'card-logo'%>
+          <%= image_tag 'card-amex.gif', class: 'card-logo'%>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">有効期限</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <div class='input-expiration-date-wrap'>
+          <%= f.text_area 'hoge', class:"input-expiration-date", id:"card-exp-month", placeholder:"例)3" %>
+          <p>月</p>
+          <%= f.text_area 'hoge', class:"input-expiration-date", id:"card-exp-year", placeholder:"例)23" %>
+          <p>年</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">セキュリティコード</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field "hoge",class:"input-default", id:"card-cvc", placeholder:"カード背面4桁もしくは3桁の番号", maxlength:"4" %>
+      </div>
+    </div>
+    <%# /カード情報の入力 %>
+    <%# 配送先の入力 %>
+    <div class='shipping-address-form'>
+      <h1 class='info-input-haedline'>
+        配送先入力
+      </h1>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">郵便番号</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"postal-code", placeholder:"例）123-4567", maxlength:"8" %>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">都道府県</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.collection_select(:prefecture_id,Prefecture.all, :id, :name, {}, {class:"select-box", id:"prefecture"}) %>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">市区町村</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"city", placeholder:"例）横浜市緑区"%>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">番地</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"addresses", placeholder:"例）青山1-1-1"%>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">建物名</label>
+          <span class="form-any">任意</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"building", placeholder:"例）柳ビル103"%>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">電話番号</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"phone-number", placeholder:"例）09012345678",maxlength:"11"%>
+      </div>
+    </div>
+    <div class='buy-btn'>
+      <%= f.submit "購入" purchase_item_path,class:"buy-red-btn" %>
+    </div>
+    <% end %>
+  </div>
+</div>
+<%= render "shared/second-footer"%>
+):
+1:    <%= render "shared/second-header"%>
+2:    
+3:    <div class='transaction-contents'>
+4:      <div class='transaction-main'>
+5:        <h1 class='transaction-title-text'>
+6:          購入内容の確認
+7:        </h1>
+8:        <%# 購入内容の表示 %>
+9:        <div class='buy-item-info'>
+10:          <%= image_tag @item.image , class: 'buy-item-img' %>
+11:          <div class='buy-item-right-content'>
+12:            <h2 class='buy-item-text'>
+13:              <%= @item.introduction %>
+14:            </h2>
+15:            <div class='buy-item-price'>
+16:              <p class='item-price-text'>¥<%= @item.price %></p>
+17:              <p class='item-price-sub-text'>（税込）送料込み</p>
+18:            </div>
+19:          </div>
+20:        </div>
+21:        <%# /購入内容の表示 %>
+22:    
+23:        <%# 支払額の表示 %>
+24:        <div class='item-payment'>
+25:          <h1 class='item-payment-title'>
+26:            支払金額
+27:          </h1>
+28:          <p class='item-payment-price'>
+29:            ¥<%= @item.price %>
+30:          </p>
+31:        </div>
+32:        <%# /支払額の表示 %>
+33:    
+34:        <%= form_with id: 'charge-form', class: 'transaction-form-wrap',local: true do |f| %>
+35:        <%# カード情報の入力 %>
+36:        <div class='credit-card-form'>
+37:          <h1 class='info-input-haedline'>
+38:            クレジットカード情報入力
+39:          </h1>
+40:          <div class="form-group">
+41:            <div class='form-text-wrap'>
+42:              <label class="form-text">カード情報</label>
+43:              <span class="indispensable">必須</span>
+44:            </div>
+45:            <%= f.text_field 'hoge', class:"input-default", id:"card-number", placeholder:"カード番号(半角英数字)", maxlength:"16" %>
+46:            <div class='available-card'>
+47:              <%= image_tag 'card-visa.gif', class: 'card-logo'%>
+48:              <%= image_tag 'card-mastercard.gif', class: 'card-logo'%>
+49:              <%= image_tag 'card-jcb.gif', class: 'card-logo'%>
+50:              <%= image_tag 'card-amex.gif', class: 'card-logo'%>
+51:            </div>
+52:          </div>
+53:          <div class="form-group">
+54:            <div class='form-text-wrap'>
+55:              <label class="form-text">有効期限</label>
+56:              <span class="indispensable">必須</span>
+57:            </div>
+58:            <div class='input-expiration-date-wrap'>
+59:              <%= f.text_area 'hoge', class:"input-expiration-date", id:"card-exp-month", placeholder:"例)3" %>
+60:              <p>月</p>
+61:              <%= f.text_area 'hoge', class:"input-expiration-date", id:"card-exp-year", placeholder:"例)23" %>
+62:              <p>年</p>
+63:            </div>
+64:          </div>
+65:          <div class="form-group">
+66:            <div class='form-text-wrap'>
+67:              <label class="form-text">セキュリティコード</label>
+68:              <span class="indispensable">必須</span>
+69:            </div>
+70:            <%= f.text_field "hoge",class:"input-default", id:"card-cvc", placeholder:"カード背面4桁もしくは3桁の番号", maxlength:"4" %>
+71:          </div>
+72:        </div>
+73:        <%# /カード情報の入力 %>
+74:        <%# 配送先の入力 %>
+75:        <div class='shipping-address-form'>
+76:          <h1 class='info-input-haedline'>
+77:            配送先入力
+78:          </h1>
+79:          <div class="form-group">
+80:            <div class='form-text-wrap'>
+81:              <label class="form-text">郵便番号</label>
+82:              <span class="indispensable">必須</span>
+83:            </div>
+84:            <%= f.text_field 'hoge', class:"input-default", id:"postal-code", placeholder:"例）123-4567", maxlength:"8" %>
+85:          </div>
+86:          <div class="form-group">
+87:            <div class='form-text-wrap'>
+88:              <label class="form-text">都道府県</label>
+89:              <span class="indispensable">必須</span>
+90:            </div>
+91:            <%= f.collection_select(:prefecture_id,Prefecture.all, :id, :name, {}, {class:"select-box", id:"prefecture"}) %>
+92:          </div>
+93:          <div class="form-group">
+94:            <div class='form-text-wrap'>
+95:              <label class="form-text">市区町村</label>
+96:              <span class="indispensable">必須</span>
+97:            </div>
+98:            <%= f.text_field 'hoge', class:"input-default", id:"city", placeholder:"例）横浜市緑区"%>
+99:          </div>
+100:          <div class="form-group">
+101:            <div class='form-text-wrap'>
+102:              <label class="form-text">番地</label>
+103:              <span class="indispensable">必須</span>
+104:            </div>
+105:            <%= f.text_field 'hoge', class:"input-default", id:"addresses", placeholder:"例）青山1-1-1"%>
+106:          </div>
+107:          <div class="form-group">
+108:            <div class='form-text-wrap'>
+109:              <label class="form-text">建物名</label>
+110:              <span class="form-any">任意</span>
+111:            </div>
+112:            <%= f.text_field 'hoge', class:"input-default", id:"building", placeholder:"例）柳ビル103"%>
+113:          </div>
+114:          <div class="form-group">
+115:            <div class='form-text-wrap'>
+116:              <label class="form-text">電話番号</label>
+117:              <span class="indispensable">必須</span>
+118:            </div>
+119:            <%= f.text_field 'hoge', class:"input-default", id:"phone-number", placeholder:"例）09012345678",maxlength:"11"%>
+120:          </div>
+121:        </div>
+122:        <div class='buy-btn'>
+123:          <%= f.submit "購入" purchase_item_path,class:"buy-red-btn" %>
+124:        </div>
+125:        <% end %>
+126:      </div>
+127:    </div>
+128:    <%= render "shared/second-footer"%>
+  
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 15:46:45 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:42:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered items/purchase.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1791)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.4ms | Allocations: 3776)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= render "shared/second-header"%>
+
+<div class='transaction-contents'>
+  <div class='transaction-main'>
+    <h1 class='transaction-title-text'>
+      購入内容の確認
+    </h1>
+    <%# 購入内容の表示 %>
+    <div class='buy-item-info'>
+      <%= image_tag @item.image , class: 'buy-item-img' %>
+      <div class='buy-item-right-content'>
+        <h2 class='buy-item-text'>
+          <%= @item.introduction %>
+        </h2>
+        <div class='buy-item-price'>
+          <p class='item-price-text'>¥<%= @item.price %></p>
+          <p class='item-price-sub-text'>（税込）送料込み</p>
+        </div>
+      </div>
+    </div>
+    <%# /購入内容の表示 %>
+
+    <%# 支払額の表示 %>
+    <div class='item-payment'>
+      <h1 class='item-payment-title'>
+        支払金額
+      </h1>
+      <p class='item-payment-price'>
+        ¥<%= @item.price %>
+      </p>
+    </div>
+    <%# /支払額の表示 %>
+
+    <%= form_with id: 'charge-form', class: 'transaction-form-wrap',local: true do |f| %>
+    <%# カード情報の入力 %>
+    <div class='credit-card-form'>
+      <h1 class='info-input-haedline'>
+        クレジットカード情報入力
+      </h1>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">カード情報</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"card-number", placeholder:"カード番号(半角英数字)", maxlength:"16" %>
+        <div class='available-card'>
+          <%= image_tag 'card-visa.gif', class: 'card-logo'%>
+          <%= image_tag 'card-mastercard.gif', class: 'card-logo'%>
+          <%= image_tag 'card-jcb.gif', class: 'card-logo'%>
+          <%= image_tag 'card-amex.gif', class: 'card-logo'%>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">有効期限</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <div class='input-expiration-date-wrap'>
+          <%= f.text_area 'hoge', class:"input-expiration-date", id:"card-exp-month", placeholder:"例)3" %>
+          <p>月</p>
+          <%= f.text_area 'hoge', class:"input-expiration-date", id:"card-exp-year", placeholder:"例)23" %>
+          <p>年</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">セキュリティコード</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field "hoge",class:"input-default", id:"card-cvc", placeholder:"カード背面4桁もしくは3桁の番号", maxlength:"4" %>
+      </div>
+    </div>
+    <%# /カード情報の入力 %>
+    <%# 配送先の入力 %>
+    <div class='shipping-address-form'>
+      <h1 class='info-input-haedline'>
+        配送先入力
+      </h1>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">郵便番号</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"postal-code", placeholder:"例）123-4567", maxlength:"8" %>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">都道府県</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.collection_select(:prefecture_id,Prefecture.all, :id, :name, {}, {class:"select-box", id:"prefecture"}) %>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">市区町村</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"city", placeholder:"例）横浜市緑区"%>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">番地</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"addresses", placeholder:"例）青山1-1-1"%>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">建物名</label>
+          <span class="form-any">任意</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"building", placeholder:"例）柳ビル103"%>
+      </div>
+      <div class="form-group">
+        <div class='form-text-wrap'>
+          <label class="form-text">電話番号</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field 'hoge', class:"input-default", id:"phone-number", placeholder:"例）09012345678",maxlength:"11"%>
+      </div>
+    </div>
+    <div class='buy-btn'>
+      <%= f.submit "購入" purchase_item_path(@item),class:"buy-red-btn" %>
+    </div>
+    <% end %>
+  </div>
+</div>
+<%= render "shared/second-footer"%>
+):
+1:    <%= render "shared/second-header"%>
+2:    
+3:    <div class='transaction-contents'>
+4:      <div class='transaction-main'>
+5:        <h1 class='transaction-title-text'>
+6:          購入内容の確認
+7:        </h1>
+8:        <%# 購入内容の表示 %>
+9:        <div class='buy-item-info'>
+10:          <%= image_tag @item.image , class: 'buy-item-img' %>
+11:          <div class='buy-item-right-content'>
+12:            <h2 class='buy-item-text'>
+13:              <%= @item.introduction %>
+14:            </h2>
+15:            <div class='buy-item-price'>
+16:              <p class='item-price-text'>¥<%= @item.price %></p>
+17:              <p class='item-price-sub-text'>（税込）送料込み</p>
+18:            </div>
+19:          </div>
+20:        </div>
+21:        <%# /購入内容の表示 %>
+22:    
+23:        <%# 支払額の表示 %>
+24:        <div class='item-payment'>
+25:          <h1 class='item-payment-title'>
+26:            支払金額
+27:          </h1>
+28:          <p class='item-payment-price'>
+29:            ¥<%= @item.price %>
+30:          </p>
+31:        </div>
+32:        <%# /支払額の表示 %>
+33:    
+34:        <%= form_with id: 'charge-form', class: 'transaction-form-wrap',local: true do |f| %>
+35:        <%# カード情報の入力 %>
+36:        <div class='credit-card-form'>
+37:          <h1 class='info-input-haedline'>
+38:            クレジットカード情報入力
+39:          </h1>
+40:          <div class="form-group">
+41:            <div class='form-text-wrap'>
+42:              <label class="form-text">カード情報</label>
+43:              <span class="indispensable">必須</span>
+44:            </div>
+45:            <%= f.text_field 'hoge', class:"input-default", id:"card-number", placeholder:"カード番号(半角英数字)", maxlength:"16" %>
+46:            <div class='available-card'>
+47:              <%= image_tag 'card-visa.gif', class: 'card-logo'%>
+48:              <%= image_tag 'card-mastercard.gif', class: 'card-logo'%>
+49:              <%= image_tag 'card-jcb.gif', class: 'card-logo'%>
+50:              <%= image_tag 'card-amex.gif', class: 'card-logo'%>
+51:            </div>
+52:          </div>
+53:          <div class="form-group">
+54:            <div class='form-text-wrap'>
+55:              <label class="form-text">有効期限</label>
+56:              <span class="indispensable">必須</span>
+57:            </div>
+58:            <div class='input-expiration-date-wrap'>
+59:              <%= f.text_area 'hoge', class:"input-expiration-date", id:"card-exp-month", placeholder:"例)3" %>
+60:              <p>月</p>
+61:              <%= f.text_area 'hoge', class:"input-expiration-date", id:"card-exp-year", placeholder:"例)23" %>
+62:              <p>年</p>
+63:            </div>
+64:          </div>
+65:          <div class="form-group">
+66:            <div class='form-text-wrap'>
+67:              <label class="form-text">セキュリティコード</label>
+68:              <span class="indispensable">必須</span>
+69:            </div>
+70:            <%= f.text_field "hoge",class:"input-default", id:"card-cvc", placeholder:"カード背面4桁もしくは3桁の番号", maxlength:"4" %>
+71:          </div>
+72:        </div>
+73:        <%# /カード情報の入力 %>
+74:        <%# 配送先の入力 %>
+75:        <div class='shipping-address-form'>
+76:          <h1 class='info-input-haedline'>
+77:            配送先入力
+78:          </h1>
+79:          <div class="form-group">
+80:            <div class='form-text-wrap'>
+81:              <label class="form-text">郵便番号</label>
+82:              <span class="indispensable">必須</span>
+83:            </div>
+84:            <%= f.text_field 'hoge', class:"input-default", id:"postal-code", placeholder:"例）123-4567", maxlength:"8" %>
+85:          </div>
+86:          <div class="form-group">
+87:            <div class='form-text-wrap'>
+88:              <label class="form-text">都道府県</label>
+89:              <span class="indispensable">必須</span>
+90:            </div>
+91:            <%= f.collection_select(:prefecture_id,Prefecture.all, :id, :name, {}, {class:"select-box", id:"prefecture"}) %>
+92:          </div>
+93:          <div class="form-group">
+94:            <div class='form-text-wrap'>
+95:              <label class="form-text">市区町村</label>
+96:              <span class="indispensable">必須</span>
+97:            </div>
+98:            <%= f.text_field 'hoge', class:"input-default", id:"city", placeholder:"例）横浜市緑区"%>
+99:          </div>
+100:          <div class="form-group">
+101:            <div class='form-text-wrap'>
+102:              <label class="form-text">番地</label>
+103:              <span class="indispensable">必須</span>
+104:            </div>
+105:            <%= f.text_field 'hoge', class:"input-default", id:"addresses", placeholder:"例）青山1-1-1"%>
+106:          </div>
+107:          <div class="form-group">
+108:            <div class='form-text-wrap'>
+109:              <label class="form-text">建物名</label>
+110:              <span class="form-any">任意</span>
+111:            </div>
+112:            <%= f.text_field 'hoge', class:"input-default", id:"building", placeholder:"例）柳ビル103"%>
+113:          </div>
+114:          <div class="form-group">
+115:            <div class='form-text-wrap'>
+116:              <label class="form-text">電話番号</label>
+117:              <span class="indispensable">必須</span>
+118:            </div>
+119:            <%= f.text_field 'hoge', class:"input-default", id:"phone-number", placeholder:"例）09012345678",maxlength:"11"%>
+120:          </div>
+121:        </div>
+122:        <div class='buy-btn'>
+123:          <%= f.submit "購入" purchase_item_path(@item),class:"buy-red-btn" %>
+124:        </div>
+125:        <% end %>
+126:      </div>
+127:    </div>
+128:    <%= render "shared/second-footer"%>
+  
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected ',', expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected ',', expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected ',', expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected ',', expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected ',', expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/items/purchase.html.erb:123: syntax error, unexpected ',', expecting ')'
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 15:47:43 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:42:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 2.6ms | Allocations: 795)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  Rendered items/purchase.html.erb within layouts/application (Duration: 12.7ms | Allocations: 12425)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.0ms | Allocations: 14409)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 0..2)):
+    120:       </div>
+    121:     </div>
+    122:     <div class='buy-btn'>
+    123:       <%= f.submit "購入", purchase_item_path(@item),class:"buy-red-btn" %>
+    124:     </div>
+    125:     <% end %>
+    126:   </div>
+  
+app/views/items/purchase.html.erb:123
+app/views/items/purchase.html.erb:34
+Started PUT "/__web_console/repl_sessions/5d6c9b90b24e249995c323177ff34c04" for ::1 at 2020-09-07 15:47:53 +0900
+Started PUT "/__web_console/repl_sessions/5d6c9b90b24e249995c323177ff34c04" for ::1 at 2020-09-07 15:47:53 +0900
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 15:48:10 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:42:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 1.3ms | Allocations: 795)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  Rendered items/purchase.html.erb within layouts/application (Duration: 11.6ms | Allocations: 12422)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.9ms | Allocations: 14405)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 0..2)):
+    120:       </div>
+    121:     </div>
+    122:     <div class='buy-btn'>
+    123:       <%= f.submit "購入", purchase_item_path(@item.id),class:"buy-red-btn" %>
+    124:     </div>
+    125:     <% end %>
+    126:   </div>
+  
+app/views/items/purchase.html.erb:123
+app/views/items/purchase.html.erb:34
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 15:49:25 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:42:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 1.7ms | Allocations: 795)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  Rendered shared/_second-footer.html.erb (Duration: 1.5ms | Allocations: 427)
+  Rendered items/purchase.html.erb within layouts/application (Duration: 13.9ms | Allocations: 12477)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 35.6ms | ActiveRecord: 1.0ms | Allocations: 31764)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dbb7dfcc37505ad65aae61b290003df4392908eb/IMG_0010.jpg" for ::1 at 2020-09-07 15:49:25 +0900
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dbb7dfcc37505ad65aae61b290003df4392908eb", "filename"=>"IMG_0010"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+[36m  Disk Storage (0.9ms) [0m[34mGenerated URL for file at key: z37nik5hx9h49pc2drde46chdafy (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjo1NDoyNS43MzJaIiwicHVyIjoiYmxvYl9rZXkifX0=--7828581a965bc018b3a5028e00a3e3b1cfdaba17/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjo1NDoyNS43MzJaIiwicHVyIjoiYmxvYl9rZXkifX0=--7828581a965bc018b3a5028e00a3e3b1cfdaba17/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms | Allocations: 2317)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjo1NDoyNS43MzJaIiwicHVyIjoiYmxvYl9rZXkifX0=--7828581a965bc018b3a5028e00a3e3b1cfdaba17/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-07 15:49:25 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjo1NDoyNS43MzJaIiwicHVyIjoiYmxvYl9rZXkifX0=--7828581a965bc018b3a5028e00a3e3b1cfdaba17", "filename"=>"IMG_0010"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 499)
+
+
+Started POST "/items/1/purchase" for ::1 at 2020-09-07 15:50:00 +0900
+Processing by ItemsController#buy as HTML
+  Parameters: {"authenticity_token"=>"Ny6pqImJHGshXGXign6fftnyK7x6tluBCcBcL4Okp3JNxJm6R5SR08ipHrSa1FEGYMqzUIJLXRIyCli9z3jLUw==", "hoge"=>"08011111111", "prefecture_id"=>"4", "commit"=>"購入", "id"=>"1"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:42:in `set_params'
+No template found for ItemsController#buy, rendering head :no_content
+Completed 204 No Content in 6ms (ActiveRecord: 0.3ms | Allocations: 2789)
+
+
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 15:50:17 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:43:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 0.9ms | Allocations: 690)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  Rendered shared/_second-footer.html.erb (Duration: 0.2ms | Allocations: 311)
+  Rendered items/purchase.html.erb within layouts/application (Duration: 39.5ms | Allocations: 26763)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 79ms (Views: 43.8ms | ActiveRecord: 12.9ms | Allocations: 58791)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjo1NDoyNS43MzJaIiwicHVyIjoiYmxvYl9rZXkifX0=--7828581a965bc018b3a5028e00a3e3b1cfdaba17/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-07 15:50:18 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjo1NDoyNS43MzJaIiwicHVyIjoiYmxvYl9rZXkifX0=--7828581a965bc018b3a5028e00a3e3b1cfdaba17", "filename"=>"IMG_0010"}
+Completed 304 Not Modified in 2ms (ActiveRecord: 0.0ms | Allocations: 548)
+
+
+Started POST "/items/1/purchase" for ::1 at 2020-09-07 15:50:55 +0900
+Processing by ItemsController#buy as HTML
+  Parameters: {"authenticity_token"=>"XwlDfFotwyXI/trXm4FKE5Uwnx15166Z/dG82v4vRowl43NulDBOnSELoYGDK4RrLAgH8YEqqArGG7hIsvMqrQ==", "hoge"=>"08011111111", "prefecture_id"=>"3", "commit"=>"購入", "id"=>"1"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:43:in `set_params'
+  [1m[36mCACHE Item Load (0.0ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:43:in `set_params'
+No template found for ItemsController#buy, rendering head :no_content
+Completed 204 No Content in 193846ms (ActiveRecord: 0.4ms | Allocations: 366733)
+
+
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 15:54:26 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:44:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 1.2ms | Allocations: 691)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  Rendered shared/_second-footer.html.erb (Duration: 0.8ms | Allocations: 311)
+  Rendered items/purchase.html.erb within layouts/application (Duration: 48.2ms | Allocations: 26761)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 101ms (Views: 69.9ms | ActiveRecord: 6.6ms | Allocations: 58741)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dbb7dfcc37505ad65aae61b290003df4392908eb/IMG_0010.jpg" for ::1 at 2020-09-07 15:54:26 +0900
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dbb7dfcc37505ad65aae61b290003df4392908eb", "filename"=>"IMG_0010"}
+  [1m[36mActiveStorage::Blob Load (2.8ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+[36m  Disk Storage (2.1ms) [0m[34mGenerated URL for file at key: z37nik5hx9h49pc2drde46chdafy (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjo1OToyNi4zNzhaIiwicHVyIjoiYmxvYl9rZXkifX0=--6523c44ed802707d3e0a2e920cd03880a9d3c8a6/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjo1OToyNi4zNzhaIiwicHVyIjoiYmxvYl9rZXkifX0=--6523c44ed802707d3e0a2e920cd03880a9d3c8a6/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg
+Completed 302 Found in 12ms (ActiveRecord: 2.8ms | Allocations: 2307)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjo1OToyNi4zNzhaIiwicHVyIjoiYmxvYl9rZXkifX0=--6523c44ed802707d3e0a2e920cd03880a9d3c8a6/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-07 15:54:26 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNjo1OToyNi4zNzhaIiwicHVyIjoiYmxvYl9rZXkifX0=--6523c44ed802707d3e0a2e920cd03880a9d3c8a6", "filename"=>"IMG_0010"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 479)
+
+
+Started POST "/items/1/purchase" for ::1 at 2020-09-07 15:55:18 +0900
+Processing by ItemsController#buy as HTML
+  Parameters: {"authenticity_token"=>"mBPGare/J9vNZtxDP/REFoiDBXm9OwX+tb+0vNu0J67i+fZ4eaKqYySTpxUnXopuMbudlUXGA22OdbAul2hLjw==", "hoge"=>"08011111111", "prefecture_id"=>"28", "commit"=>"購入", "id"=>"1"}
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:44:in `set_params'
+Started GET "/items/1" for ::1 at 2020-09-07 15:59:20 +0900
+Redirected to http://localhost:3000/
+Redirected to 
+Redirected to 
+Completed 500 Internal Server Error in 282384ms (ActiveRecord: 4.3ms | Allocations: 153030)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/items_controller.rb:34:in `buy'
+Started GET "/items/1" for ::1 at 2020-09-07 16:00:00 +0900
+Started GET "/" for ::1 at 2020-09-07 16:00:00 +0900
+Processing by ItemsController#show as HTML
+Started GET "/" for ::1 at 2020-09-07 16:00:00 +0900
+Started GET "/items/1" for ::1 at 2020-09-07 16:00:00 +0900
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:45:in `set_params'
+  Rendering items/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 21.9ms | Allocations: 12575)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:11
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:11
+  [1m[36mPurchase Load (0.3ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` = 1 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:14
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:51
+  Rendered shared/_footer.html.erb (Duration: 3.2ms | Allocations: 1725)
+  Rendered items/show.html.erb within layouts/application (Duration: 61.8ms | Allocations: 37294)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 114ms (Views: 64.4ms | ActiveRecord: 15.6ms | Allocations: 69474)
+
+
+  [1m[35m (1.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ItemsController#index as HTML
+Started GET "/" for ::1 at 2020-09-07 16:00:01 +0900
+  [1m[35m (59.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (59.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  Rendering items/index.html.erb within layouts/application
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (3.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.1ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:45:in `set_params'
+  Rendering items/show.html.erb within layouts/application
+  ↳ app/controllers/items_controller.rb:45:in `set_params'
+  Rendering items/show.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 36.0ms | Allocations: 28037)
+  [1m[36mUser Load (16.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (13.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_header.html.erb (Duration: 41.3ms | Allocations: 32254)
+  ↳ app/views/shared/_header.html.erb:18
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 37.9ms | Allocations: 29199)
+  Rendered shared/_header.html.erb (Duration: 25.5ms | Allocations: 18930)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 35.1ms | Allocations: 22178)
+  [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  [1m[36mActiveStorage::Attachment Load (1.2ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:11
+  ↳ app/views/items/show.html.erb:11
+  [1m[36mItem Load (9.5ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  [1m[36mItem Load (1.0ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  [1m[36mItem Load (1.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  ↳ app/views/items/index.html.erb:129
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  [1m[36mActiveStorage::Blob Load (1.4ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:11
+  [1m[36mActiveStorage::Blob Load (1.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  [1m[36mActiveStorage::Attachment Load (2.0ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  ↳ app/views/items/index.html.erb:134
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Blob Load (1.0ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Blob Load (1.8ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  ↳ app/views/items/show.html.erb:11
+  [1m[36mPurchase Load (1.7ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` = 1 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:135
+  [1m[36mPurchase Load (1.0ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` = 1 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:135
+  [1m[36mPurchase Load (2.1ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` = 1 LIMIT 1[0m
+  [1m[36mPurchase Load (1.6ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` = 1 LIMIT 1[0m
+  [1m[36mPurchase Load (2.2ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` = 1 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:135
+  ↳ app/views/items/show.html.erb:14
+  ↳ app/views/items/show.html.erb:14
+  Rendered shared/_footer.html.erb (Duration: 2.5ms | Allocations: 2848)
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered shared/_footer.html.erb (Duration: 2.4ms | Allocations: 2100)
+  Rendered items/index.html.erb within layouts/application (Duration: 120.9ms | Allocations: 89761)
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 1076)
+  Rendered items/index.html.erb within layouts/application (Duration: 124.2ms | Allocations: 92376)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:51
+  ↳ app/views/items/show.html.erb:51
+  Rendered items/index.html.erb within layouts/application (Duration: 113.7ms | Allocations: 84289)
+  Rendered shared/_footer.html.erb (Duration: 3.8ms | Allocations: 4282)
+  Rendered items/show.html.erb within layouts/application (Duration: 111.2ms | Allocations: 85061)
+  Rendered shared/_footer.html.erb (Duration: 3.3ms | Allocations: 4891)
+  Rendered items/show.html.erb within layouts/application (Duration: 110.2ms | Allocations: 86314)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 263ms (Views: 194.9ms | ActiveRecord: 20.3ms | Allocations: 186508)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 210ms (Views: 183.2ms | ActiveRecord: 26.6ms | Allocations: 177334)
+
+
+Completed 200 OK in 219ms (Views: 197.0ms | ActiveRecord: 21.9ms | Allocations: 184746)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 224ms (Views: 171.7ms | ActiveRecord: 38.6ms | Allocations: 187471)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 223ms (Views: 180.1ms | ActiveRecord: 23.1ms | Allocations: 185855)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dbb7dfcc37505ad65aae61b290003df4392908eb/IMG_0010.jpg" for ::1 at 2020-09-07 16:00:01 +0900
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dbb7dfcc37505ad65aae61b290003df4392908eb", "filename"=>"IMG_0010"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: z37nik5hx9h49pc2drde46chdafy (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNzowNTowMS40MDJaIiwicHVyIjoiYmxvYl9rZXkifX0=--e613adb667d1d3df5b2831175b96b7f1801313ce/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNzowNTowMS40MDJaIiwicHVyIjoiYmxvYl9rZXkifX0=--e613adb667d1d3df5b2831175b96b7f1801313ce/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms | Allocations: 2328)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNzowNTowMS40MDJaIiwicHVyIjoiYmxvYl9rZXkifX0=--e613adb667d1d3df5b2831175b96b7f1801313ce/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-07 16:00:01 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNzowNTowMS40MDJaIiwicHVyIjoiYmxvYl9rZXkifX0=--e613adb667d1d3df5b2831175b96b7f1801313ce", "filename"=>"IMG_0010"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 483)
+
+
+Started GET "/items/1" for ::1 at 2020-09-07 16:00:07 +0900
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:45:in `set_params'
+  Rendering items/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 6.3ms | Allocations: 2299)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:11
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:11
+  [1m[36mPurchase Load (0.3ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` = 1 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:14
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:51
+  Rendered shared/_footer.html.erb (Duration: 2.7ms | Allocations: 1294)
+  Rendered items/show.html.erb within layouts/application (Duration: 23.8ms | Allocations: 9215)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 46.7ms | ActiveRecord: 2.5ms | Allocations: 27584)
+
+
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 16:00:09 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:45:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 1.8ms | Allocations: 689)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  Rendered shared/_second-footer.html.erb (Duration: 0.5ms | Allocations: 311)
+  Rendered items/purchase.html.erb within layouts/application (Duration: 18.3ms | Allocations: 12899)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 44.2ms | ActiveRecord: 1.2ms | Allocations: 31174)
+
+
+Started POST "/items/1/purchase" for ::1 at 2020-09-07 16:00:44 +0900
+Processing by ItemsController#buy as HTML
+  Parameters: {"authenticity_token"=>"5kXPNUr85s8ool0NgvVosxUFvh2h/1mX/iU1Sf0r0x/jE+f/dzzoU1dbnNOtYLFyt5yek3GfnBndqyyN6l3+Og==", "hoge"=>"08011111111", "prefecture_id"=>"4", "commit"=>"購入", "id"=>"1"}
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:45:in `set_params'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms | Allocations: 3095)
+
+
+  
+NameError (uninitialized constant ItemsController::UserPurchases):
+  
+app/controllers/items_controller.rb:33:in `buy'
+Started PUT "/__web_console/repl_sessions/12bbf9ef52253d9bac5107b55481f42b" for ::1 at 2020-09-07 16:01:09 +0900
+Started PUT "/__web_console/repl_sessions/12bbf9ef52253d9bac5107b55481f42b" for ::1 at 2020-09-07 16:01:13 +0900
+Started PUT "/__web_console/repl_sessions/12bbf9ef52253d9bac5107b55481f42b" for ::1 at 2020-09-07 16:01:17 +0900
+Started POST "/items/1/purchase" for ::1 at 2020-09-07 16:04:16 +0900
+Processing by ItemsController#buy as HTML
+  Parameters: {"authenticity_token"=>"eNE2z1sNygV0otUmosCLY7eLziu6rZ26FU9JHaD8DZkCOwbdlRBHvZ1XrnC6akUbDrNWx0JQmykuhU2P7CBhuA==", "hoge"=>"08011111111", "prefecture_id"=>"4", "commit"=>"購入", "id"=>"1"}
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:45:in `set_params'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms | Allocations: 3061)
+
+
+  
+NameError (uninitialized constant ItemsController::UserPurchases):
+  
+app/controllers/items_controller.rb:33:in `buy'
+Started POST "/items/1/purchase" for ::1 at 2020-09-07 16:07:46 +0900
+Processing by ItemsController#buy as HTML
+  Parameters: {"authenticity_token"=>"eNE2z1sNygV0otUmosCLY7eLziu6rZ26FU9JHaD8DZkCOwbdlRBHvZ1XrnC6akUbDrNWx0JQmykuhU2P7CBhuA==", "hoge"=>"08011111111", "prefecture_id"=>"4", "commit"=>"購入", "id"=>"1"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:46:in `set_params'
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 3.1ms | Allocations: 16675)
+
+
+  
+NameError (uninitialized constant ItemsController::UserPurchase):
+  
+app/controllers/items_controller.rb:34:in `buy'
+Started POST "/items/1/purchase" for ::1 at 2020-09-07 16:07:53 +0900
+Processing by ItemsController#buy as HTML
+  Parameters: {"authenticity_token"=>"eNE2z1sNygV0otUmosCLY7eLziu6rZ26FU9JHaD8DZkCOwbdlRBHvZ1XrnC6akUbDrNWx0JQmykuhU2P7CBhuA==", "hoge"=>"08011111111", "prefecture_id"=>"4", "commit"=>"購入", "id"=>"1"}
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:46:in `set_params'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms | Allocations: 3058)
+
+
+  
+NameError (uninitialized constant ItemsController::UserPurchase):
+  
+app/controllers/items_controller.rb:34:in `buy'
+Started GET "/items/1" for ::1 at 2020-09-07 16:07:57 +0900
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:46:in `set_params'
+  Rendering items/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 25.7ms | Allocations: 12624)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:11
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:11
+  [1m[36mPurchase Load (0.2ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` = 1 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:14
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:51
+  Rendered shared/_footer.html.erb (Duration: 3.1ms | Allocations: 1700)
+  Rendered items/show.html.erb within layouts/application (Duration: 79.2ms | Allocations: 37232)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 107ms (Views: 89.2ms | ActiveRecord: 15.3ms | Allocations: 56475)
+
+
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 16:07:59 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:46:in `set_params'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.4ms | Allocations: 3024)
+
+
+  
+NameError (uninitialized constant ItemsController::UserPurchase):
+  
+app/controllers/items_controller.rb:30:in `purchase'
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 16:08:14 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:45:in `set_params'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 2.3ms | Allocations: 16550)
+
+
+  
+NameError (uninitialized constant ItemsController::UserPurchase):
+  
+app/controllers/items_controller.rb:29:in `purchase'
+Started GET "/" for ::1 at 2020-09-07 16:08:22 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 21.2ms | Allocations: 12193)
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mPurchase Load (0.2ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` = 1 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:135
+  Rendered shared/_footer.html.erb (Duration: 1.7ms | Allocations: 1076)
+  Rendered items/index.html.erb within layouts/application (Duration: 84.6ms | Allocations: 41477)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 110ms (Views: 93.4ms | ActiveRecord: 15.2ms | Allocations: 59454)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dbb7dfcc37505ad65aae61b290003df4392908eb/IMG_0010.jpg" for ::1 at 2020-09-07 16:08:22 +0900
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dbb7dfcc37505ad65aae61b290003df4392908eb", "filename"=>"IMG_0010"}
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: z37nik5hx9h49pc2drde46chdafy (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNzoxMzoyMi41NTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--22bd9c8fa570c9d87d5707866ff60d8aec9d1e5c/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNzoxMzoyMi41NTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--22bd9c8fa570c9d87d5707866ff60d8aec9d1e5c/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 2330)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNzoxMzoyMi41NTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--22bd9c8fa570c9d87d5707866ff60d8aec9d1e5c/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-07 16:08:22 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNzoxMzoyMi41NTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--22bd9c8fa570c9d87d5707866ff60d8aec9d1e5c", "filename"=>"IMG_0010"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 503)
+
+
+Started GET "/items/1" for ::1 at 2020-09-07 16:08:26 +0900
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:45:in `set_params'
+  Rendering items/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 5.6ms | Allocations: 2298)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:11
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:11
+  [1m[36mPurchase Load (0.4ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` = 1 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:14
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:51
+  Rendered shared/_footer.html.erb (Duration: 2.3ms | Allocations: 1294)
+  Rendered items/show.html.erb within layouts/application (Duration: 23.7ms | Allocations: 9984)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 43.3ms | ActiveRecord: 2.7ms | Allocations: 28250)
+
+
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 16:08:29 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:45:in `set_params'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.4ms | Allocations: 3040)
+
+
+  
+NameError (uninitialized constant ItemsController::UserPurchase):
+  
+app/controllers/items_controller.rb:29:in `purchase'
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 16:08:42 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:45:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 1.9ms | Allocations: 794)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  Rendered items/purchase.html.erb within layouts/application (Duration: 337.4ms | Allocations: 188822)
+Completed 500 Internal Server Error in 362ms (ActiveRecord: 7.0ms | Allocations: 203803)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `postal_code' for #<#<Class:0x00007fa5ccc74c90>:0x00007fa5ccc7f398>):
+    81:           <label class="form-text">郵便番号</label>
+    82:           <span class="indispensable">必須</span>
+    83:         </div>
+    84:         <%= f.text_field postal_code, class:"input-default", id:"postal-code", placeholder:"例）123-4567", maxlength:"8" %>
+    85:       </div>
+    86:       <div class="form-group">
+    87:         <div class='form-text-wrap'>
+  
+app/views/items/purchase.html.erb:84
+app/views/items/purchase.html.erb:34
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 16:08:46 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:45:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 0.9ms | Allocations: 690)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  Rendered items/purchase.html.erb within layouts/application (Duration: 424.8ms | Allocations: 173747)
+Completed 500 Internal Server Error in 427ms (ActiveRecord: 0.8ms | Allocations: 174912)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `postal_code' for #<#<Class:0x00007fa5ccc74c90>:0x00007fa5cccb54c0>):
+    81:           <label class="form-text">郵便番号</label>
+    82:           <span class="indispensable">必須</span>
+    83:         </div>
+    84:         <%= f.text_field postal_code, class:"input-default", id:"postal-code", placeholder:"例）123-4567", maxlength:"8" %>
+    85:       </div>
+    86:       <div class="form-group">
+    87:         <div class='form-text-wrap'>
+  
+app/views/items/purchase.html.erb:84
+app/views/items/purchase.html.erb:34
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 16:09:03 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:45:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 1.1ms | Allocations: 795)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  Rendered shared/_second-footer.html.erb (Duration: 1.4ms | Allocations: 427)
+  Rendered items/purchase.html.erb within layouts/application (Duration: 21.3ms | Allocations: 16353)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 39.3ms | ActiveRecord: 0.9ms | Allocations: 35656)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNzoxMzoyMi41NTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--22bd9c8fa570c9d87d5707866ff60d8aec9d1e5c/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-07 16:09:03 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNzoxMzoyMi41NTdaIiwicHVyIjoiYmxvYl9rZXkifX0=--22bd9c8fa570c9d87d5707866ff60d8aec9d1e5c", "filename"=>"IMG_0010"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 567)
+
+
+Started POST "/items/1/purchase" for ::1 at 2020-09-07 16:09:36 +0900
+Processing by ItemsController#buy as HTML
+  Parameters: {"authenticity_token"=>"juPTcC1LwZyVu3yy/lA1KP5ODeEhD3Zc2ed9tI+N1zv0CeNi41ZMJHxOB+Tm+vtQR3aVDdnycM/iLXkmw1G7Gg==", "hoge"=>"123", "postal_code"=>"123-4567", "prefecture_id"=>"5", "city"=>"横浜市緑区", "address"=>"青山1-1-1", "phone_number"=>"08011111111", "commit"=>"購入", "id"=>"1"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:45:in `set_params'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms | Allocations: 3076)
+
+
+  
+NameError (uninitialized constant ItemsController::UserPurchase):
+  
+app/controllers/items_controller.rb:33:in `buy'
+Started PUT "/__web_console/repl_sessions/f388066fe32bac7312f6c9f8d6bfe033" for ::1 at 2020-09-07 16:11:37 +0900
+Started PUT "/__web_console/repl_sessions/f388066fe32bac7312f6c9f8d6bfe033" for ::1 at 2020-09-07 16:11:38 +0900
+Started PUT "/__web_console/repl_sessions/f388066fe32bac7312f6c9f8d6bfe033" for ::1 at 2020-09-07 16:11:48 +0900
+Started PUT "/__web_console/repl_sessions/f388066fe32bac7312f6c9f8d6bfe033" for ::1 at 2020-09-07 16:11:49 +0900
+Started POST "/items/1/purchase" for ::1 at 2020-09-07 16:12:09 +0900
+Processing by ItemsController#buy as HTML
+  Parameters: {"authenticity_token"=>"juPTcC1LwZyVu3yy/lA1KP5ODeEhD3Zc2ed9tI+N1zv0CeNi41ZMJHxOB+Tm+vtQR3aVDdnycM/iLXkmw1G7Gg==", "hoge"=>"123", "postal_code"=>"123-4567", "prefecture_id"=>"5", "city"=>"横浜市緑区", "address"=>"青山1-1-1", "phone_number"=>"08011111111", "commit"=>"購入", "id"=>"1"}
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:45:in `set_params'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 2.6ms | Allocations: 16599)
+
+
+  
+NameError (uninitialized constant ItemsController::UserPurchase):
+  
+app/controllers/items_controller.rb:33:in `buy'
+Started GET "/items/1/purchase" for ::1 at 2020-09-07 16:22:06 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:45:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 0.9ms | Allocations: 691)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  Rendered shared/_second-footer.html.erb (Duration: 0.3ms | Allocations: 311)
+  Rendered items/purchase.html.erb within layouts/application (Duration: 40.5ms | Allocations: 26817)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 79ms (Views: 52.4ms | ActiveRecord: 8.5ms | Allocations: 58714)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dbb7dfcc37505ad65aae61b290003df4392908eb/IMG_0010.jpg" for ::1 at 2020-09-07 16:22:07 +0900
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dbb7dfcc37505ad65aae61b290003df4392908eb", "filename"=>"IMG_0010"}
+  [1m[36mActiveStorage::Blob Load (1.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+[36m  Disk Storage (0.9ms) [0m[34mGenerated URL for file at key: z37nik5hx9h49pc2drde46chdafy (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNzoyNzowNy4xMTJaIiwicHVyIjoiYmxvYl9rZXkifX0=--5eb26f5c455e50330c917034e1317d5988c66dd9/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNzoyNzowNy4xMTJaIiwicHVyIjoiYmxvYl9rZXkifX0=--5eb26f5c455e50330c917034e1317d5988c66dd9/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg
+Completed 302 Found in 21ms (ActiveRecord: 1.2ms | Allocations: 2322)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNzoyNzowNy4xMTJaIiwicHVyIjoiYmxvYl9rZXkifX0=--5eb26f5c455e50330c917034e1317d5988c66dd9/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-07 16:22:07 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlak0zYm1sck5XaDRPV2cwT1hCak1tUnlaR1UwTm1Ob1pHRm1lUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QwNzoyNzowNy4xMTJaIiwicHVyIjoiYmxvYl9rZXkifX0=--5eb26f5c455e50330c917034e1317d5988c66dd9", "filename"=>"IMG_0010"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 495)
+
+
+Started POST "/items/1/purchase" for ::1 at 2020-09-07 16:22:41 +0900
+Processing by ItemsController#buy as HTML
+  Parameters: {"authenticity_token"=>"0tdWQqy8E6IX0LApIc0GOYa7Wr6Z5XVRRMINZ5YW4ByoPWZQYqGeGv4ly385Z8hBP4PCUmEYc8J/CAn12sqMPQ==", "hoge"=>"123", "postal_code"=>"123-4567", "prefecture_id"=>"2", "city"=>"横浜市緑区", "address"=>"青山1-1-1", "phone_number"=>"08011111111", "commit"=>"購入", "id"=>"1"}
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:45:in `set_params'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.5ms | Allocations: 3071)
+
+
+  
+NameError (uninitialized constant ItemsController::UserPurchase):
+  
+app/controllers/items_controller.rb:33:in `buy'
+Started POST "/items/1/purchase" for ::1 at 2020-09-07 16:24:43 +0900
+Processing by ItemsController#buy as HTML
+  Parameters: {"authenticity_token"=>"0tdWQqy8E6IX0LApIc0GOYa7Wr6Z5XVRRMINZ5YW4ByoPWZQYqGeGv4ly385Z8hBP4PCUmEYc8J/CAn12sqMPQ==", "hoge"=>"123", "postal_code"=>"123-4567", "prefecture_id"=>"2", "city"=>"横浜市緑区", "address"=>"青山1-1-1", "phone_number"=>"08011111111", "commit"=>"購入", "id"=>"1"}
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:45:in `set_params'
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 2.9ms | Allocations: 16583)
+
+
+  
+NameError (uninitialized constant ItemsController::UserPurchase):
+  
+app/controllers/items_controller.rb:33:in `buy'

@@ -33,6 +33,7 @@ class ItemsController < ApplicationController
   def buy
     @place = UserPurchase.new(purchase_params)
     @place.save
+    binding.pry
     redirect_to root_path
   end
 
@@ -47,6 +48,7 @@ class ItemsController < ApplicationController
   end
 
   def purchase_params
-    params.require(:user_purchase).permit(:prefecture_id, :postal_code, :city, :address, :building, :phone_number, :purchase_id, :user_id)
+    params.permit(:prefecture_id, :postal_code, :city, :address, :building, :phone_number, :purchase_id, :user_id)
   end
+
 end

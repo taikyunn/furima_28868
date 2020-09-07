@@ -11557,3 +11557,778 @@ Processing by ActiveStorage::DiskController#show as JPEG
 Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 447)
 
 
+Started GET "/items/3" for ::1 at 2020-09-08 08:43:26 +0900
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:47:in `set_params'
+  Rendering items/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 4.2ms | Allocations: 2305)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:11
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:11
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:51
+  Rendered shared/_footer.html.erb (Duration: 2.3ms | Allocations: 1294)
+  Rendered items/show.html.erb within layouts/application (Duration: 21.2ms | Allocations: 9943)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 45.0ms | ActiveRecord: 2.3ms | Allocations: 28327)
+
+
+Started GET "/items/3" for ::1 at 2020-09-08 08:43:57 +0900
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:47:in `set_params'
+  Rendering items/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 4.6ms | Allocations: 2631)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:11
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:11
+  Rendered items/show.html.erb within layouts/application (Duration: 332.3ms | Allocations: 173162)
+Completed 500 Internal Server Error in 338ms (ActiveRecord: 1.2ms | Allocations: 175123)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `item' for #<#<Class:0x00007ff7c4e06b40>:0x00007ff7c4e0ee80>
+Did you mean?  @item):
+    11:       <%= image_tag @item.image ,class:"item-box-img" %>
+    12:     <% end %> 
+    13:       <%# 商品が売れている場合は、sold outの表示をしましょう。 %>
+    14:       <% if item.purchase.present? %>
+    15:         <div class='sold-out'>
+    16:           <span>Sold Out!!</span>
+    17:         </div>
+  
+app/views/items/show.html.erb:14
+Started GET "/items/3" for ::1 at 2020-09-08 08:44:14 +0900
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:47:in `set_params'
+  Rendering items/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 5.0ms | Allocations: 2632)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:11
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:11
+  [1m[36mPurchase Load (0.2ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` = 3 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:14
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:51
+  Rendered shared/_footer.html.erb (Duration: 2.0ms | Allocations: 1700)
+  Rendered items/show.html.erb within layouts/application (Duration: 17.8ms | Allocations: 10987)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 34.5ms | ActiveRecord: 1.6ms | Allocations: 30338)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNM281Y1hsbWJ6WnVOV3hqTUdKb04yczFaR1p6YWpaNk1ubDNjQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QyMzo0Nzo1MS42NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--7cbad05cbc4dd817085dd549667b6ff8173c7e2b/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-08 08:44:14 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNM281Y1hsbWJ6WnVOV3hqTUdKb04yczFaR1p6YWpaNk1ubDNjQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QyMzo0Nzo1MS42NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--7cbad05cbc4dd817085dd549667b6ff8173c7e2b", "filename"=>"IMG_0010"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 429)
+
+
+Started GET "/items/3/purchase" for ::1 at 2020-09-08 08:44:22 +0900
+Processing by ItemsController#purchase as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:47:in `set_params'
+  Rendering items/purchase.html.erb within layouts/application
+  Rendered shared/_second-header.html.erb (Duration: 1.8ms | Allocations: 794)
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/items/purchase.html.erb:10
+  Rendered shared/_second-footer.html.erb (Duration: 1.2ms | Allocations: 427)
+  Rendered items/purchase.html.erb within layouts/application (Duration: 21.2ms | Allocations: 12461)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 42.7ms | ActiveRecord: 2.0ms | Allocations: 30881)
+
+
+Started GET "/" for ::1 at 2020-09-08 08:46:09 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 6.8ms | Allocations: 2633)
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mPurchase Load (0.4ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` = 3 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:136
+  Rendered shared/_footer.html.erb (Duration: 2.0ms | Allocations: 1482)
+  Rendered items/index.html.erb within layouts/application (Duration: 35.5ms | Allocations: 14783)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 83ms (Views: 79.5ms | ActiveRecord: 2.2ms | Allocations: 33584)
+
+
+Started GET "/" for ::1 at 2020-09-08 08:46:10 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 3.8ms | Allocations: 2633)
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mPurchase Load (0.3ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` = 3 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:136
+  Rendered shared/_footer.html.erb (Duration: 1.5ms | Allocations: 1482)
+  Rendered items/index.html.erb within layouts/application (Duration: 21.1ms | Allocations: 14791)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 38.7ms | ActiveRecord: 1.6ms | Allocations: 33589)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNM281Y1hsbWJ6WnVOV3hqTUdKb04yczFaR1p6YWpaNk1ubDNjQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QyMzo0Nzo1MS42NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--7cbad05cbc4dd817085dd549667b6ff8173c7e2b/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-08 08:46:10 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNM281Y1hsbWJ6WnVOV3hqTUdKb04yczFaR1p6YWpaNk1ubDNjQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QyMzo0Nzo1MS42NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--7cbad05cbc4dd817085dd549667b6ff8173c7e2b", "filename"=>"IMG_0010"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 431)
+
+
+Started GET "/items/3" for ::1 at 2020-09-08 08:46:15 +0900
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:47:in `set_params'
+  Rendering items/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 4.3ms | Allocations: 2305)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:11
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:11
+  [1m[36mPurchase Load (0.5ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` = 3 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:14
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:51
+  Rendered shared/_footer.html.erb (Duration: 2.0ms | Allocations: 1294)
+  Rendered items/show.html.erb within layouts/application (Duration: 20.7ms | Allocations: 9971)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 47ms (Views: 41.6ms | ActiveRecord: 2.4ms | Allocations: 28458)
+
+
+Started GET "/" for ::1 at 2020-09-08 08:46:44 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 3.9ms | Allocations: 2633)
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mPurchase Load (0.2ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` = 3 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:136
+  Rendered shared/_footer.html.erb (Duration: 1.5ms | Allocations: 1482)
+  Rendered items/index.html.erb within layouts/application (Duration: 20.4ms | Allocations: 14783)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 1.4ms | Allocations: 33565)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNM281Y1hsbWJ6WnVOV3hqTUdKb04yczFaR1p6YWpaNk1ubDNjQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QyMzo0Nzo1MS42NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--7cbad05cbc4dd817085dd549667b6ff8173c7e2b/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-08 08:46:44 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNM281Y1hsbWJ6WnVOV3hqTUdKb04yczFaR1p6YWpaNk1ubDNjQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QyMzo0Nzo1MS42NzlaIiwicHVyIjoiYmxvYl9rZXkifX0=--7cbad05cbc4dd817085dd549667b6ff8173c7e2b", "filename"=>"IMG_0010"}
+Completed 304 Not Modified in 2ms (ActiveRecord: 0.0ms | Allocations: 419)
+
+
+Started GET "/items/3" for ::1 at 2020-09-08 08:46:45 +0900
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:47:in `set_params'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1647)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.6ms | Allocations: 2902)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= render "shared/header" %>
+
+<%# 商品の概要 %>
+<div class="item-show">
+  <div class="item-box">
+    <h2 class="name">
+  <% if @item.present? %>
+      <%= @item.title %>
+    </h2>
+    <div class='item-img-content'>
+      <%= image_tag @item.image ,class:"item-box-img" %>
+    <% end %> 
+      <%# 商品が売れている場合は、sold outの表示をしましょう。 %>
+      <% if @item.purchase.present? %>
+        <div class='sold-out'>
+          <span>Sold Out!!</span>
+        </div>
+      <% end %>
+      <%# //商品が売れている場合は、sold outの表示をしましょう。 %>
+    </div>
+  <% if @item.nil? %>
+    <div class="item-price-box">
+      <span class="item-price">
+        ¥ 999,999,999
+      </span>
+      <span class="item-postage">
+        (税込) 送料込み
+      </span>
+    </div>
+  <% end %>
+
+    <%# ログインしているユーザと出品しているユーザが同一人物である時、商品の編集と削除を表示にしましょう%>
+    <% if user_signed_in? && current_user.id == @item.user_id %>
+      <%= link_to '商品の編集', edit_item_path(@item) , method: :get, class: "item-red-btn" %>
+      <p class='or-text'>or</p>
+      <%= link_to '削除', item_path(@item), method: :delete, class:'item-destroy' %>
+    <% unless @item.purchase.present? %>
+    <%# 商品が売れていない場合はこちらを表示しましょう %>
+      <%= link_to '購入画面に進む', purchase_item_path(@item) ,class:"item-red-btn"%>
+      <% end %>
+    <%# //商品が売れていない場合はこちらを表示しましょう %>
+    <%# // ログインしているユーザと出品しているユーザが同一人物である時、商品の編集と削除を表示にしましょう %>
+
+    <div class="item-explain-box">
+      <span><%= @item.introduction %></span>
+    </div>
+    <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-item">出品者</th>
+          <td class="detail-value"><%= @item.user.nickname %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">カテゴリー</th>
+          <td class="detail-value"><%= @item.category.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">商品の状態</th>
+          <td class="detail-value"><%= @item.status.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">配送料の負担</th>
+          <td class="detail-value"><%= @item.postage.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">発送元の地域</th>
+          <td class="detail-value"><%= @item.area.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">発送日の目安</th>
+          <td class="detail-value"><%= @item.shipping.name %></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="option">
+      <div class="favorite-btn">
+        <%= image_tag "star.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
+        <span>お気に入り 0</span>
+      </div>
+      <div class="report-btn">
+        <%= image_tag "flag.png" ,class:"report-flag-icon" ,width:"20",height:"20"%>
+        <span>不適切な商品の通報</span>
+      </div>
+    </div>
+  </div>
+
+  <%# /商品の概要 %>
+
+  <div class="comment-box">
+    <form>
+      <textarea class="comment-text"></textarea>
+      <p class="comment-warn">
+        相手のことを考え丁寧なコメントを心がけましょう。
+        <br>
+        不快な言葉遣いなどは利用制限や退会処分となることがあります。
+      </p>
+      <button type="submit" class="comment-btn">
+        <%= image_tag "comment.png" ,class:"comment-flag-icon" ,width:"20",height:"25"%>
+        <span>コメントする<span>
+      </button>
+    </form>
+  </div>
+  <div class="links">
+    <a href="#" class="change-item-btn">
+      ＜ 前の商品
+    </a>
+    <a href="#" class="change-item-btn">
+      後ろの商品 ＞
+    </a>
+  </div>
+  <a href="#" class='another-item'><%= "" %>をもっと見る</a>
+</div>
+
+<%= render "shared/footer" %>
+):
+1:    <%= render "shared/header" %>
+2:    
+3:    <%# 商品の概要 %>
+4:    <div class="item-show">
+5:      <div class="item-box">
+6:        <h2 class="name">
+7:      <% if @item.present? %>
+8:          <%= @item.title %>
+9:        </h2>
+10:        <div class='item-img-content'>
+11:          <%= image_tag @item.image ,class:"item-box-img" %>
+12:        <% end %> 
+13:          <%# 商品が売れている場合は、sold outの表示をしましょう。 %>
+14:          <% if @item.purchase.present? %>
+15:            <div class='sold-out'>
+16:              <span>Sold Out!!</span>
+17:            </div>
+18:          <% end %>
+19:          <%# //商品が売れている場合は、sold outの表示をしましょう。 %>
+20:        </div>
+21:      <% if @item.nil? %>
+22:        <div class="item-price-box">
+23:          <span class="item-price">
+24:            ¥ 999,999,999
+25:          </span>
+26:          <span class="item-postage">
+27:            (税込) 送料込み
+28:          </span>
+29:        </div>
+30:      <% end %>
+31:    
+32:        <%# ログインしているユーザと出品しているユーザが同一人物である時、商品の編集と削除を表示にしましょう%>
+33:        <% if user_signed_in? && current_user.id == @item.user_id %>
+34:          <%= link_to '商品の編集', edit_item_path(@item) , method: :get, class: "item-red-btn" %>
+35:          <p class='or-text'>or</p>
+36:          <%= link_to '削除', item_path(@item), method: :delete, class:'item-destroy' %>
+37:        <% unless @item.purchase.present? %>
+38:        <%# 商品が売れていない場合はこちらを表示しましょう %>
+39:          <%= link_to '購入画面に進む', purchase_item_path(@item) ,class:"item-red-btn"%>
+40:          <% end %>
+41:        <%# //商品が売れていない場合はこちらを表示しましょう %>
+42:        <%# // ログインしているユーザと出品しているユーザが同一人物である時、商品の編集と削除を表示にしましょう %>
+43:    
+44:        <div class="item-explain-box">
+45:          <span><%= @item.introduction %></span>
+46:        </div>
+47:        <table class="detail-table">
+48:          <tbody>
+49:            <tr>
+50:              <th class="detail-item">出品者</th>
+51:              <td class="detail-value"><%= @item.user.nickname %></td>
+52:            </tr>
+53:            <tr>
+54:              <th class="detail-item">カテゴリー</th>
+55:              <td class="detail-value"><%= @item.category.name %></td>
+56:            </tr>
+57:            <tr>
+58:              <th class="detail-item">商品の状態</th>
+59:              <td class="detail-value"><%= @item.status.name %></td>
+60:            </tr>
+61:            <tr>
+62:              <th class="detail-item">配送料の負担</th>
+63:              <td class="detail-value"><%= @item.postage.name %></td>
+64:            </tr>
+65:            <tr>
+66:              <th class="detail-item">発送元の地域</th>
+67:              <td class="detail-value"><%= @item.area.name %></td>
+68:            </tr>
+69:            <tr>
+70:              <th class="detail-item">発送日の目安</th>
+71:              <td class="detail-value"><%= @item.shipping.name %></td>
+72:            </tr>
+73:          </tbody>
+74:        </table>
+75:    
+76:        <div class="option">
+77:          <div class="favorite-btn">
+78:            <%= image_tag "star.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
+79:            <span>お気に入り 0</span>
+80:          </div>
+81:          <div class="report-btn">
+82:            <%= image_tag "flag.png" ,class:"report-flag-icon" ,width:"20",height:"20"%>
+83:            <span>不適切な商品の通報</span>
+84:          </div>
+85:        </div>
+86:      </div>
+87:    
+88:      <%# /商品の概要 %>
+89:    
+90:      <div class="comment-box">
+91:        <form>
+92:          <textarea class="comment-text"></textarea>
+93:          <p class="comment-warn">
+94:            相手のことを考え丁寧なコメントを心がけましょう。
+95:            <br>
+96:            不快な言葉遣いなどは利用制限や退会処分となることがあります。
+97:          </p>
+98:          <button type="submit" class="comment-btn">
+99:            <%= image_tag "comment.png" ,class:"comment-flag-icon" ,width:"20",height:"25"%>
+100:            <span>コメントする<span>
+101:          </button>
+102:        </form>
+103:      </div>
+104:      <div class="links">
+105:        <a href="#" class="change-item-btn">
+106:          ＜ 前の商品
+107:        </a>
+108:        <a href="#" class="change-item-btn">
+109:          後ろの商品 ＞
+110:        </a>
+111:      </div>
+112:      <a href="#" class='another-item'><%= "" %>をもっと見る</a>
+113:    </div>
+114:    
+115:    <%= render "shared/footer" %>
+  
+app/views/items/show.html.erb:117: syntax error, unexpected end-of-input, expecting end
+app/views/items/show.html.erb:117: syntax error, unexpected end-of-input, expecting end
+app/views/items/show.html.erb:117: syntax error, unexpected end-of-input, expecting end
+app/views/items/show.html.erb:117: syntax error, unexpected end-of-input, expecting end
+app/views/items/show.html.erb:117: syntax error, unexpected end-of-input, expecting end
+app/views/items/show.html.erb:117: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2020-09-08 08:50:46 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 4.9ms | Allocations: 2633)
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mPurchase Load (0.2ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` = 3 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:136
+  Rendered shared/_footer.html.erb (Duration: 1.4ms | Allocations: 1482)
+  Rendered items/index.html.erb within layouts/application (Duration: 20.8ms | Allocations: 14786)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 38.2ms | ActiveRecord: 1.3ms | Allocations: 33580)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8b63b5cad89ebba7a25a193246d7230faeaec573/IMG_0010.jpg" for ::1 at 2020-09-08 08:50:46 +0900
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8b63b5cad89ebba7a25a193246d7230faeaec573", "filename"=>"IMG_0010"}
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+[36m  Disk Storage (0.5ms) [0m[34mGenerated URL for file at key: 3z9qyfo6n5lc0bh7k5dfsj6z2ywp (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNM281Y1hsbWJ6WnVOV3hqTUdKb04yczFaR1p6YWpaNk1ubDNjQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QyMzo1NTo0Ni42MTFaIiwicHVyIjoiYmxvYl9rZXkifX0=--568bdad0159340bb5fec53bdf098144a0fb92038/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNM281Y1hsbWJ6WnVOV3hqTUdKb04yczFaR1p6YWpaNk1ubDNjQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QyMzo1NTo0Ni42MTFaIiwicHVyIjoiYmxvYl9rZXkifX0=--568bdad0159340bb5fec53bdf098144a0fb92038/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms | Allocations: 1971)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNM281Y1hsbWJ6WnVOV3hqTUdKb04yczFaR1p6YWpaNk1ubDNjQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QyMzo1NTo0Ni42MTFaIiwicHVyIjoiYmxvYl9rZXkifX0=--568bdad0159340bb5fec53bdf098144a0fb92038/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-08 08:50:46 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNM281Y1hsbWJ6WnVOV3hqTUdKb04yczFaR1p6YWpaNk1ubDNjQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QyMzo1NTo0Ni42MTFaIiwicHVyIjoiYmxvYl9rZXkifX0=--568bdad0159340bb5fec53bdf098144a0fb92038", "filename"=>"IMG_0010"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 457)
+
+
+Started GET "/items/3" for ::1 at 2020-09-08 08:50:48 +0900
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:47:in `set_params'
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1660)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.5ms | Allocations: 2917)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= render "shared/header" %>
+
+<%# 商品の概要 %>
+<div class="item-show">
+  <div class="item-box">
+    <h2 class="name">
+  <% if @item.present? %>
+      <%= @item.title %>
+    </h2>
+    <div class='item-img-content'>
+      <%= image_tag @item.image ,class:"item-box-img" %>
+    <% end %> 
+      <%# 商品が売れている場合は、sold outの表示をしましょう。 %>
+      <% if @item.purchase.present? %>
+        <div class='sold-out'>
+          <span>Sold Out!!</span>
+        </div>
+      <% end %>
+      <%# //商品が売れている場合は、sold outの表示をしましょう。 %>
+    </div>
+  <% if @item.nil? %>
+    <div class="item-price-box">
+      <span class="item-price">
+        ¥ 999,999,999
+      </span>
+      <span class="item-postage">
+        (税込) 送料込み
+      </span>
+    </div>
+  <% end %>
+
+    <%# ログインしているユーザと出品しているユーザが同一人物である時、商品の編集と削除を表示にしましょう%>
+    <% if user_signed_in? && current_user.id == @item.user_id %>
+      <%= link_to '商品の編集', edit_item_path(@item) , method: :get, class: "item-red-btn" %>
+      <p class='or-text'>or</p>
+      <%= link_to '削除', item_path(@item), method: :delete, class:'item-destroy' %>
+    <% elseif user_signed_in? %>
+      <% unless @item.purchase.present? %>
+    <%# 商品が売れていない場合はこちらを表示しましょう %>
+      <%= link_to '購入画面に進む', purchase_item_path(@item) ,class:"item-red-btn"%>
+      <% end %>
+    <%# //商品が売れていない場合はこちらを表示しましょう %>
+    <%# // ログインしているユーザと出品しているユーザが同一人物である時、商品の編集と削除を表示にしましょう %>
+
+    <div class="item-explain-box">
+      <span><%= @item.introduction %></span>
+    </div>
+    <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-item">出品者</th>
+          <td class="detail-value"><%= @item.user.nickname %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">カテゴリー</th>
+          <td class="detail-value"><%= @item.category.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">商品の状態</th>
+          <td class="detail-value"><%= @item.status.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">配送料の負担</th>
+          <td class="detail-value"><%= @item.postage.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">発送元の地域</th>
+          <td class="detail-value"><%= @item.area.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">発送日の目安</th>
+          <td class="detail-value"><%= @item.shipping.name %></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="option">
+      <div class="favorite-btn">
+        <%= image_tag "star.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
+        <span>お気に入り 0</span>
+      </div>
+      <div class="report-btn">
+        <%= image_tag "flag.png" ,class:"report-flag-icon" ,width:"20",height:"20"%>
+        <span>不適切な商品の通報</span>
+      </div>
+    </div>
+  </div>
+
+  <%# /商品の概要 %>
+
+  <div class="comment-box">
+    <form>
+      <textarea class="comment-text"></textarea>
+      <p class="comment-warn">
+        相手のことを考え丁寧なコメントを心がけましょう。
+        <br>
+        不快な言葉遣いなどは利用制限や退会処分となることがあります。
+      </p>
+      <button type="submit" class="comment-btn">
+        <%= image_tag "comment.png" ,class:"comment-flag-icon" ,width:"20",height:"25"%>
+        <span>コメントする<span>
+      </button>
+    </form>
+  </div>
+  <div class="links">
+    <a href="#" class="change-item-btn">
+      ＜ 前の商品
+    </a>
+    <a href="#" class="change-item-btn">
+      後ろの商品 ＞
+    </a>
+  </div>
+  <a href="#" class='another-item'><%= "" %>をもっと見る</a>
+</div>
+
+<%= render "shared/footer" %>
+):
+1:    <%= render "shared/header" %>
+2:    
+3:    <%# 商品の概要 %>
+4:    <div class="item-show">
+5:      <div class="item-box">
+6:        <h2 class="name">
+7:      <% if @item.present? %>
+8:          <%= @item.title %>
+9:        </h2>
+10:        <div class='item-img-content'>
+11:          <%= image_tag @item.image ,class:"item-box-img" %>
+12:        <% end %> 
+13:          <%# 商品が売れている場合は、sold outの表示をしましょう。 %>
+14:          <% if @item.purchase.present? %>
+15:            <div class='sold-out'>
+16:              <span>Sold Out!!</span>
+17:            </div>
+18:          <% end %>
+19:          <%# //商品が売れている場合は、sold outの表示をしましょう。 %>
+20:        </div>
+21:      <% if @item.nil? %>
+22:        <div class="item-price-box">
+23:          <span class="item-price">
+24:            ¥ 999,999,999
+25:          </span>
+26:          <span class="item-postage">
+27:            (税込) 送料込み
+28:          </span>
+29:        </div>
+30:      <% end %>
+31:    
+32:        <%# ログインしているユーザと出品しているユーザが同一人物である時、商品の編集と削除を表示にしましょう%>
+33:        <% if user_signed_in? && current_user.id == @item.user_id %>
+34:          <%= link_to '商品の編集', edit_item_path(@item) , method: :get, class: "item-red-btn" %>
+35:          <p class='or-text'>or</p>
+36:          <%= link_to '削除', item_path(@item), method: :delete, class:'item-destroy' %>
+37:        <% elseif user_signed_in? %>
+38:          <% unless @item.purchase.present? %>
+39:        <%# 商品が売れていない場合はこちらを表示しましょう %>
+40:          <%= link_to '購入画面に進む', purchase_item_path(@item) ,class:"item-red-btn"%>
+41:          <% end %>
+42:        <%# //商品が売れていない場合はこちらを表示しましょう %>
+43:        <%# // ログインしているユーザと出品しているユーザが同一人物である時、商品の編集と削除を表示にしましょう %>
+44:    
+45:        <div class="item-explain-box">
+46:          <span><%= @item.introduction %></span>
+47:        </div>
+48:        <table class="detail-table">
+49:          <tbody>
+50:            <tr>
+51:              <th class="detail-item">出品者</th>
+52:              <td class="detail-value"><%= @item.user.nickname %></td>
+53:            </tr>
+54:            <tr>
+55:              <th class="detail-item">カテゴリー</th>
+56:              <td class="detail-value"><%= @item.category.name %></td>
+57:            </tr>
+58:            <tr>
+59:              <th class="detail-item">商品の状態</th>
+60:              <td class="detail-value"><%= @item.status.name %></td>
+61:            </tr>
+62:            <tr>
+63:              <th class="detail-item">配送料の負担</th>
+64:              <td class="detail-value"><%= @item.postage.name %></td>
+65:            </tr>
+66:            <tr>
+67:              <th class="detail-item">発送元の地域</th>
+68:              <td class="detail-value"><%= @item.area.name %></td>
+69:            </tr>
+70:            <tr>
+71:              <th class="detail-item">発送日の目安</th>
+72:              <td class="detail-value"><%= @item.shipping.name %></td>
+73:            </tr>
+74:          </tbody>
+75:        </table>
+76:    
+77:        <div class="option">
+78:          <div class="favorite-btn">
+79:            <%= image_tag "star.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
+80:            <span>お気に入り 0</span>
+81:          </div>
+82:          <div class="report-btn">
+83:            <%= image_tag "flag.png" ,class:"report-flag-icon" ,width:"20",height:"20"%>
+84:            <span>不適切な商品の通報</span>
+85:          </div>
+86:        </div>
+87:      </div>
+88:    
+89:      <%# /商品の概要 %>
+90:    
+91:      <div class="comment-box">
+92:        <form>
+93:          <textarea class="comment-text"></textarea>
+94:          <p class="comment-warn">
+95:            相手のことを考え丁寧なコメントを心がけましょう。
+96:            <br>
+97:            不快な言葉遣いなどは利用制限や退会処分となることがあります。
+98:          </p>
+99:          <button type="submit" class="comment-btn">
+100:            <%= image_tag "comment.png" ,class:"comment-flag-icon" ,width:"20",height:"25"%>
+101:            <span>コメントする<span>
+102:          </button>
+103:        </form>
+104:      </div>
+105:      <div class="links">
+106:        <a href="#" class="change-item-btn">
+107:          ＜ 前の商品
+108:        </a>
+109:        <a href="#" class="change-item-btn">
+110:          後ろの商品 ＞
+111:        </a>
+112:      </div>
+113:      <a href="#" class='another-item'><%= "" %>をもっと見る</a>
+114:    </div>
+115:    
+116:    <%= render "shared/footer" %>
+  
+app/views/items/show.html.erb:118: syntax error, unexpected end-of-input, expecting end
+app/views/items/show.html.erb:118: syntax error, unexpected end-of-input, expecting end
+app/views/items/show.html.erb:118: syntax error, unexpected end-of-input, expecting end
+app/views/items/show.html.erb:118: syntax error, unexpected end-of-input, expecting end
+app/views/items/show.html.erb:118: syntax error, unexpected end-of-input, expecting end
+app/views/items/show.html.erb:118: syntax error, unexpected end-of-input, expecting end
+Started GET "/items/3" for ::1 at 2020-09-08 08:51:12 +0900
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/items_controller.rb:47:in `set_params'
+  Rendering items/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 4.9ms | Allocations: 2632)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:11
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:11
+  [1m[36mPurchase Load (0.2ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` = 3 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:14
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/items/show.html.erb:53
+  Rendered shared/_footer.html.erb (Duration: 1.9ms | Allocations: 1700)
+  Rendered items/show.html.erb within layouts/application (Duration: 15.8ms | Allocations: 10973)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 1.4ms | Allocations: 30316)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNM281Y1hsbWJ6WnVOV3hqTUdKb04yczFaR1p6YWpaNk1ubDNjQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QyMzo1NTo0Ni42MTFaIiwicHVyIjoiYmxvYl9rZXkifX0=--568bdad0159340bb5fec53bdf098144a0fb92038/IMG_0010.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_0010.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_0010.jpg" for ::1 at 2020-09-08 08:51:12 +0900
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_0010.jpg\"; filename*=UTF-8''IMG_0010.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhNM281Y1hsbWJ6WnVOV3hqTUdKb04yczFaR1p6YWpaNk1ubDNjQVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtsTlIxOHdNREV3TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25TVTFIWHpBd01UQXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wOS0wN1QyMzo1NTo0Ni42MTFaIiwicHVyIjoiYmxvYl9rZXkifX0=--568bdad0159340bb5fec53bdf098144a0fb92038", "filename"=>"IMG_0010"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 425)
+
+
+Started GET "/" for ::1 at 2020-09-08 08:51:14 +0900
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:18
+  Rendered shared/_header.html.erb (Duration: 5.0ms | Allocations: 2307)
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY created_at DESC[0m
+  ↳ app/views/items/index.html.erb:129
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Item' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:134
+  [1m[36mPurchase Load (0.2ms)[0m  [1m[34mSELECT `purchases`.* FROM `purchases` WHERE `purchases`.`item_id` = 3 LIMIT 1[0m
+  ↳ app/views/items/index.html.erb:136
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 1076)
+  Rendered items/index.html.erb within layouts/application (Duration: 25.0ms | Allocations: 13773)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 54ms (Views: 50.9ms | ActiveRecord: 1.6ms | Allocations: 31706)
+
+

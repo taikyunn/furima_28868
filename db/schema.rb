@@ -54,9 +54,9 @@ ActiveRecord::Schema.define(version: 2020_09_07_042308) do
     t.string "address", null: false
     t.string "building"
     t.string "phone_number", null: false
-    t.integer "purchase_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "purchase_id", null: false
   end
 
   create_table "purchases", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|

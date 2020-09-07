@@ -48,7 +48,7 @@ class ItemsController < ApplicationController
   end
 
   def purchase_params
-    params.permit(:prefecture_id, :postal_code, :city, :address, :building, :phone_number, :purchase_id, :user_id)
+    params.permit(:prefecture_id, :postal_code, :city, :address, :building, :phone_number, :purchase_id, :user_id).merge(user_id: current_user.id, item_id: @item.id)
   end
 
 end

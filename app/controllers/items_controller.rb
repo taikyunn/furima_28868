@@ -35,7 +35,7 @@ class ItemsController < ApplicationController
     if @place.valid?
       pay_item
       @place.save
-      render 'index'
+      redirect_to action: :index
     else
       render 'purchase'
     end

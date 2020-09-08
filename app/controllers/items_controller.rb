@@ -31,10 +31,14 @@ class ItemsController < ApplicationController
   end
 
   def buy
-    @place = UserPurchase.new(purchase_params)
-    @place.save
-    binding.pry
-    redirect_to root_path
+    @place = UserPurchase.new(card_params)
+    if @place.valid?
+      pay_item
+      @place.save
+      return redirect_to root_path
+    else
+      render 'purchase'
+    end
   end
 
   private
@@ -49,6 +53,19 @@ class ItemsController < ApplicationController
 
   def purchase_params
     params.permit(:prefecture_id, :postal_code, :city, :address, :building, :phone_number, :purchase_id, :user_id).merge(user_id: current_user.id, item_id: @item.id)
+  end
+
+  def card_params
+    params.permit(:prefecture_id, :postal_code, :city, :address, :building, :phone_number, :purchase_id, :user_id,:token).merge(user_id: current_user.id, item_id: @item.id)
+  end
+
+  def pay_item
+    Payjp.api_key = ENV["PAYJP_SECRET_KEY"]  # PAY.JPテスト秘密鍵
+    Payjp::Charge.create(
+      amount: order_params[:price],  # 商品の値段
+      card: order_params[:token],    # カードトークン
+      currency:'jpy'                 # 通貨の種類(日本円)
+    )
   end
 
 end

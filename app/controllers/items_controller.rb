@@ -1,6 +1,5 @@
 class ItemsController < ApplicationController
   before_action :set_params, only: %i[show edit update purchase buy]
-
   def index
     @items = Item.all.order('created_at DESC')
   end
@@ -18,6 +17,10 @@ class ItemsController < ApplicationController
     end
   end
 
+  def edit
+    render :show unless @item.user_id == current_user.id
+  end
+
   def update
     if @item.update(items_params)
       redirect_to action: :show
@@ -27,6 +30,13 @@ class ItemsController < ApplicationController
   end
 
   def purchase
+    if @item.purchase.present?
+      redirect_to root_path
+    elsif user_signed_in?
+      redirect_to root_path unless current_user.id != @item.user_id
+    else
+      redirect_to root_path
+    end
     @place = UserPurchase.new
   end
 
@@ -50,7 +60,12 @@ class ItemsController < ApplicationController
   def set_params
     @item = Item.find(params[:id])
   end
-
+  
+  def move_to_index
+    unless current_user.id == Item.user_id
+      redirect_to action: :index
+    end
+  end
 
   def card_params
     params.permit(:prefecture_id, :postal_code, :city, :address, :building, :phone_number, :purchase_id, :user_id, :token, :price).merge(user_id: current_user.id, item_id: @item.id,purchase_id: @item.id)

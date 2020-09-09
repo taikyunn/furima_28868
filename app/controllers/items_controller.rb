@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-  before_action :set_params, only: %i[show edit update purchase buy]
+  before_action :set_params, only: %i[show edit update purchase buy destroy]
   def index
     @items = Item.all.order('created_at DESC')
   end

@@ -17,10 +17,19 @@ class ItemsController < ApplicationController
     end
   end
 
+
   def edit
     render :show unless @item.user_id == current_user.id
   end
-
+    
+  def destroy
+    if @item.destroy
+      redirect_to root_path
+    else
+      render 'show'
+    end
+  end
+  
   def update
     if @item.update(items_params)
       redirect_to action: :show
@@ -78,3 +87,4 @@ class ItemsController < ApplicationController
     )
   end
 end
+

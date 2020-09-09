@@ -4,8 +4,8 @@ RSpec.describe Place, type: :model do
   describe Place do
     before do
       @user = FactoryBot.create(:user)
-      @item = FactoryBot.create(:item)
-      @place = FactoryBot.build(:place,user_id:@user.id, item_id: @item.id)
+      @item = FactoryBot.create(:item, user_id:@user.id,)
+      @place = FactoryBot.build(:place, item_id: @item.id)
     end
   end
 

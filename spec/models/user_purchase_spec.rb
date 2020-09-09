@@ -16,7 +16,7 @@ RSpec.describe UserPurchase, type: :model do
           it 'prefecture_idが空だと購入できない' do
             @user_purchase.prefecture_id = nil
             @user_purchase.valid?
-            expect(@user_purchase.errors.full_messages).to include(["Prefecture can't be blank", "Prefecture is not a number")
+            expect(@user_purchase.errors.full_messages).to include("Prefecture can't be blank")
           end
           it 'postal_codeが空だと購入できない' do
             @user_purchase.postal_code = nil

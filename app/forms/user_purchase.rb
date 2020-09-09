@@ -1,5 +1,4 @@
 class UserPurchase
-
   include ActiveModel::Model
   attr_accessor :prefecture_id, :postal_code, :city, :address, :building, :phone_number, :purchase_id, :user_id, :item_id, :token
 

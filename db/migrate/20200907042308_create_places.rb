@@ -7,7 +7,7 @@ class CreatePlaces < ActiveRecord::Migration[6.0]
       t.string :address, null: false
       t.string :building
       t.string :phone_number, null: false
-      t.integer :purchase_id, null: false, foreign_key: 
+      t.integer :purchase_id, null: false, foreign_key:
       t.timestamps
     end
   end

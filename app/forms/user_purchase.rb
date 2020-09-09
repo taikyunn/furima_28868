@@ -8,7 +8,7 @@ class UserPurchase
     validates :postal_code, format: { with: /\A\d{3}[-]\d{4}\z/ }
     validates :city
     validates :address
-    validates :phone_number, numericality: { less_than_or_equal_to: 11 }
+    validates :phone_number, format: { with: /\A\d{,11}\z/, message: 'は11桁以内の数字（ハイフン不要）で入力してください' }
     validates :purchase_id
     validates :token
   end

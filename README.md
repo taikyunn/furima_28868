@@ -8,8 +8,8 @@
 |password             |string      |null: false        |
 |first_name           |string      |null: false        |
 |family_name          |string      |null: false        |
-|first_name_phonetic  |string       |null: false       |
-|family_name_phonetic |string       |null: false       |
+|first_name_phonetic  |string      |null: false       |
+|family_name_phonetic |string      |null: false       |
 |birthday             |date        |null: false        |
 
 ### Association
@@ -21,7 +21,7 @@
 |Column           |Type        |options                         |
 |-----------------|------------|--------------------------------|
 |image            |string      |null: false                     |
-|title           |string       |null: false                     |
+|title            |string       |null: false                     |
 |introduction     |text        |null: false                     |
 |category_id      |integer     |null: false                     |
 |status_id        |integer     |null: false                     |

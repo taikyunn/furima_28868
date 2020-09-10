@@ -18,7 +18,7 @@ class Item < ApplicationRecord
     validates :status_id
     validates :title
     validates :introduction
-    validates :price, numericality: { greater_than: 300, less_than: 9_999_999 }, format: { with: /\A[0-9]+\z/ }
+    validates :price, numericality: { greater_than: 300, less_than: 9_999_999 }, format: { with: /\A[0-9]+\z/, message: 'は300円以上9,999,999円以下で記入してください' }
     validates :user_id
     validates :image
   end

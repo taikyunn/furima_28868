@@ -10,10 +10,6 @@ class ApplicationController < ActionController::Base
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up, keys: %i[nickname first_name first_name_phonetic family_name family_name_phonetic family_name birthday])
   end
-  
-  def production?
-    Rails.env.production?
-  end
 
   def basic_auth
     authenticate_or_request_with_http_basic do |username, password|

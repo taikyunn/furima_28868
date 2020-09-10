@@ -8,16 +8,16 @@ ja:
        family_name: お名前
        family_name_phonetic: お名前(カナ)
        birthday: 誕生日
-     tweet:
-       text: テキスト
-       image: 画像
-#     user:
-#         nickname: ニックネーム
-#         first_name: 名字
-#         first_name_phonetic: 名字(カナ)
-#         family_name: お名前
-#         family_name_phonetic: お名前(カナ)
-#         birthday: 誕生日
+     item:
+      title: 商品名
+      introduction: 商品の説明
+      price: 価格
+      image: 画像
+      category_id: カテゴリー
+      area_id: 発送元の地域
+      postage_id: 配送料の負担
+      shipping_id: 発送元の地域
+      status_id: 商品の状態
 
 #         item:
 #             title: 商品名

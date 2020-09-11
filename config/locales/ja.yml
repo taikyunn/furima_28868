@@ -18,7 +18,7 @@ ja:
       postage_id: 配送料の負担
       shipping_id: 発送までの日数
       status_id: 商品の状態
-ja:
+      
  activemodel:
     attributes:
      user_purchase:

@@ -16,7 +16,7 @@ ja:
       category_id: カテゴリー
       area_id: 発送元の地域
       postage_id: 配送料の負担
-      shipping_id: 発送元の地域
+      shipping_id: 発送までの日数
       status_id: 商品の状態
 
 #         item:

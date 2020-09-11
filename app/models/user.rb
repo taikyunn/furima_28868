@@ -9,10 +9,10 @@ class User < ApplicationRecord
     validates :password, format: { with: /[a-z\d]{6,}/i }
     validates :nickname
     validates :email, uniqueness: true
-    validates :first_name, format: { with: /\A[ぁ-んァ-ン一-龥]/, message: 'is invalid. Input full-width characters.' }
-    validates :family_name, format: { with: /\A[ぁ-んァ-ン一-龥]/, message: 'is invalid. Input full-width characters.' }
+    validates :first_name, format: { with: /\A[ぁ-んァ-ン一-龥]/, message: 'は全角（漢字・ひらがな・カタカナ）で入力してください' }
+    validates :family_name, format: { with: /\A[ぁ-んァ-ン一-龥]/, message: 'は全角（漢字・ひらがな・カタカナ）で入力してください'  }
     validates :birthday
-    validates :first_name_phonetic, format: { with: /\A[ァ-ヶー－]+\z/, message: 'is invalid. Input full-width katakana characters.' }
-    validates :family_name_phonetic, format: { with: /\A[ァ-ヶー－]+\z/, message: 'is invalid. Input full-width katakana characters.' }
+    validates :first_name_phonetic, format: { with: /\A[ァ-ヶー－]+\z/, message: 'はカタカナで入力してください'  }
+    validates :family_name_phonetic, format: { with: /\A[ァ-ヶー－]+\z/, message: 'はカタカタで入力してください'  }
   end
 end

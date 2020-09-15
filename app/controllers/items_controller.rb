@@ -38,6 +38,11 @@ class ItemsController < ApplicationController
     end
   end
 
+  def show
+    @messages = @item.messages.includes(:user)
+    @message = Message.new
+  end
+
   def purchase
     if @item.purchase.present?
       redirect_to root_path
@@ -54,7 +59,7 @@ class ItemsController < ApplicationController
     if @place.valid?
       pay_item
       @place.save
-      redirect_to action: :index
+      redirect_to root_path
     else
       render 'purchase'
     end
@@ -86,5 +91,6 @@ class ItemsController < ApplicationController
       currency: 'jpy'                 # 通貨の種類(日本円)
     )
   end
+
 end
 

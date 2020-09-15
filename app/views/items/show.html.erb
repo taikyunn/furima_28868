@@ -92,7 +92,7 @@
   <%# /商品の概要 %>
 
   <div class="comment-box">
-  <% if user_signed_in? %>
+  <% if current_user %>
     <%= form_with( model: [@item, @message], local: true) do |f| %>
       <%= f.text_field :text, class:"comment-text" , rows: 5 , id: 'messages'%>
       <p class="comment-warn">
@@ -101,14 +101,22 @@
         不快な言葉遣いなどは利用制限や退会処分となることがあります。
       </p>
       <%= image_tag "comment.png" ,class:"comment-flag-icon" ,width:"20",height:"25"%>
-        <%= f.submit 'コメントする', class: "comment-btn"%>
+        <%= f.submit 'コメントする', class: "comment-btn" %>
     <% end %>
+  <% else %>
+   <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
+  <% end %>
+  <div class = comments>
+    <h2>コメント一覧</h2>
     <% if @messages %>
       <% @messages.reverse_each do |message| %>
-        <p><%= message.text %></p>
+      <p>
+          <strong><%= message.user.nickname %>さん：</strong>
+        <%= message.text %>
+      </p>
       <% end %>
     <% end %>
-  <% end %>
+  </div>
   </div>
   <div class="links">
     <a href="#" class="change-item-btn">

@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
   before_action :set_params, only: %i[show edit update purchase buy destroy]
-  before_action :move_to_index expect: [:search]
+  
   def index
     @items = Item.all.order('created_at DESC')
   end

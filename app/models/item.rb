@@ -19,12 +19,12 @@ class Item < ApplicationRecord
     validates :status_id
     validates :title
     validates :introduction
-    validates :price, numericality: { greater_than: 300, less_than: 9_999_999, message: 'は300円以上9,999,999円以下かつ半角で記入してください'}, format: { with: /\A[0-9]+\z/}
+    validates :price, numericality: { greater_than: 300, less_than: 9_999_999, message: 'は300円以上9,999,999円以下かつ半角で記入してください' }, format: { with: /\A[0-9]+\z/ }
     validates :user_id
     validates :image
   end
 
-  with_options numericality: { other_than: 1, message: 'を選択してください'} do
+  with_options numericality: { other_than: 1, message: 'を選択してください' } do
     validates :category_id
     validates :area_id
     validates :postage_id

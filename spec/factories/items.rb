@@ -8,7 +8,7 @@ FactoryBot.define do
     postage_id    { '3' }
     area_id       { '3' }
     shipping_id   { '3' }
-    price      { '3000' }
+    price { '3000' }
     #  trait(:image) do
     #     image { Rack::Test::UploadedFile.new(Rails.root.join('public/images/test_image.jpg')) }
     #  end

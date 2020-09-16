@@ -10,7 +10,6 @@ class Item < ApplicationRecord
   has_one :purchase
   has_one_attached :image
   has_many :messages
-
   with_options presence: true do
     validates :category_id
     validates :area_id
@@ -30,5 +29,13 @@ class Item < ApplicationRecord
     validates :postage_id
     validates :shipping_id
     validates :status_id
+  end
+
+  def self.search(search)
+     if search != ""
+      Item.where('text LIKE(?)', "%#{search}%")
+     else
+      Item.all
+     end
   end
 end

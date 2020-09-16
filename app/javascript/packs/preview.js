@@ -10,5 +10,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
     imageElement.appendChild(blobImage);
     ImageList.appendChild(imageElement);
+    console.log('aaa')
   });
 });

@@ -32,10 +32,10 @@ class Item < ApplicationRecord
   end
 
   def self.search(search)
-     if search != ""
+    if search != ''
       Item.where('title LIKE(?)', "%#{search}%")
-     else
+    else
       Item.all
-     end
+    end
   end
 end

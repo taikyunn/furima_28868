@@ -7,5 +7,8 @@ Rails.application.routes.draw do
       get 'purchase', to: 'items#purchase'
       post 'purchase', to: 'items#buy'
     end
+    collection do
+      get 'search'
+    end
   end
 end

@@ -1,5 +1,6 @@
 class ItemsController < ApplicationController
   before_action :set_params, only: %i[show edit update purchase buy destroy]
+
   def index
     @items = Item.all.order('created_at DESC')
   end
@@ -62,6 +63,10 @@ class ItemsController < ApplicationController
     else
       render 'purchase'
     end
+  end
+
+  def search
+    @items = Item.search(params[:keyword])
   end
 
   private

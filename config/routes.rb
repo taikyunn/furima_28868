@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'items#index'
   resources :items do
-    get 'posts/id', to: 'posts#checked'
+    get 'items/id', to: 'items#checked'
     resources :messages, only: [:create]
     member do
       get 'purchase', to: 'items#purchase'

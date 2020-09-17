@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-  before_action :set_params, only: %i[show edit update purchase buy destroy checked]
+  before_action :set_params, only: %i[show edit update purchase buy destroy ]
 
   def index
     @items = Item.all.order('created_at DESC')
@@ -67,17 +67,6 @@ class ItemsController < ApplicationController
 
   def search
     @items = Item.search(params[:keyword])
-  end
-
-  def checked
-    if @item.checked
-      @item.update(ckecked: false)
-    else
-      @item.update(ckecked: true)
-    end
-
-    item = @item = Item.find(params[:id])
-    render json: {post: item}
   end
 
   private

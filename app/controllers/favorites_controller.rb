@@ -1,25 +1,21 @@
 class FavoritesController < ApplicationController
-  before_action :set_params
+  before_action :set_item
 
   def create
-    if Favorite.create(user_id: user.id,item_id:item.id)
+    if @item.user_id != current_user.id 
+    @favorite = Favorite.create( user_id: current_user.id, item_id: @item.id)
     redirect_to root_path
-    else
-
     end
   end
 
   def destroy
-    if favorite = Favorite.find_by(user_id: user.id,item_id:item.id)
-      favorite.delete
-      redirect_to root_path
-    else
-      redirect_to root_path
-    end
+    @favorite = Favorite.find_by(user_id: current_user.id,item_id: @item.id)
+    @favorite.destroy 
   end
 
   private
-  def set_params
-    params.require(:favorite).merge(user_id: current_user.id, item_id: @item.id)
+  
+  def set_item
+    @item = Item.find(params[:item_id])
   end
 end

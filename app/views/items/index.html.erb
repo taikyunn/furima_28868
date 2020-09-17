@@ -138,6 +138,7 @@
               <span>Sold Out!!</span>
             </div>
         <% end %>
+
       </div>
         <div class='item-info'>
           <h3 class='item-name'>
@@ -145,15 +146,10 @@
           </h3>
           <div class='item-price'>
             <span><%= item.price %>円<br>(税込み)</span>
-
-            <% if !Favorite.exists? %>
-            <%= link_to "お気に入り",item_favorite_index_path(item), method: :post %>
+            <div class='star-btn'>
               <%= image_tag "star.png", class:"star-icon" %>
               <span class='star-count'>0</span>
-            <% else %>
-            <%= link_to "お気に入り解除",item_favorite_path(item), method: :delete %>
-            <% end %>
-
+            </div>
           </div>
         </div>
     </li>

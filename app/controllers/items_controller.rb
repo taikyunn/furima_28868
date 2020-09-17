@@ -1,8 +1,10 @@
 class ItemsController < ApplicationController
-  before_action :set_params, only: %i[show edit update purchase buy destroy]
+  before_action :set_params, only: %i[ edit update purchase buy destroy]
 
   def index
     @items = Item.all.order('created_at DESC')
+    # @favorite = Favorite.find(params[id])
+    # @favorite_count = Favorite.where(id: @favorite.ids).count
   end
 
   def new
@@ -39,8 +41,15 @@ class ItemsController < ApplicationController
   end
 
   def show
+    @item = Item.find(params[:id])
     @messages = @item.messages.includes(:user)
     @message = Message.new
+
+    # @user = User.find(params[:id])
+    # @items = @user.items
+
+    favorites = Favorite.where(user_id: current_user.id).pluck(:item_id)
+    # @favorite_list = Favorite.find(favorites)
   end
 
   def purchase

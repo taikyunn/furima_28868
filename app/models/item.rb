@@ -10,7 +10,7 @@ class Item < ApplicationRecord
   has_one :purchase
   has_one_attached :image
   has_many :messages
-  has_many :favorites
+  has_many :favorites, dependent: :destroy 
 
   with_options presence: true do
     validates :category_id

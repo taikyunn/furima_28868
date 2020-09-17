@@ -6,10 +6,12 @@ class Item < ApplicationRecord
   belongs_to_active_hash :shipping
   belongs_to_active_hash :status
 
-  belongs_to :user
+  has_many :user,through: :favorites
   has_one :purchase
   has_one_attached :image
   has_many :messages
+  has_many :favorites
+
   with_options presence: true do
     validates :category_id
     validates :area_id

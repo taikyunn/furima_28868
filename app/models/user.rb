@@ -2,9 +2,10 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  has_many :items
+  has_many :items,through: :favorites
   has_many :purchases
   has_many :messages
+  has_many :favorites
 
   with_options presence: true do
     validates :password, format: { with: /[a-z\d]{6,}/i }

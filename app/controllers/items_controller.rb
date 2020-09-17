@@ -45,11 +45,7 @@ class ItemsController < ApplicationController
     @messages = @item.messages.includes(:user)
     @message = Message.new
 
-    # @user = User.find(params[:id])
-    # @items = @user.items
-
     favorites = Favorite.where(user_id: current_user.id).pluck(:item_id)
-    # @favorite_list = Favorite.find(favorites)
   end
 
   def purchase

@@ -3,7 +3,6 @@ class ItemsController < ApplicationController
 
   def index
     @items = Item.all.order('created_at DESC')
-    favorites = Favorite.where(user_id: current_user.id).pluck(:item_id)
   end
 
   def new

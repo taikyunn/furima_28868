@@ -147,14 +147,8 @@
           <div class='item-price'>
             <span><%= item.price %>円<br>(税込み)</span>
             <div class='star-btn'>
-              <% if !Favorite.exists?(user: current_user.id, item_id: item.id) %>
-                <%= link_to "お気に入り",item_favorites_path(item, user_id: current_user.id), method: :post %>
                   <%= image_tag "star.png", class:"star-icon" %>
                   <span class='star-count'><%= item.favorites.count %></span>
-              <% else %>
-                <%# <%= link_to "お気に入り解除",item_favorite_path(item_id: item.id, user_id: current_user.id, favorite_id: item.favorites.ids), method: :delete %> 
-                  <span class='star-count'><%= item.favorites.count %></span>
-              <% end %>
             </div>
           </div>
         </div>

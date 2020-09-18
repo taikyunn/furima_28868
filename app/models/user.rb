@@ -5,6 +5,7 @@ class User < ApplicationRecord
   has_many :items
   has_many :purchases
   has_many :messages
+  has_many :favorites
 
   with_options presence: true do
     validates :password, format: { with: /[a-z\d]{6,}/i }

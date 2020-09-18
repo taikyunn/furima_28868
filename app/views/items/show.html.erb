@@ -1,9 +1,11 @@
 <%= render "shared/header" %>
 
 <%# 商品の概要 %>
+<%= render partial: 'shared/flash' %>
 <div class="item-show">
   <div class="item-box">
     <h2 class="name">
+
   <% if @item.present? %>
       <%= @item.title %>
     </h2>
@@ -79,8 +81,14 @@
 
     <div class="option">
       <div class="favorite-btn">
-        <%= image_tag "star.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
-        <span>お気に入り 0</span>
+        <% if !Favorite.exists?(user: current_user.id, item_id: @item.id) %>
+          <%= link_to "お気に入り",item_favorites_path(@item, user_id: current_user.id), method: :post %>
+            <%= image_tag "star.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
+            <span class='star-count'><%= @item.favorites.count %></span>
+        <% else %>
+            <%= link_to "お気に入り解除",item_favorite_path(@item, user_id: current_user.id), method: :delete %>
+            <span class='star-count'><%= @item.favorites.count %></span>
+        <% end %>
       </div>
       <div class="report-btn">
         <%= image_tag "flag.png" ,class:"report-flag-icon" ,width:"20",height:"20"%>

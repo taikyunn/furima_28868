@@ -3,7 +3,7 @@ class FavoritesController < ApplicationController
 
   def create
     if @item.user_id != current_user.id 
-    @favorite = Favorite.create( user_id: current_user.id, item_id: @item.id)
+    @favorite = Favorite.create(user_id: current_user.id, item_id: @item.id)
     flash[:success] = 'お気に入り登録されました'
     redirect_to item_path(@item)
     end

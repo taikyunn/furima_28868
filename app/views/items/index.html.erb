@@ -152,7 +152,7 @@
                   <%= image_tag "star.png", class:"star-icon" %>
                   <span class='star-count'><%= item.favorites.count %></span>
               <% else %>
-                <%= link_to "お気に入り解除",item_favorite_path(item_id: item.id, user_id: current_user.id, favorite_id: favorites.ids), method: :delete %>
+                <%# <%= link_to "お気に入り解除",item_favorite_path(item_id: item.id, user_id: current_user.id, favorite_id: item.favorites.ids), method: :delete %> 
                   <span class='star-count'><%= item.favorites.count %></span>
               <% end %>
             </div>

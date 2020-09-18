@@ -10,8 +10,6 @@ require("channels")
 require("../calculate")
 require("../card")
 require('./preview')
-require("../checked")
-require("../memo")
 
 //= require jquery3
 //= require popper

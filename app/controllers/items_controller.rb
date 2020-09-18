@@ -5,6 +5,7 @@ class ItemsController < ApplicationController
     @items = Item.all.order('created_at DESC')
 
     favorites = Favorite.where(user_id: current_user.id).pluck(:item_id)
+    @favorite = Favorite.new(params[:item_id])
   end
 
   def new

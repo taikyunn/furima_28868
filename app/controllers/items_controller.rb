@@ -3,8 +3,8 @@ class ItemsController < ApplicationController
 
   def index
     @items = Item.all.order('created_at DESC')
-    # @favorite = Favorite.find(params[id])
-    # @favorite_count = Favorite.where(id: @favorite.ids).count
+
+    favorites = Favorite.where(user_id: current_user.id).pluck(:item_id)
   end
 
   def new

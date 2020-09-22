@@ -16,6 +16,8 @@
 
 - has_many :items
 - has_many :purchases
+- has_many :messages
+- has_many :favorites
 
 ## itemsテーブル
 |Column           |Type        |options                         |
@@ -35,6 +37,8 @@
 
 - belongs_to :user
 - has_one :purchase
+- has_many :messages
+- has_many :favorites
 
 ## purchasesテーブル
 |Column           |Type        |options                         |
@@ -63,3 +67,29 @@
 ### Association
 
 - belongs_to :purchase
+
+## messagesテーブル
+|Column           |Type        |options                       |
+|-----------------|------------|------------------------------|
+|text             |text        |null: false                   |
+|item_id          |integer     |null: false, foreign_key: true|
+|user_id          |integer     |null: false, foreign_key: true|
+
+
+### Association
+
+-   belongs_to :item
+-   belongs_to :user
+
+## favoritesテーブル
+|Column           |Type        |options                       |
+|-----------------|------------|------------------------------|
+|item_id          |integer     |null: false, foreign_key: true|
+|user_id          |integer     |null: false, foreign_key: true|
+
+
+### Association
+
+-   belongs_to :item
+-   belongs_to :user
+

@@ -1,7 +1,6 @@
 require_relative 'boot'
 
 require 'rails/all'
-
 class MyLogger < Logger
   include LoggerSilence
   include ActiveSupport::LoggerThreadSafeLevel
